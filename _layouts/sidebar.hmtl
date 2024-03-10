@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
+</head>
+<body>
+  <div class="sidebar">
+    <!-- Your sidebar content here -->
+    <!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search -->
+							<!--	<section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section>  
+							-->
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="index.html">Home</a></li>
+										<!-- <li><a href="aboutme.html">About Me</a></li> -->
+										<li><a href="research.html">Research</a></li>
+										<li>
+											<span class="opener">Teaching</span>
+											<ul>
+												<li><a href="Calculus III.html">Calculus III</a></li>
+											</ul>
+										</li>
+									</ul>
+								</nav>
+
+                <!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Get in touch</h2>
+									</header>
+									
+									<ul class="contact">
+										<li class="icon solid fa-envelope"><a href="#">apohlma2@nd.edu</a></li>
+									<!-- 	<li class="icon solid fa-phone">(000) 000-0000</li> -->
+										<li class="icon solid fa-home">University of Notre Dame<br />
+										Department of Mathematics<br />
+										B25 Hayes-Healy <br />
+										Notre Dame, IN 46556</li>
+									</ul>
+								</section> 
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">&copy; Audriana Houtz. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+								</footer>
+
+						</div>
+					</div>
+
+
+  <div class="content">
+    {{ content }}
+  </div>
+</body>
+</html>
