@@ -3,260 +3,73 @@ layout: sidebar
 title: Home
 ---
 
-<!DOCTYPE HTML>
-<!--
-	Editorial by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Calculus III</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<style>
-			
-			.hr3 {
-        			border-top: 3px double #d39F10;
-      			}
-			
-			
-			.hr1 {
-        			height: 15px;
-        			border: 0;
-       				box-shadow: inset 0 12px 12px -12px rgba(124, 147, 195);
-      			}
-			
-			
-			p.vspace {
-				margin-bottom: 3cm;	
-			}
-			
-		</style> 
-	</head>
-	<body class="is-preload">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculus III</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        .hr3 {
+            border-top: 3px double #d39F10;
+        }
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+        .hr1 {
+            height: 15px;
+            border: 0;
+            box-shadow: inset 0 12px 12px -12px rgba(124, 147, 195);
+        }
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
+        p.vspace {
+            margin-bottom: 3cm;
+        }
+    </style>
+</head>
+<body class="is-preload">
 
-							<!-- Header -->
-								<header id="header">
-									<a href="index.html" class="logo"><strong>AH</strong></a>
-									<ul class="icons">
-										<li><a href="https://github.com/AudrianaHoutz" class="icon brands fa-github"><span class="label">Github</span></a></li>
+<div id="wrapper">
 
-									</ul>
-								</header>
+    <!-- Main -->
+    <div id="main">
+        <div class="inner">
 
-							<!-- Content -->
-								<section>
-									<header class="main">
-										<h1>Calculus III</h1>
-									</header>
-									
-									<p> A collection of notes created during my time as a graduate teaching assistant at University of Notre Dame for my undergraduate Calculus III students. 
-										The course utilizes the mastery system, meaning that the class is split up into standards and the students are tested on each standard individually. 
-										Students were expected to complete one homework assignment, one quiz, and one mastery test per standard each worth 1 point with the ability to earn 
-										back a percentage of the point through a "What I Have Learned" document. 
-										<p class="vspace"> </p>
+            <!-- Header -->
+            <header id="header">
+                <a href="index.html" class="logo"><strong>AH</strong></a>
+                <ul class="icons">
+                    <li><a href="https://github.com/AudrianaHoutz" class="icon brands fa-github"><span class="label">Github</span></a></li>
+                </ul>
+            </header>
 
-										For fall 2023 students:
-										Additional office hours for final: Wednesday Dec 13th 6:30-8:00pm in math help room. 
-									</p>
-										
-									
-								</section>
-								<section>
-									<div> 
-										<h3 id="content"> Standard 01.  Dot and Cross Product</h3>
-										<a href="./pdfs/calc3-standard01.pdf#toolbar=0" target="_blank">view notes</a>
-										<p> An introduction to vector arithmetic and its applications.  </p>
-									</div>
-									<p class="vspace"> </p>
-									<!-- <p><br><br><br><br></p> -->
-									
-									<div>
-										<h3 id="content"> Standard 02. Lines</h3>
-										<a href="./pdfs/calc3-standard02.pdf#toolbar=0" target="_blank">view notes </a>
-										<p > An introduction to lines in 3-dimensional space and three ways to write the equation(s) of a line. </p>
-									</div>
-									
-									<p class="vspace"> </p>
-									<!-- <p><br><br><br><br></p> -->
-									
-									<div>
-										<h3 id="content"> Standard 03. Planes</h3>
-										<a href="./pdfs/calc3-standard03.pdf#toolbar=0" target="_blank">view notes </a>
-										<p > An introduction to planes in 3-dimension space and how planes interact with each other.  </p>
-									</div>
-									<p class="vspace"> </p>
-									<!-- <p><br><br><br><br></p> -->
+            <!-- Content -->
+            <section>
+                <header class="main">
+                    <h1>Calculus III</h1>
+                </header>
 
-									<div>
-										<h3 id="content"> Standard 04. Vector-valued Functions </h3>
-										<a href="./pdfs/calc3-standard04.pdf#toolbar=0" target="_blank">view notes </a>
-										<p > An extensive introduction to common quadratic surfaces and vector valued functions, in order to find the curve of intersection between two quadratic surfaces and parameterize the solution.  </p>
-									</div>
-									<p class="vspace"> </p>
-									<!-- <p><br><br><br><br></p> -->
+                <p> A collection of notes created during my time as a graduate teaching assistant at University of Notre Dame for my undergraduate Calculus III students. The course utilizes the mastery system, meaning that the class is split up into standards and the students are tested on each standard individually. Students were expected to complete one homework assignment, one quiz, and one mastery test per standard each worth 1 point with the ability to earn back a percentage of the point through a "What I Have Learned" document.</p>
+                <p class="vspace"> </p>
 
-									<div>
-										<h3 id="content"> Standard 05. Calculus for Curves</h3>
-										<a href="./pdfs/calc3-standard05.pdf#toolbar=0" target="_blank">view notes </a>
-										<p > An extension our of the single variable definitions of limits, derivatives, and integrals to vector-valued functions. </p>
-									</div>
-									<p class="vspace"> </p>
-									<!-- <p><br><br><br><br></p> -->
+                <p>For fall 2023 students: Additional office hours for final: Wednesday Dec 13th 6:30-8:00pm in math help room.</p>
+            </section>
 
-									<div>
-										<h3 id="content"> Standard 06. T-N-B Frame</h3>
-										<a href="./pdfs/calc3-standard06.pdf#toolbar=0" target="_blank">view notes </a>
-										<p > A deep dive into an application of the derivative of vector-valued functions called the T-N-B frame.  </p>
-									</div>
-									<p class="vspace"> </p>
-									<!-- <p><br><br><br><br></p> -->
+            <!-- Standards -->
+            <section>
+                <!-- Standard 01 -->
+                <div>
+                    <h3 id="content">Standard 01. Dot and Cross Product</h3>
+                    <a href="./pdfs/calc3-standard01.pdf#toolbar=0" target="_blank">view notes</a>
+                    <p>An introduction to vector arithmetic and its applications.</p>
+                </div>
+                <p class="vspace"></p>
+                <!-- Add more standards as needed -->
+            </section>
 
+        </div>
+    </div>
 
-									<div>
-										<h3 id="content"> Standard 07. Partial Derivative</h3>
-										<a href="./pdfs/calc3-standard07.pdf#toolbar=0" target="_blank">view notes </a>
-										<p > An introduction to partial derivatives and an extension of the chain rule for multivariable calculus.  </p>
-									</div>
-									<p class="vspace"> </p>
-									<!-- <p><br><br><br><br></p> -->
+</div>
 
-									<div>
-										<h3 id="content"> Standard 08. Directional Derivative</h3>
-										<a href="./pdfs/calc3-standard08.pdf#toolbar=0" target="_blank">view notes </a>
-										<p > An introduction to a second form of partial derivatives, one where we allow both the x and y vary as we look for the rate of change of f(x,y).  </p>
-									</div>
-									<p class="vspace"> </p>
-									<!-- <p><br><br><br><br></p> -->
-
-									<div>
-										<h3 id="content"> Standard 09. Local Extrema</h3>
-										<a href="./pdfs/calc3-standard09.pdf#toolbar=0" target="_blank">view notes </a>
-										<p > An extension of local extrema into multivariables through critical points and the second derivative test for multivariable functions. Also contains an example of finding absolute extrema on a closed and bounded region using the same techniques.   </p>
-									</div>
-									<p class="vspace"> </p>
-									<!-- <p><br><br><br><br></p> -->
-
-									<div>
-										<h3 id="content"> Standard 10. Lagrange Multipliers</h3>
-										<a href="./pdfs/calc3-standard10.pdf#toolbar=0" target="_blank">view notes </a>
-										<p > An introduction to a new method of solving for absolute extrema on a closed and bounded region given one or two constraints.   </p>
-									</div>
-									<p class="vspace"> </p>
-									<!-- <p><br><br><br><br></p> -->
-
-									<div>
-										<h3 id="content"> Standard 11. Double Integrals - Rectangular </h3>
-										<a href="./pdfs/calc3-standard11.pdf#toolbar=0" target="_blank">view notes </a>
-										<p > An introduction to double integration over a rectangular region or a general two-dimensional region.  </p>
-									</div>
-									<p class="vspace"> </p>
-									<!-- <p><br><br><br><br></p> -->
-
-									<div>
-										<h3 id="content"> Standard 12. Double Integrals - Polar </h3>
-										<a href="./pdfs/calc3-standard12.pdf#toolbar=0" target="_blank">view notes </a>
-										<p > A look into converting double integrals, and the region of integration, using Cartesian (or rectangular) coordinates into polar coordinates.  </p>
-									</div>
-									<p class="vspace"> </p>
-									<!-- <p><br><br><br><br></p> -->
-
-									<div>
-										<h3 id="content"> Standard 13. Triple Integrals - Rectangular </h3>
-										<a href="./pdfs/calc3-standard13.pdf#toolbar=0" target="_blank">view notes </a>
-										<p > An introduction to triple integration over a rectangular prism or a general three-dimensional region.  </p>
-									</div>
-									<p class="vspace"> </p>
-									<!-- <p><br><br><br><br></p> -->
-
-									<div>
-										<h3 id="content"> Standard 14. Triple Integrals - Cylindrical and Spherical </h3>
-										<a href="./pdfs/calc3-standard14.pdf#toolbar=0" target="_blank">view notes </a>
-										<p > A look into converting triple integrals, and the region of integration, using Cartesian coordinate into cylindrical and spherical coordinates.  </p>
-									</div>
-									<p class="vspace"> </p>
-									<!-- <p><br><br><br><br></p> -->
-
-									<div>
-										<h3 id="content"> Standard 15. Change of Variable  </h3>
-										<a href="./pdfs/calc3-standard15.pdf#toolbar=0" target="_blank">view notes </a>
-										<p > A generalization of the process to convert integrals using Cartesian coordinates into an alternate coordinate system.  </p>
-									</div>
-									<p class="vspace"> </p>
-									<!-- <p><br><br><br><br></p> -->
-
-									<div>
-										<h3 id="content"> Standard 16. Line Integrals </h3>
-										<a href="./pdfs/calc3-standard16.pdf#toolbar=0" target="_blank">view notes </a>
-										<p > An introduction to a new type of integral called line integrals, where the independent variables now are defined by curves rather than regions as we have done before. </p>
-									</div>
-									<p class="vspace"> </p>
-									<!-- <p><br><br><br><br></p> -->
-
-									<div>
-										<h3 id="content"> Standard 17. Fundamental Theorem of Line Integrals </h3>
-										<a href="./pdfs/calc3-standard17.pdf#toolbar=0" target="_blank">view notes </a>
-										<p > An introduction to the fundamental theorem of calculus for line integrals of vector fields along with more in-depth discussion on conservative vector fields and their potential functions.   </p>
-									</div>
-									<p class="vspace"> </p>
-									<!-- <p><br><br><br><br></p> -->
-
-									<div>
-										<h3 id="content"> Standard 18. Curl and Divergence </h3>
-										<a href="./pdfs/calc3-standard18.pdf#toolbar=0" target="_blank">view notes </a>
-										<p > An introduction of the curl and divergence of a vector field along and how the curl can be used to find out if a vector field is conservative.  </p>
-									</div>
-									<p class="vspace"> </p>
-									<!-- <p><br><br><br><br></p> -->
-
-									<div>
-										<h3 id="content"> Standard 19. Green's Theorem  </h3>
-										<a href="./pdfs/calc3-standard19.pdf#toolbar=0" target="_blank">view notes </a>
-										<p > An introduction to one of the three main theorems of calculus III, Green's theorem.  </p>
-									</div>
-									<p class="vspace"> </p>
-									<!-- <p><br><br><br><br></p> -->
-
-									<div>
-										<h3 id="content"> Standard 20. Surface Integrals </h3>
-										<a href="./pdfs/calc3-standard20.pdf#toolbar=0" target="_blank">view notes </a>
-										<p > An introduction to a new type of integral called surface integrals, where the integrand is a function of two variables or more variables and the independent variables are now on the surface of a three-dimensional solid. </p>
-									</div>
-									<p class="vspace"> </p>
-									<!-- <p><br><br><br><br></p> -->
-
-									<div>
-										<h3 id="content"> Standard 21. Stokes' Theorem </h3>
-										<a href="./pdfs/calc3-standard21.pdf#toolbar=0" target="_blank">view notes </a>
-										<p > An introduction to the second of the three main theorems of calculus III, Stokes' theorem.   </p>
-									</div>
-									<p class="vspace"> </p>
-									<!-- <p><br><br><br><br></p> -->
-
-									<div>
-										<h3 id="content"> Standard 22. Divergence Theorem </h3>
-										<a href="./pdfs/calc3-standard22.pdf#toolbar=0" target="_blank">view notes </a>
-										<p > An introduction to the last of the three main theorems (and ana pplication of divergence) of calculus III, Divergence theorem.   </p>
-									</div>
-									<p class="vspace"> </p>
-									<!-- <p><br><br><br><br></p> -->
-
-									<div>
-										<a href="./pdfs/calc3-final-review.pdf#toolbar=0" target="_blank">final exam review </a>
-									</div>
-									<p class="vspace"> </p>
-									<!-- <p><br><br><br><br></p> -->
-									
-								</section>
-
-						</div>
-					</div>
+</body>
+</html>
