@@ -115,47 +115,36 @@ title: Vector Arithmetic
     </div>
 
 		 <!-- Third Video Player -->
-    <div class="video-container">
-        <h2>Addition and Subtraction</h2>
-        <!-- Placeholder for video player -->
-                    <!-- Uncomment the following lines to add video player -->
-                    <!-- 
-                    <div style="position: relative; padding-bottom: 56.25%; height: 0;">
-                        <iframe src="VIDEO_URL" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-                    </div>
-                    -->
-                    <figure>
-                        <img src="../images/coming-soon-photo.jpg" width="600" height="400" alt="Coming soon: video lecture">
-                    </figure>
-        <!-- Button to toggle Transcript for Video 3 -->
-        <button class="transcript-button" onclick="toggleTranscript('transcript3')">Transcript</button>
-        <!-- Transcript Content for Video 3 -->
-        <div id="transcript1" class="transcript">
-            <p>This is the transcript of Video 3...</p>
-        </div>
-    </div>
-		 <!-- Fourth Video Player -->
+<div class="video-container">
+    <h2>Addition and Subtraction</h2>
     <!-- Placeholder for video player -->
-                    <!-- Uncomment the following lines to add video player -->
-                    <!-- 
-                    <div style="position: relative; padding-bottom: 56.25%; height: 0;">
-                        <iframe src="VIDEO_URL" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-                    </div>
-                    -->
-                    <figure>
-                        <img src="../images/coming-soon-photo.jpg" width="600" height="400" alt="Coming soon: video lecture">
-                    </figure>
-        <!-- Button to toggle Transcript for Video 4 -->
-        <button class="transcript-button" onclick="toggleTranscript('transcript4')">Transcript</button>
-        <!-- Transcript Content for Video 4 -->
-        <div id="transcript4" class="transcript">
-            <p>This is the transcript of Video 4...</p>
-        </div>
+    <figure>
+        <img src="../images/coming-soon-photo.jpg" width="600" height="400" alt="Coming soon: video lecture">
+    </figure>
+    <!-- Button to toggle Transcript for Video 3 -->
+    <button class="transcript-button" onclick="toggleTranscript('transcript3')">Transcript</button>
+    <!-- Transcript Content for Video 3 -->
+    <div id="transcript3" class="transcript" style="display:none;">
+        <p>This is the transcript of Video 3...</p>
     </div>
+</div>
 
-		
+<!-- Fourth Video Player -->
+<!-- Placeholder for video player -->
+<div class="video-container">
+    <h2>Multiplication and Division</h2>
+    <figure>
+        <img src="../images/coming-soon-photo.jpg" width="600" height="400" alt="Coming soon: video lecture">
+    </figure>
+    <!-- Button to toggle Transcript for Video 4 -->
+    <button class="transcript-button" onclick="toggleTranscript('transcript4')">Transcript</button>
+    <!-- Transcript Content for Video 4 -->
+    <div id="transcript4" class="transcript" style="display:none;">
+        <p>This is the transcript of Video 4...</p>
+    </div>
+</div>
 
-		<!-- Questions Section -->
+<!-- Questions Section -->
 		<section>
     			<header class="main">
         		<h2>Self-assessment Questions</h2>
@@ -216,10 +205,20 @@ title: Vector Arithmetic
         		</div>
     		</div>
 		</section>
-		    
-            </div>
-        </div>
-    </div>
+
+<!-- Scripts and Function for Transcript Toggle -->
+<script>
+    function toggleTranscript(transcriptId) {
+        var transcript = document.getElementById(transcriptId);
+        if (transcript.style.display === "none") {
+            transcript.style.display = "block";
+        } else {
+            transcript.style.display = "none";
+        }
+    }
+</script>
+
+		
 
     <!-- Scripts -->
     <script src="assets/js/jquery.min.js"></script>
@@ -231,19 +230,17 @@ title: Vector Arithmetic
     <!-- MathJax for LaTeX rendering -->
     <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
 
-    <!-- JavaScript Function for Transcript Toggle -->
-    <script>
-        function toggleTranscript(transcriptId) {
-    // Get the transcript element by its ID
-    var transcript = document.getElementById(transcriptId);
-    // Toggle the display property of the transcript element
-    if (transcript.style.display === "none") {
-        transcript.style.display = "block";
-    } else {
-        transcript.style.display = "none";
+    <!-- Scripts and Function for Transcript Toggle -->
+<script>
+    function toggleTranscript(transcriptId) {
+        var transcript = document.getElementById(transcriptId);
+        if (transcript.style.display === "none") {
+            transcript.style.display = "block";
+        } else {
+            transcript.style.display = "none";
+        }
     }
-}
-    </script>
+</script>
 	
 
 
