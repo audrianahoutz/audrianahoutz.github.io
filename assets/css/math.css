@@ -39,24 +39,26 @@
 
 /* transcript.css */
 
-/* Styles for the transcript button */
 .transcript-button {
-    font-size: 20px; /* Adjust the font size */
-    font-weight: bold; /* Make the text bold */
-    cursor: pointer; /* Show pointer cursor on hover */
+    font-size: 22px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+    background-color: #fff;
+    border: 2px solid #333;
+    padding: 8px 12px;
+    border-radius: 5px;
 }
 
-/* Styles for the transcript content */
 .transcript-content {
-    display: none; /* Hide the content by default */
-    background-color: #f9f9f9; /* Set background color */
-    padding: 10px; /* Add padding */
-    border: 1px solid #ccc; /* Add border */
-    border-top: none; /* Remove top border */
-    font-size: 16px; /* Adjust the font size */
+    display: none;
+    background-color: #f0f0f0;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-top: none;
+    font-size: 16px;
 }
 
-/* Show the transcript content when the 'show' class is added */
 .transcript-content.show {
-    display: block; /* Show the content */
+    display: block;
 }
