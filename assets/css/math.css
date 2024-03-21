@@ -37,26 +37,13 @@
 }
 
 
-/* transcript.css */
-
-.transcript-button {
-    font-size: 22px;
-    font-weight: bold;
-    cursor: pointer;
-    color: #333;
-    background-color: #fff;
-    border: 2px solid #333;
-    padding: 8px 12px;
-    border-radius: 5px;
-}
-
-.transcript-content {
+/* Add your custom styles here */
+/* Hides all transcript elements by default */
+.transcript {
     display: none;
-    background-color: #f0f0f0;
-    padding: 15px;
     border: 1px solid #ccc;
-    border-top: none;
-    font-size: 16px;
+    padding: 10px;
+    margin-top: 10px;
 }
 
 .transcript-content.show {
