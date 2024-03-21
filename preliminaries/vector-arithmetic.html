@@ -48,11 +48,11 @@ title: Vector Arithmetic
                     </header>
                     <p> These notes cover vector arithmetic, focusing on operations like addition, subtraction, scalar multiplication, dot product, and cross product. Readers will learn how to manipulate vectors to solve problems in physics, engineering, computer science, and mathematics. Through practical exercises and theoretical discussions, they will develop a strong understanding of vector arithmetic and its applications. </p>
                 </section>
-                <!-- What is a vector section -->
-                <section> 
-                    <header class="main">
+		    <!-- What is a vector? -->
+		    <header class="main">
                         <h2> What is a vector?</h2>
                     </header>
+    <div class="video-container">
                     <!-- Placeholder for video player -->
                     <!-- Uncomment the following lines to add video player -->
                     <!-- 
@@ -63,11 +63,11 @@ title: Vector Arithmetic
                     <figure>
                         <img src="../images/coming-soon-photo.jpg" width="600" height="400" alt="Coming soon: video lecture">
                     </figure>
-                    <!-- Transcript Button -->
-                    <button onclick="toggleTranscript()">Transcript</button>
-                    <!-- Transcript Content -->
-                    <div id="transcript" style="display:none;">
-                        <!-- Definition of vectors -->
+        <!-- Button to toggle Transcript for Video 1 -->
+        <button onclick="toggleTranscript('transcript1')">Transcript</button>
+        <!-- Transcript Content for Video 1 -->
+        <div id="transcript1" class="transcript">
+            <!-- Definition of vectors -->
                         <p> Vectors are used to represent mathematical quantities that hold both a magnitude and a direction. You may have seen them before in physics when working with force or velocity. For example, a force vector would be described by something like: a person is pushing a toy car forward with a power of 5 Newtons. We would depict this vector with an arrow starting at the point of impact and ending some distance away in the described direction. </p>
                         <!-- Image of a toy car -->
                         <figure>
@@ -90,102 +90,54 @@ title: Vector Arithmetic
                         </div>
                         <p> Since the initial point of the vector is not important, we often denote all vectors as originating from the origin. We call these vectors <u>position vectors</u>. </p>
                     	</div>
-                </section>
+        </div>
+    </div>
 
-		<!-- Magnitude and Direction -->
-                <section> 
-                    <header class="main">
-                        <h2> Magnitude and Direction </h2>
-                    </header>
-                    <!-- Placeholder for video player -->
-                    <!-- Uncomment the following lines to add video player -->
-                    <!-- 
-                    <div style="position: relative; padding-bottom: 56.25%; height: 0;">
-                        <iframe src="VIDEO_URL" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-                    </div>
-                    -->
-                    <figure>
-                        <img src="../images/coming-soon-photo.jpg" width="600" height="400" alt="Coming soon: video lecture">
-                    </figure>
-                    <!-- Video 2 -->
-    		<video id="video2" width="640" height="360" controls>
-        		<source src="video2.mp4" type="video/mp4">
-        		Your browser does not support the video tag.
-    		</video>
+    <!-- Second Video Player -->
+    <div class="video-container">
+        <h2> Magnitude and Direction</h2>
+        <video width="640" height="360" controls>
+            <source src="video2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <!-- Button to toggle Transcript for Video 2 -->
+        <button onclick="toggleTranscript('transcript2')">Transcript</button>
+        <!-- Transcript Content for Video 2 -->
+        <div id="transcript2" class="transcript">
+            <p>This is the transcript of Video 2...</p>
+        </div>
+    </div>
 
-    		<!-- Transcript Button for Video 1 -->
-    			<h2 class="transcript-button" onclick="toggleTranscript('transcript2')">Transcript</h2>
+		 <!-- Third Video Player -->
+    <div class="video-container">
+        <h2>Addition and Subtraction</h2>
+        <video width="640" height="360" controls>
+            <source src="video3.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <!-- Button to toggle Transcript for Video 3 -->
+        <button onclick="toggleTranscript('transcript3')">Transcript</button>
+        <!-- Transcript Content for Video 2 -->
+        <div id="transcript3" class="transcript">
+            <p>This is the transcript of Video 3...</p>
+        </div>
+    </div>
+		 <!-- Fourth Video Player -->
+    <div class="video-container">
+        <h2>Scalar Multiplication </h2>
+        <video width="640" height="360" controls>
+            <source src="video4.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <!-- Button to toggle Transcript for Video 4 -->
+        <button onclick="toggleTranscript('transcript4')">Transcript</button>
+        <!-- Transcript Content for Video 2 -->
+        <div id="transcript4" class="transcript">
+            <p>This is the transcript of Video 4...</p>
+        </div>
+    </div>
 
-    		<!-- Transcript Content for Video 1 -->
-    			<div id="transcript2" class="transcript-content">
-        			<p>This is the transcript of video 2...</p>
-    			</div>
-                </section>
-
-		<!-- Addition and Subtraction -->
-                <section> 
-                    <header class="main">
-                        <h2> Addition and Subtraction </h2>
-                    </header>
-                    <!-- Placeholder for video player -->
-                    <!-- Uncomment the following lines to add video player -->
-                    <!-- 
-                    <div style="position: relative; padding-bottom: 56.25%; height: 0;">
-                        <iframe src="VIDEO_URL" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-                    </div>
-                    -->
-                    <figure>
-                        <img src="../images/coming-soon-photo.jpg" width="600" height="400" alt="Coming soon: video lecture">
-                    </figure>
-                    <!-- Video 3 -->
-    			<video id="video3" width="640" height="360" controls>
-        			<source src="video3.mp4" type="video/mp4">
-        			Your browser does not support the video tag.
-    			</video>
-
-    			<!-- Transcript Button for Video 3 -->
-    			<h2 class="transcript-button" onclick="toggleTranscript('transcript3')">Transcript</h2>
-
-   		 	<!-- Transcript Content for Video 3 -->
-    			<div id="transcript3" class="transcript-content">
-        			<p>This is the transcript of video 3...</p>
-    			</div>
-                    
-	    </div>
-                </section>
-
-		<!-- Scalar Multiplication -->
-                <section> 
-                    <header class="main">
-                        <h2> Scalar Multiplication </h2>
-                    </header>
-                    <!-- Placeholder for video player -->
-                    <!-- Uncomment the following lines to add video player -->
-                    <!-- 
-                    <div style="position: relative; padding-bottom: 56.25%; height: 0;">
-                        <iframe src="VIDEO_URL" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-                    </div>
-                    -->
-                    <figure>
-                        <img src="../images/coming-soon-photo.jpg" width="600" height="400" alt="Coming soon: video lecture">
-                    </figure>
-                    <!-- Video 4 -->
-    			<video id="video4" width="640" height="360" controls>
-        			<source src="video4.mp4" type="video/mp4">
-        			Your browser does not support the video tag.
-    			</video>
-
-    			<!-- Transcript Button for Video 4 -->
-    			<h2 class="transcript-button" onclick="toggleTranscript('transcript4')">Transcript</h2>
-
-   		 	<!-- Transcript Content for Video 4 -->
-    			<div id="transcript4" class="transcript-content">
-        			<p>This is the transcript of video 4...</p>
-    			</div>
-                        
-                        
-                    </div>
-                </section>
+		
 
 		<!-- Questions Section -->
 		<section>
@@ -265,27 +217,19 @@ title: Vector Arithmetic
 
     <!-- JavaScript Function for Transcript Toggle -->
     <script>
-        function toggleTranscript() {
-            var transcript = document.getElementById("transcript");
-            if (transcript.style.display === "none") {
-                transcript.style.display = "block";
-            } else {
-                transcript.style.display = "none";
-            }
-        }
+        function toggleTranscript(transcriptId) {
+    // Get the transcript element by its ID
+    var transcript = document.getElementById(transcriptId);
+    // Toggle the display property of the transcript element
+    if (transcript.style.display === "none") {
+        transcript.style.display = "block";
+    } else {
+        transcript.style.display = "none";
+    }
+}
     </script>
 	
 
-<!-- JavaScript Function to Toggle Solutions -->
-<script>
-    function toggleSolution(solutionId) {
-        var solution = document.getElementById(solutionId);
-        if (solution.style.display === "none") {
-            solution.style.display = "block";
-        } else {
-            solution.style.display = "none";
-        }
-    }
-</script>
+
 </body>
 </html>
