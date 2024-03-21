@@ -1,0 +1,23 @@
+/* CSS file for math related styling */
+
+/* vector arrow over the letter */
+
+.vector {
+  /* Position the vector relative to its parent */
+  position: relative;
+  display: inline-block; /* Display the vector as an inline block */
+  font-weight: bold; /* Make the letter bold */
+}
+
+.vector::after {
+  /* Create the arrow using CSS pseudo-elements */
+  content: ""; /* Empty content */
+  position: absolute; /* Position relative to the parent */
+  top: -0.5em; /* Adjust the top position to align with the letter */
+  left: 0; /* Align with the left edge of the parent */
+  width: 1em; /* Width of the arrow */
+  height: 1em; /* Height of the arrow */
+  border-bottom: 2px solid black; /* Style the arrow as a diagonal line */
+  border-right: 2px solid black; /* Style the arrow as a diagonal line */
+  transform: rotate(45deg); /* Rotate the arrow to form an arrow shape */
+}
