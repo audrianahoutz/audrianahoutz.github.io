@@ -38,7 +38,6 @@
 
 
 /* Add your custom styles here */
-/* Hides all transcript elements by default */
 .transcript {
     display: none;
     border: 1px solid #ccc;
@@ -46,6 +45,18 @@
     margin-top: 10px;
 }
 
-.transcript-content.show {
-    display: block;
+/* Style for the transcript button */
+.transcript-button {
+    font-size: 18px; /* Adjust the font size */
+    font-weight: bold; /* Make the text bold */
+    background-color: #f0f0f0; /* Change the background color */
+    border: none; /* Remove border */
+    cursor: pointer; /* Change cursor to pointer */
+    padding: 5px; /* Add padding */
+    margin-bottom: 10px; /* Add space below the button */
+}
+
+/* Style for the transcript button when transcript content is displayed */
+.transcript-button.active {
+    background-color: #ddd; /* Change background color when active */
 }
