@@ -37,14 +37,6 @@
 }
 
 
-/* Add your custom styles here */
-.transcript {
-    display: none;
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-top: 10px;
-}
-
 /* Button Styles */
 .transcript-button {
     background: none;
@@ -79,5 +71,3 @@
 .transcript-header {
     display: none; /* Hide the header by default */
 }
-
-
