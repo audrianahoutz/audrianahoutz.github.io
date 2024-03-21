@@ -45,26 +45,4 @@
     margin-top: 10px;
 }
 
-.transcript-button {
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-size: 1em; /* Adjust font size as needed */
-    font-weight: bold; /* Make the text bold */
-    color: #333; /* Set text color */
-    margin-bottom: 10px; /* Add some spacing */
-    border-bottom: 2px solid transparent; /* Add a transparent bottom border */
-    width: 100%; /* Make the button span the entire width */
-    text-align: left; /* Align text to the left */
-}
 
-.transcript-button:focus,
-.transcript-button:hover {
-    outline: none; /* Remove focus outline */
-}
-
-.transcript-header {
-    font-size: 1.2em; /* Adjust font size as needed */
-    font-weight: bold; /* Make the text bold */
-    color: #333; /* Set text color */
-}
