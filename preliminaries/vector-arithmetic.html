@@ -8,134 +8,242 @@ title: Vector Arithmetic
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculus III</title>
+    <title>Vector Arithmetic</title>
+    <!-- Link to main stylesheet -->
     <link rel="stylesheet" href="../assets/css/main.css">
-  <link rel="stylesheet" href="../assets/css/math.css">
+    <!-- Link to additional stylesheet for math content -->
+    <link rel="stylesheet" href="../assets/css/math.css">
     <style>
+        /* Additional styles specific to this page */
         .hr3 {
             border-top: 3px double #d39F10;
         }
-
         .hr1 {
             height: 15px;
             border: 0;
             box-shadow: inset 0 12px 12px -12px rgba(124, 147, 195);
         }
-
         p.vspace {
             margin-bottom: 3cm;
         }
     </style>
-
-
 </head>
 <body class="is-preload">
-
-<div id="wrapper">
-
-    <!-- Main -->
-    <div id="main">
-        <div class="inner">
-
-            <!-- Header -->
-            <header id="header">
-                <a href="index.html" class="logo"><strong>AH</strong></a>
-                <ul class="icons">
-                    <li><a href="https://github.com/AudrianaHoutz" class="icon brands fa-github"><span class="label">Github</span></a></li>
-                </ul>
-            </header>
-
-            <!-- Content -->
-            <section>
-                <header class="main">
-                    <h1>Vector Arithmetic</h1>
+    <div id="wrapper">
+        <!-- Main content -->
+        <div id="main">
+            <div class="inner">
+                <!-- Header section -->
+                <header id="header">
+                    <a href="index.html" class="logo"><strong>AH</strong></a>
+                    <!-- Link to Github profile -->
+                    <ul class="icons">
+                        <li><a href="https://github.com/AudrianaHoutz" class="icon brands fa-github"><span class="label">Github</span></a></li>
+                    </ul>
                 </header>
+                <!-- Content section -->
+                <section>
+                    <header class="main">
+                        <h1>Vector Arithmetic</h1>
+                    </header>
+                    <p> These notes cover vector arithmetic, focusing on operations like addition, subtraction, scalar multiplication, dot product, and cross product. Readers will learn how to manipulate vectors to solve problems in physics, engineering, computer science, and mathematics. Through practical exercises and theoretical discussions, they will develop a strong understanding of vector arithmetic and its applications. </p>
+                </section>
+                <!-- What is a vector section -->
+                <section> 
+                    <header class="main">
+                        <h2> What is a vector?</h2>
+                    </header>
+                    <!-- Placeholder for video player -->
+                    <!-- Uncomment the following lines to add video player -->
+                    <!-- 
+                    <div style="position: relative; padding-bottom: 56.25%; height: 0;">
+                        <iframe src="VIDEO_URL" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+                    </div>
+                    -->
+                    <figure>
+                        <img src="../images/coming-soon-photo.jpg" width="600" height="400" alt="Coming soon: video lecture">
+                    </figure>
+                    <!-- Transcript Button -->
+                    <button onclick="toggleTranscript()">Transcript</button>
+                    <!-- Transcript Content -->
+                    <div id="transcript" style="display:none;">
+                        <!-- Definition of vectors -->
+                        <p> Vectors are used to represent mathematical quantities that hold both a magnitude and a direction. You may have seen them before in physics when working with force or velocity. For example, a force vector would be described by something like: a person is pushing a toy car forward with a power of 5 Newtons. We would depict this vector with an arrow starting at the point of impact and ending some distance away in the described direction. </p>
+                        <!-- Image of a toy car -->
+                        <figure>
+                            <img src="../images/coming-soon-photo.jpg" width="300" height="200" alt="Coming soon: photo">
+                            <figcaption>Coming soon: photo of little toy car being pushed 5 newtons forward. </figcaption>
+                        </figure>
+                        <!-- Description of position vectors -->
+                        <p> Notice that the point of impact does not define the vector, only the magnitude and the direction. </p>
+                        <p> Consider this sketch of vectors in a 2-Dimensional coordinate plane. </p>
+                        <!-- Image of vectors in 2D -->
+                        <div class="image left">
+                            <figure>
+                                <img src="../images/coming-soon-photo.jpg" width="300" height="200" alt="Coming soon: photo">
+                                <figcaption>Coming soon: photo of multiple vectors in 2D </figcaption>
+                            </figure>
+                        </div>
+                        <div>
+                            <p> While all of these directed line segments originate from different points, each of them depicts the same vector. In particular, they depict a vector that moves X units left and Y units up. We denote this vector by <b>v</b>=&ltX, Y&gt; with the bolded <b>v</b> and angled brackets to differentiate between a point and a vector. </p>
+                            <p> Notice that we obtain the vector <b>v</b> from a directed line segment \(\overrightarrow{AB}\) from the point A=(x<sub>1</sub>, y<sub>1</sub>) to the point B=(x<sub>2</sub>, y<sub>2</sub>) by using the equation <b>v</b>=&lt;x<sub>2</sub>-x<sub>1</sub>, y<sub>2</sub>-y<sub>1</sub>&gt;. Also, note that the vector from point A to point B is different from the reverse vector going from point B to point A. </p>
+                        </div>
+                        <p> Since the initial point of the vector is not important, we often denote all vectors as originating from the origin. We call these vectors <u>position vectors</u>. </p>
+                    </div>
+                </section>
 
-                <p> These notes cover vector arithmetic, focusing on operations like addition, subtraction, scalar multiplication, dot product, and cross product. Readers will learn how to manipulate vectors to solve problems in physics, engineering, computer science, and mathematics. Through practical exercises and theoretical discussions, they will develop a strong understanding of vector arithmetic and its applications. </p>
+		<!-- Magnitude and Direction -->
+                <section> 
+                    <header class="main">
+                        <h2> Magnitude and Direction </h2>
+                    </header>
+                    <!-- Placeholder for video player -->
+                    <!-- Uncomment the following lines to add video player -->
+                    <!-- 
+                    <div style="position: relative; padding-bottom: 56.25%; height: 0;">
+                        <iframe src="VIDEO_URL" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+                    </div>
+                    -->
+                    <figure>
+                        <img src="../images/coming-soon-photo.jpg" width="600" height="400" alt="Coming soon: video lecture">
+                    </figure>
+                    <!-- Transcript Button -->
+                    <button onclick="toggleTranscript()">Transcript</button>
+                    <!-- Transcript Content -->
+                    <div id="transcript" style="display:none;">
+			<p>coming soon section</p>
+                        
+                        
+                    </div>
+                </section>
 
-            </section>
+		<!-- Addition and Subtraction -->
+                <section> 
+                    <header class="main">
+                        <h2> Addition and Subtraction </h2>
+                    </header>
+                    <!-- Placeholder for video player -->
+                    <!-- Uncomment the following lines to add video player -->
+                    <!-- 
+                    <div style="position: relative; padding-bottom: 56.25%; height: 0;">
+                        <iframe src="VIDEO_URL" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+                    </div>
+                    -->
+                    <figure>
+                        <img src="../images/coming-soon-photo.jpg" width="600" height="400" alt="Coming soon: video lecture">
+                    </figure>
+                    <!-- Transcript Button -->
+                    <button onclick="toggleTranscript()">Transcript</button>
+                    <!-- Transcript Content -->
+                    <div id="transcript" style="display:none;">
+			<p>coming soon section</p>
+                        
+                        
+                    </div>
+                </section>
 
-          <!-- What is a vector -->
-          <section> 
-              <header class="main">
-                  <h2> What is a vector?</h2>
-              </header>
+		<!-- Scalar Multiplication -->
+                <section> 
+                    <header class="main">
+                        <h2> Scalar Multiplication </h2>
+                    </header>
+                    <!-- Placeholder for video player -->
+                    <!-- Uncomment the following lines to add video player -->
+                    <!-- 
+                    <div style="position: relative; padding-bottom: 56.25%; height: 0;">
+                        <iframe src="VIDEO_URL" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+                    </div>
+                    -->
+                    <figure>
+                        <img src="../images/coming-soon-photo.jpg" width="600" height="400" alt="Coming soon: video lecture">
+                    </figure>
+                    <!-- Transcript Button -->
+                    <button onclick="toggleTranscript()">Transcript</button>
+                    <!-- Transcript Content -->
+                    <div id="transcript" style="display:none;">
+			<p>coming soon section</p>
+                        
+                        
+                    </div>
+                </section>
 
-		  
-          <!-- What is a vector video -->
+		<!-- Questions Section -->
+		<section>
+    			<header class="main">
+        		<h2>Self-assessment Questions</h2>
+   			 </header>
 
-	 <!-- Video Player -->
-   	 <figure>
-            <img src="../images/coming-soon-photo.jpg" width="600" height="400" alt="Coming soon: video lecture">
-          </figure>
-
-            <!-- 
-            <div style="position: relative; padding-bottom: 56.25%; height: 0;">
-                <iframe src="VIDEO_URL" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-            </div>
-            -->
-
-    <!-- Transcript Button -->
-    <button onclick="toggleTranscript()">Transcript</button>
-
-    <!-- Transcript Content -->
-    <div id="transcript">
-        <!-- Definition -->
-            <p> Vectors are used to represent mathematical quantities that hold both a magnitude and a direction. You may have seen them before in physic when working with force or velocity. For example, a force vector would be described by something like: a person is pushing a toy car forward with a power of 5 Newtons. We would depict this vector with an arrow starting at the point of impact and ending some distance away in the direction described. </p>
-          
-
-          <figure>
-            <img src="../images/coming-soon-photo.jpg" width="300" height="200" alt="Coming soon: photo">
-            <figcaption>Coming soon: photo of little toy car being pushed 5 newtons forward. </figcaption>
-          </figure>
-
-
-          <p> Notice that the point of impact does not define the vector, only the magnitude and the direction. </p>
-
-          <!-- Position Vectors -->
-          <p> Consider this sketch of vectors in a 2-Dimensional coordinate plane. </p>
-
-	<div class="image left">
- 	 <figure>
-            <img src="../images/coming-soon-photo.jpg" width="300" height="200" alt="Coming soon: photo">
-            <figcaption>Coming soon: photo of multiple vectors in 2D </figcaption>
-          </figure>
-	</div>
-	<div>
- 	 <p> While all of these directed line segments originate from a different point, each of them depict the same vector. In particular, they depict a vector that move X units left and Y units up. We denote this vector by <b>v</b>=&ltX, Y&gt; the bolded <b>v</b> and angled brackets help differentiate between a point and a vector.  </p>
-
-        <p> Notice that we pulled the vector <b>v</b> from a directed line segment \(\overrightarrow{AB}\) from the point A=(x<sub>1</sub>, y<sub>1</sub>) to the point B=(x<sub>2</sub>, y<sub>2</sub>) by using the equation <b>v</b>=&lt;x<sub>2</sub>-x<sub>1</sub>, y<sub>2</sub>-y<sub>1</sub>&gt;. Also, note that the vector from point A to point B is different from the reverse vector going from point B to point A. </p>
-
-	</div>
-	    
-        <p> Since the intial point of the vector is not important, we often denote all vectors as originating from the original. We call these vecotrs <u>position vectors</u>. </p>
-          
-	  
-            
-          
-	</section>
-          <!-- Magnitude -->
-
-
-
+    		<!-- Question 1: Remembering -->
+    		<div>
+        		<p><strong>1. Remembering:</strong> What is a vector?</p>
+        		<!-- Dropdown button for solution -->
+        		<button onclick="toggleSolution('solution1')">Show Solution</button>
+       			 <!-- Solution Content -->
+       			 <div id="solution1" style="display:none;">
+            		<p>A vector is a quantity that has both magnitude and direction.</p>
         </div>
     </div>
 
-</div>
+    <!-- Question 2: Understanding -->
+    <div>
+        <p><strong>2. Understanding:</strong> Explain the difference between a vector and a scalar quantity.</p>
+        <!-- Dropdown button for solution -->
+        <button onclick="toggleSolution('solution2')">Show Solution</button>
+        <!-- Solution Content -->
+        <div id="solution2" style="display:none;">
+            <p>A vector has both magnitude and direction, while a scalar has only magnitude.</p>
+        </div>
+    </div>
 
-<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-	
-<!-- MathJax aka LaTex in Html -->
-	<script type="text/javascript" async
- 	 src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
-	</script>
+    <!-- Question 3: Applying -->
+    <div>
+        <p><strong>3. Applying:</strong> Given two vectors A and B, how do you calculate their sum?</p>
+        <!-- Dropdown button for solution -->
+        <button onclick="toggleSolution('solution3')">Show Solution</button>
+        <!-- Solution Content -->
+        <div id="solution3" style="display:none;">
+            <p>To calculate the sum of vectors A and B, add their corresponding components.</p>
+        </div>
+    </div>
 
-<!-- JavaScript Function -->
+    <!-- Question 4: Analyzing -->
+    <div>
+        <p><strong>4. Analyzing:</strong> What happens to the resultant vector when two vectors are added together?</p>
+        <!-- Dropdown button for solution -->
+        <button onclick="toggleSolution('solution4')">Show Solution</button>
+        <!-- Solution Content -->
+        <div id="solution4" style="display:none;">
+            <p>The resultant vector is the vector sum of the individual vectors, obtained by combining their magnitudes and directions.</p>
+        </div>
+    </div>
+
+    <!-- Question 5: Evaluating -->
+    <div>
+        <p><strong>5. Evaluating:</strong> Discuss the significance of vector arithmetic in various fields.</p>
+        <!-- Dropdown button for solution -->
+        <button onclick="toggleSolution('solution5')">Show Solution</button>
+        <!-- Solution Content -->
+        <div id="solution5" style="display:none;">
+            <p>Vector arithmetic is fundamental in physics, engineering, computer science, and mathematics, where it is used to model and solve real-world problems involving forces, velocities, motions, and more.</p>
+        </div>
+    </div>
+</section>
+		    
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    
+    <!-- MathJax for LaTeX rendering -->
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+
+    <!-- JavaScript Function for Transcript Toggle -->
     <script>
         function toggleTranscript() {
             var transcript = document.getElementById("transcript");
@@ -147,7 +255,16 @@ title: Vector Arithmetic
         }
     </script>
 
-
+<!-- JavaScript Function to Toggle Solutions -->
+<script>
+    function toggleSolution(solutionId) {
+        var solution = document.getElementById(solutionId);
+        if (solution.style.display === "none") {
+            solution.style.display = "block";
+        } else {
+            solution.style.display = "none";
+        }
+    }
+</script>
 </body>
 </html>
-
