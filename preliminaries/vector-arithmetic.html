@@ -48,163 +48,195 @@ title: Vector Arithmetic
                     </header>
                     <p> These notes cover vector arithmetic, focusing on operations like addition, subtraction, scalar multiplication, dot product, and cross product. Readers will learn how to manipulate vectors to solve problems in physics, engineering, computer science, and mathematics. Through practical exercises and theoretical discussions, they will develop a strong understanding of vector arithmetic and its applications. </p>
                 </section>
-		    <!-- What is a vector? -->
+		<!-- What is a vector? -->
+		<section>
 		    <header class="main">
                         <h2> What is a vector?</h2>
                     </header>
-    <div class="video-container">
-                    <!-- Placeholder for video player -->
-                    <!-- Uncomment the following lines to add video player -->
-                    <!-- 
-                    <div style="position: relative; padding-bottom: 56.25%; height: 0;">
-                        <iframe src="VIDEO_URL" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-                    </div>
-                    -->
-                    <figure>
-                        <img src="../images/coming-soon-photo.jpg" width="600" height="400" alt="Coming soon: video lecture">
-                    </figure>
-        <!-- Button to toggle Transcript for Video 1 -->
-        <button class="transcript-button" onclick="toggleTranscript('transcript1')">Transcript</button>
-        <!-- Transcript Content for Video 1 -->
-        <div id="transcript1" class="transcript">
-            <!-- Definition of vectors -->
-                        <p> Vectors are used to represent mathematical quantities that hold both a magnitude and a direction. You may have seen them before in physics when working with force or velocity. For example, a force vector would be described by something like: a person is pushing a toy car forward with a power of 5 Newtons. We would depict this vector with an arrow starting at the point of impact and ending some distance away in the described direction. </p>
-                        <!-- Image of a toy car -->
-                        <figure>
-                            <img src="../images/coming-soon-photo.jpg" width="300" height="200" alt="Coming soon: photo">
-                            <figcaption>Coming soon: photo of little toy car being pushed 5 newtons forward. </figcaption>
-                        </figure>
-                        <!-- Description of position vectors -->
-                        <p> Notice that the point of impact does not define the vector, only the magnitude and the direction. </p>
-                        <p> Consider this sketch of vectors in a 2-Dimensional coordinate plane. </p>
-                        <!-- Image of vectors in 2D -->
-                        <div class="image left">
-                            <figure>
-                                <img src="../images/coming-soon-photo.jpg" width="300" height="200" alt="Coming soon: photo">
-                                <figcaption>Coming soon: photo of multiple vectors in 2D </figcaption>
-                            </figure>
-                        </div>
-                        <div>
-                            <p> While all of these directed line segments originate from different points, each of them depicts the same vector. In particular, they depict a vector that moves X units left and Y units up. We denote this vector by <b>v</b>=&ltX, Y&gt; with the bolded <b>v</b> and angled brackets to differentiate between a point and a vector. </p>
-                            <p> Notice that we obtain the vector <b>v</b> from a directed line segment \(\overrightarrow{AB}\) from the point A=(x<sub>1</sub>, y<sub>1</sub>) to the point B=(x<sub>2</sub>, y<sub>2</sub>) by using the equation <b>v</b>=&lt;x<sub>2</sub>-x<sub>1</sub>, y<sub>2</sub>-y<sub>1</sub>&gt;. Also, note that the vector from point A to point B is different from the reverse vector going from point B to point A. </p>
-                        </div>
-                        <p> Since the initial point of the vector is not important, we often denote all vectors as originating from the origin. We call these vectors <u>position vectors</u>. </p>
-                    	</div>
-        </div>
-    </div>
+			<!-- Video Player for Video 1 -->
+    			<div class="video-container">
+                    		<!-- Placeholder for video player -->
+                    		<!-- Uncomment the following lines to add video player -->
+                    		<!-- 
+                   		 <div style="position: relative; padding-bottom: 56.25%; height: 0;">
+                       		 <iframe src="VIDEO_URL" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+                    		</div>
+                    		-->
+                    		<figure>
+                        	<img src="../images/coming-soon-photo.jpg" width="600" height="400" alt="Coming soon: video lecture">
+                    		</figure>
+			</div>
+        		<!-- Button to toggle Transcript for Video 1 -->
+        		<button class="transcript-button" onclick="toggleTranscript('transcript1')">Transcript</button>
+        		<!-- Transcript Content for Video 1 -->
+        		<div id="transcript1" class="transcript">
+            			<!-- Definition of vectors -->
+                        	<p> Vectors are used to represent mathematical quantities that hold both a magnitude and a direction. You may have seen them before in physics when working with force or velocity. For example, a force vector would be described by something like: a person is pushing a toy car forward with a power of 5 Newtons. We would depict this vector with an arrow starting at the point of impact and ending some distance away in the described direction. </p>
+                        	<!-- Image of a toy car -->
+                        	<figure>
+                            		<img src="../images/coming-soon-photo.jpg" width="300" height="200" alt="Coming soon: photo">
+                            		<figcaption>Coming soon: photo of little toy car being pushed 5 newtons forward. </figcaption>
+                        	</figure>
+                        	<!-- Description of position vectors -->
+                        	<p> Notice that the point of impact does not define the vector, only the magnitude and the direction. </p>
+                        	<p> Consider this sketch of vectors in a 2-Dimensional coordinate plane. </p>
+                        	<!-- Image of vectors in 2D -->
+                        	<div class="image left">
+                            		<figure>
+                                	<img src="../images/coming-soon-photo.jpg" width="300" height="200" alt="Coming soon: photo">
+                                	<figcaption>Coming soon: photo of multiple vectors in 2D </figcaption>
+                           		 </figure>
+                        	</div>
+                       		 <div>
+                            	<p> While all of these directed line segments originate from different points, each of them depicts the same vector. In particular, they depict a vector that moves X units left and Y units up. We denote this vector by <b>v</b>=&ltX, Y&gt; with the bolded <b>v</b> and angled brackets to differentiate between a point and a vector. </p>
+                           	 <p> Notice that we obtain the vector <b>v</b> from a directed line segment \(\overrightarrow{AB}\) from the point A=(x<sub>1</sub>, y<sub>1</sub>) to the point B=(x<sub>2</sub>, y<sub>2</sub>) by using the equation <b>v</b>=&lt;x<sub>2</sub>-x<sub>1</sub>, y<sub>2</sub>-y<sub>1</sub>&gt;. Also, note that the vector from point A to point B is different from the reverse vector going from point B to point A. </p>
+                        	</div>
+                       		 <p> Since the initial point of the vector is not important, we often denote all vectors as originating from the origin. We call these vectors <u>position vectors</u>. </p>
+       			</div>
+		</section>
 
-    <!-- Second Video Player -->
-    <div class="video-container">
-        <h2> Magnitude and Direction</h2>
-        <!-- Placeholder for video player -->
-                    <!-- Uncomment the following lines to add video player -->
-                    <!-- 
-                    <div style="position: relative; padding-bottom: 56.25%; height: 0;">
-                        <iframe src="VIDEO_URL" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
-                    </div>
-                    -->
-                    <figure>
-                        <img src="../images/coming-soon-photo.jpg" width="600" height="400" alt="Coming soon: video lecture">
-                    </figure>
-        <!-- Button to toggle Transcript for Video 2 -->
-        <button class="transcript-button" onclick="toggleTranscript('transcript2')">Transcript</button>
-        <!-- Transcript Content for Video 2 -->
-        <div id="transcript2" class="transcript">
-            <p>This is the transcript of Video 2...</p>
-        </div>
-    </div>
+		<!-- Magnitude and Direction -->
+		<section>
+		    <header class="main">
+                        <h2> Magnitude and Direction</h2>
+                    </header>
+			<!-- Video Player for Video 2 -->
+    			<div class="video-container">
+                    		<!-- Placeholder for video player -->
+                    		<!-- Uncomment the following lines to add video player -->
+                    		<!-- 
+                   		 <div style="position: relative; padding-bottom: 56.25%; height: 0;">
+                       		 <iframe src="VIDEO_URL" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+                    		</div>
+                    		-->
+                    		<figure>
+                        	<img src="../images/coming-soon-photo.jpg" width="600" height="400" alt="Coming soon: video lecture">
+                    		</figure>
+			</div>
+        		<!-- Button to toggle Transcript for Video 2 -->
+        		<button class="transcript-button" onclick="toggleTranscript('transcript2')">Transcript</button>
+        		<!-- Transcript Content for Video 2 -->
+        		<div id="transcript2" class="transcript">
+            			transcript for video 2 ...
+       			</div>
+		</section>
 
-		 <!-- Third Video Player -->
-<div class="video-container">
-    <h2>Addition and Subtraction</h2>
-    <!-- Placeholder for video player -->
-    <figure>
-        <img src="../images/coming-soon-photo.jpg" width="600" height="400" alt="Coming soon: video lecture">
-    </figure>
-    <!-- Button to toggle Transcript for Video 3 -->
-    <button class="transcript-button" onclick="toggleTranscript('transcript3')">Transcript</button>
-    <!-- Transcript Content for Video 3 -->
-    <div id="transcript3" class="transcript" style="display:none;">
-        <p>This is the transcript of Video 3...</p>
-    </div>
-</div>
+		<!-- Addition and Subtraction -->
+		<section>
+		    <header class="main">
+                        <h2> Addition and Subtraction</h2>
+                    </header>
+			<!-- Video Player for Video 3 -->
+    			<div class="video-container">
+                    		<!-- Placeholder for video player -->
+                    		<!-- Uncomment the following lines to add video player -->
+                    		<!-- 
+                   		 <div style="position: relative; padding-bottom: 56.25%; height: 0;">
+                       		 <iframe src="VIDEO_URL" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+                    		</div>
+                    		-->
+                    		<figure>
+                        	<img src="../images/coming-soon-photo.jpg" width="600" height="400" alt="Coming soon: video lecture">
+                    		</figure>
+			</div>
+        		<!-- Button to toggle Transcript for Video 3 -->
+        		<button class="transcript-button" onclick="toggleTranscript('transcript3')">Transcript</button>
+        		<!-- Transcript Content for Video 3 -->
+        		<div id="transcript3" class="transcript">
+            			transcript for video 3 ...
+       			</div>
+		</section>
 
-<!-- Fourth Video Player -->
-<!-- Placeholder for video player -->
-<div class="video-container">
-    <h2>Multiplication and Division</h2>
-    <figure>
-        <img src="../images/coming-soon-photo.jpg" width="600" height="400" alt="Coming soon: video lecture">
-    </figure>
-    <!-- Button to toggle Transcript for Video 4 -->
-    <button class="transcript-button" onclick="toggleTranscript('transcript4')">Transcript</button>
-    <!-- Transcript Content for Video 4 -->
-    <div id="transcript4" class="transcript" style="display:none;">
-        <p>This is the transcript of Video 4...</p>
-    </div>
-</div>
+		<!-- Scalar Multipliation -->
+		<section>
+		    <header class="main">
+                        <h2> Scalar Multiplication </h2>
+                    </header>
+			<!-- Video Player for Video 4 -->
+    			<div class="video-container">
+                    		<!-- Placeholder for video player -->
+                    		<!-- Uncomment the following lines to add video player -->
+                    		<!-- 
+                   		 <div style="position: relative; padding-bottom: 56.25%; height: 0;">
+                       		 <iframe src="VIDEO_URL" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+                    		</div>
+                    		-->
+                    		<figure>
+                        	<img src="../images/coming-soon-photo.jpg" width="600" height="400" alt="Coming soon: video lecture">
+                    		</figure>
+			</div>
+        		<!-- Button to toggle Transcript for Video 4 -->
+        		<button class="transcript-button" onclick="toggleTranscript('transcript4')">Transcript</button>
+        		<!-- Transcript Content for Video 4 -->
+        		<div id="transcript4" class="transcript">
+            			transcript for video 4 ...
+       			</div>
+		</section>
 
-<!-- Questions Section -->
+		<!-- Questions Section -->
 		<section>
     			<header class="main">
         		<h2>Self-assessment Questions</h2>
    			 </header>
 
-    		<!-- Question 1: Remembering -->
-    		<div>
-        		<p><strong>1. Remembering:</strong> What is a vector?</p>
-        		<!-- Dropdown button for solution -->
-        		<button onclick="toggleSolution('solution1')">Show Solution</button>
-       			 <!-- Solution Content -->
-       			 <div id="solution1" style="display:none;">
-            		<p>A vector is a quantity that has both magnitude and direction.</p>
-        		</div>
-   		 </div>
+    			<!-- Question 1: Remembering -->
+    			<div>
+        			<p><strong>1. Remembering:</strong> What is a vector?</p>
+        			<!-- Dropdown button for solution -->
+        			<button onclick="toggleSolution('solution1')">Show Solution</button>
+       			 	<!-- Solution Content -->
+       				 <div id="solution1" style="display:none;">
+            				<p>A vector is a quantity that has both magnitude and direction.</p>
+        			</div>
+   		 	</div>
 
-   		 <!-- Question 2: Understanding -->
-   		 <div>
-        		<p><strong>2. Understanding:</strong> Explain the difference between a vector and a scalar quantity.</p>
-        		<!-- Dropdown button for solution -->
-        		<button onclick="toggleSolution('solution2')">Show Solution</button>
-        		<!-- Solution Content -->
-        		<div id="solution2" style="display:none;">
-           		 <p>A vector has both magnitude and direction, while a scalar has only magnitude.</p>
-        		</div>
-    		</div>
+   		 	<!-- Question 2: Understanding -->
+   		 	<div>
+        			<p><strong>2. Understanding:</strong> Explain the difference between a vector and a scalar quantity.</p>
+        			<!-- Dropdown button for solution -->
+        			<button onclick="toggleSolution('solution2')">Show Solution</button>
+        			<!-- Solution Content -->
+        			<div id="solution2" style="display:none;">
+           		 		<p>A vector has both magnitude and direction, while a scalar has only magnitude.</p>
+        			</div>
+    			</div>
 
-   		 <!-- Question 3: Applying -->
-  		  <div>
-        		<p><strong>3. Applying:</strong> Given two vectors A and B, how do you calculate their sum?</p>
-        		<!-- Dropdown button for solution -->
-        		<button onclick="toggleSolution('solution3')">Show Solution</button>
-        		<!-- Solution Content -->
-        		<div id="solution3" style="display:none;">
-            		<p>To calculate the sum of vectors A and B, add their corresponding components.</p>
-        		</div>
-    		</div>
+   		 	<!-- Question 3: Applying -->
+  		  	<div>
+        			<p><strong>3. Applying:</strong> Given two vectors A and B, how do you calculate their sum?</p>
+        			<!-- Dropdown button for solution -->
+        			<button onclick="toggleSolution('solution3')">Show Solution</button>
+        			<!-- Solution Content -->
+        			<div id="solution3" style="display:none;">
+            				<p>To calculate the sum of vectors A and B, add their corresponding components.</p>
+        			</div>
+    			</div>
 
-   		 <!-- Question 4: Analyzing -->
-   		 <div>
-        		<p><strong>4. Analyzing:</strong> What happens to the resultant vector when two vectors are added together?</p>
-        		<!-- Dropdown button for solution -->
-        		<button onclick="toggleSolution('solution4')">Show Solution</button>
-        		<!-- Solution Content -->
-        		<div id="solution4" style="display:none;">
-            		<p>The resultant vector is the vector sum of the individual vectors, obtained by combining their magnitudes and directions.</p>
-        		</div>
-    		</div>
+   		 	<!-- Question 4: Analyzing -->
+   		 	<div>
+        			<p><strong>4. Analyzing:</strong> What happens to the resultant vector when two vectors are added together?</p>
+        			<!-- Dropdown button for solution -->
+        			<button onclick="toggleSolution('solution4')">Show Solution</button>
+        			<!-- Solution Content -->
+        			<div id="solution4" style="display:none;">
+            				<p>The resultant vector is the vector sum of the individual vectors, obtained by combining their magnitudes and directions.</p>
+        			</div>
+    			</div>
 
-   		 <!-- Question 5: Evaluating -->
-    		<div>
-        		<p><strong>5. Evaluating:</strong> Discuss the significance of vector arithmetic in various fields.</p>
-        		<!-- Dropdown button for solution -->
-        		<button onclick="toggleSolution('solution5')">Show Solution</button>
-        		<!-- Solution Content -->
-        		<div id="solution5" style="display:none;">
-            		<p>Vector arithmetic is fundamental in physics, engineering, computer science, and mathematics, where it is used to model and solve real-world problems involving forces, velocities, motions, and more.</p>
-        		</div>
-    		</div>
+   		 	<!-- Question 5: Evaluating -->
+    			<div>
+        			<p><strong>5. Evaluating:</strong> Discuss the significance of vector arithmetic in various fields.</p>
+        			<!-- Dropdown button for solution -->
+        			<button onclick="toggleSolution('solution5')">Show Solution</button>
+        			<!-- Solution Content -->
+        			<div id="solution5" style="display:none;">
+            				<p>Vector arithmetic is fundamental in physics, engineering, computer science, and mathematics, where it is used to model and solve real-world problems involving forces, velocities, motions, and more.</p>
+        			</div>
+    			</div>
 		</section>
+
+	   
+
 
 
 		
@@ -230,8 +262,22 @@ title: Vector Arithmetic
     }
 }
 </script>
+
+<!-- Scripts and Function for Solution Toggle -->
+<<script>
+    function toggleSolution(solutionId) {
+        var solution = document.getElementById(solutionId);
+        if (solution.style.display === "none") {
+            solution.style.display = "block";
+        } else {
+            solution.style.display = "none";
+        }
+    }
+</script>
 	
 
-
+</div>
+</div>
+</div>
 </body>
 </html>
