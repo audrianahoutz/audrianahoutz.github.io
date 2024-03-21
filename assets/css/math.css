@@ -45,6 +45,7 @@
     margin-top: 10px;
 }
 
+/* Button Styles */
 .transcript-button {
     background: none;
     border: none;
@@ -53,9 +54,6 @@
     font-weight: bold; /* Make the text bold */
     color: #333; /* Set text color */
     margin-bottom: 10px; /* Add some spacing */
-    border-bottom: 2px solid transparent; /* Add a transparent bottom border */
-    width: 100%; /* Make the button span the entire width */
-    text-align: left; /* Align text to the left */
 }
 
 .transcript-button:focus,
@@ -63,8 +61,22 @@
     outline: none; /* Remove focus outline */
 }
 
+/* Box Styles */
+.transcript {
+    background-color: #f8f8f8; /* Set background color of the box */
+    border: 1px solid #ddd; /* Add border around the box */
+    border-radius: 5px; /* Add border radius to make the box rounded */
+    padding: 10px; /* Add padding inside the box */
+}
+
+.transcript-content {
+    padding-top: 10px; /* Add padding to separate content from header */
+}
+
 .transcript-header {
     font-size: 1.2em; /* Adjust font size as needed */
     font-weight: bold; /* Make the text bold */
     color: #333; /* Set text color */
+    margin-bottom: 10px; /* Add margin bottom to separate from content */
 }
+
