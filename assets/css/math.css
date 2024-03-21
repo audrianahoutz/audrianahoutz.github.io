@@ -21,3 +21,17 @@
   border-right: 2px solid black; /* Style the arrow as a diagonal line */
   transform: rotate(45deg); /* Rotate the arrow to form an arrow shape */
 }
+
+/* Styling for vector components */
+.vector-components {
+  font-family: Arial, sans-serif; /* Set font family */
+  font-size: 14px; /* Set font size */
+  font-weight: bold; /* Set font weight */
+  color: #333; /* Set text color */
+}
+
+/* Styling for vector symbol */
+.vector {
+  font-weight: bold; /* Set font weight */
+  font-style: italic; /* Set font style to italic */
+}
