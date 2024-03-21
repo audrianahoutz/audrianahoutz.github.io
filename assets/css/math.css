@@ -35,3 +35,28 @@
   font-weight: bold; /* Set font weight */
   font-style: italic; /* Set font style to italic */
 }
+
+
+/* transcript.css */
+
+/* Styles for the transcript button */
+.transcript-button {
+    font-size: 20px; /* Adjust the font size */
+    font-weight: bold; /* Make the text bold */
+    cursor: pointer; /* Show pointer cursor on hover */
+}
+
+/* Styles for the transcript content */
+.transcript-content {
+    display: none; /* Hide the content by default */
+    background-color: #f9f9f9; /* Set background color */
+    padding: 10px; /* Add padding */
+    border: 1px solid #ccc; /* Add border */
+    border-top: none; /* Remove top border */
+    font-size: 16px; /* Adjust the font size */
+}
+
+/* Show the transcript content when the 'show' class is added */
+.transcript-content.show {
+    display: block; /* Show the content */
+}
