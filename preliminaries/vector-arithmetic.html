@@ -109,7 +109,7 @@ title: Vector Arithmetic
         <!-- Button to toggle Transcript for Video 2 -->
         <button class="transcript-button" onclick="toggleTranscript('transcript2')">Transcript</button>
         <!-- Transcript Content for Video 2 -->
-        <div id="transcript1" class="transcript">
+        <div id="transcript2" class="transcript">
             <p>This is the transcript of Video 2...</p>
         </div>
     </div>
@@ -206,17 +206,6 @@ title: Vector Arithmetic
     		</div>
 		</section>
 
-<!-- Scripts and Function for Transcript Toggle -->
-<script>
-    function toggleTranscript(transcriptId) {
-        var transcript = document.getElementById(transcriptId);
-        if (transcript.style.display === "none") {
-            transcript.style.display = "block";
-        } else {
-            transcript.style.display = "none";
-        }
-    }
-</script>
 
 		
 
@@ -233,13 +222,13 @@ title: Vector Arithmetic
     <!-- Scripts and Function for Transcript Toggle -->
 <script>
     function toggleTranscript(transcriptId) {
-        var transcript = document.getElementById(transcriptId);
-        if (transcript.style.display === "none") {
-            transcript.style.display = "block";
-        } else {
-            transcript.style.display = "none";
-        }
+    var transcript = document.getElementById(transcriptId);
+    if (transcript.style.display === "none") {
+        transcript.style.display = "block";
+    } else {
+        transcript.style.display = "none";
     }
+}
 </script>
 	
 
