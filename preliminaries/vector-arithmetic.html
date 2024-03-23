@@ -228,21 +228,69 @@ title: Vector Arithmetic
    		 	<!-- Question 5: Evaluating -->
     			<div id="question">
     				<p><strong>5. Evaluating:</strong> Discuss the significance of vector arithmetic in various fields.</p>
-    				<form id="quizForm">
-       					<input type="radio" id="option1" name="answer" value="incorrect">
-        				<label for="option1">A. Physics only</label><br>
-        				<input type="radio" id="option2" name="answer" value="incorrect">
-        				<label for="option2">B. Engineering only</label><br>
-        				<input type="radio" id="option3" name="answer" value="incorrect">
-        				<label for="option3">C. Computer science only</label><br>
-        				<input type="radio" id="option4" name="answer" value="correct">
-        				<label for="option4">D. Physics, engineering, computer science, and mathematics</label><br><br>
-        					<button type="button" onclick="submitAnswer()">Submit</button>
-    				</form>
+    				<!-- Dropdown button for solution -->
+        			<button onclick="toggleSolution('solution5')">Show Solution</button>
+				<!-- Solution Content -->
+				<div id="solution5" style="display:none; border: 1px solid #ccc; padding: 10px; margin-top: 10px; background-color: #f9f9f9; border-radius: 5px;">
+    				<p>Vector arithmetic is fundamental in physics, engineering, computer science, and mathematics, where it is used to model and solve real-world problems involving forces, velocities, motions, and more.</p>
+				</div>
 			</div>
 		</section>
 
-	   
+	<section>
+		<header class="main">
+        		<h2>Self-assessment Questions</h2>
+   			 </header>
+
+		<!-- Question 1: Evaluating -->
+		<div class="question">
+    			<p><strong>1. Evaluating:</strong> Discuss the significance of vector arithmetic in physics.</p>
+    			<form class="quizForm">
+        			<!-- Radio buttons for answer options -->
+        			<input type="radio" id="q1_option1" name="q1_answer" value="incorrect">
+        			<label for="q1_option1">A. Force calculations only</label><br>
+        			<input type="radio" id="q1_option2" name="q1_answer" value="incorrect">
+        			<label for="q1_option2">B. Velocity calculations only</label><br>
+        			<input type="radio" id="q1_option3" name="q1_answer" value="incorrect">
+        			<label for="q1_option3">C. Motion analysis only</label><br>
+        			<input type="radio" id="q1_option4" name="q1_answer" value="correct">
+        			<label for="q1_option4">D. Force, velocity, and motion analysis</label><br><br>
+        				<!-- Button to submit the answer -->
+        				<button type="button" onclick="submitAnswer('q1')">Submit</button>
+   			 </form>
+		</div>
+
+		<!-- Solution for Question 1 -->
+		<div id="solution_q1" class="solution" style="display:none;">
+    			<!-- Solution text -->
+    			<p>Vector arithmetic is essential in physics for analyzing forces, velocities, and motions. It allows for the representation and calculation of these quantities in both magnitude and direction.</p>
+		</div>
+
+		<!-- Question 2: Evaluating -->
+		<div class="question">
+    			<p><strong>2. Evaluating:</strong> How is vector arithmetic used in engineering?</p>
+   			 <form class="quizForm">
+        			<!-- Radio buttons for answer options -->
+       				<input type="radio" id="q2_option1" name="q2_answer" value="incorrect">
+       				<label for="q2_option1">A. Electrical circuit analysis only</label><br>
+        			<input type="radio" id="q2_option2" name="q2_answer" value="correct">
+        			<label for="q2_option2">B. Structural analysis, stress calculations, and optimization</label><br>
+        			<input type="radio" id="q2_option3" name="q2_answer" value="incorrect">
+        			<label for="q2_option3">C. Software development only</label><br>
+        			<input type="radio" id="q2_option4" name="q2_answer" value="incorrect">
+        			<label for="q2_option4">D. None of the above</label><br><br>
+        				<!-- Button to submit the answer -->
+        				<button type="button" onclick="submitAnswer('q2')">Submit</button>
+    			</form>
+		</div>
+
+		<!-- Solution for Question 2 -->
+		<div id="solution_q2" class="solution" style="display:none;">
+    			<!-- Solution text -->
+    			<p>In engineering, vector arithmetic is used for structural analysis, stress calculations, and optimization, among other applications. It allows engineers to model and solve complex problems involving forces, motions, and material properties.</p>
+		</div>
+		
+	</section>
 
 
 
@@ -283,24 +331,27 @@ title: Vector Arithmetic
 </script>
 
 <script>
-    // Function to submit the answer
-    function submitAnswer() {
-        // Get the selected answer
-        var selectedAnswer = document.querySelector('input[name="answer"]:checked');
+    // Function to submit the answer for a specific question
+    function submitAnswer(questionId) {
+        // Get the selected answer for the given question
+        var selectedAnswer = document.querySelector('input[name="' + questionId + '_answer"]:checked');
+        // Get the corresponding solution element
+        var solutionElement = document.getElementById('solution_' + questionId);
         // Check if an answer is selected
         if (selectedAnswer) {
             // Display solution regardless of the answer
-            document.getElementById("solution").style.display = "block";
+            solutionElement.style.display = "block";
             // Check if the selected answer is correct
             if (selectedAnswer.value === "correct") {
                 // Display congratulatory message if correct
-                document.getElementById("question").innerHTML += "<p><strong>Congratulations! Your answer is correct.</strong></p>";
+                solutionElement.innerHTML += "<p><strong>Congratulations! Your answer is correct.</strong></p>";
             } else {
                 // Display message for incorrect answer
-                document.getElementById("question").innerHTML += "<p><strong>Sorry, your answer is incorrect.</strong></p>";
+                solutionElement.innerHTML += "<p><strong>Sorry, your answer is incorrect.</strong></p>";
             }
             // Hide the form after submission
-            document.getElementById("quizForm").style.display = "none";
+            var questionElement = document.querySelector('.' + questionId);
+            questionElement.querySelector('.quizForm').style.display = "none";
         } else {
             // Alert if no answer is selected
             alert("Please select an answer before submitting.");
