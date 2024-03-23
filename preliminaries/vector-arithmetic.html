@@ -223,7 +223,7 @@ title: Vector Arithmetic
         				<input type="radio" id="q2_option4" name="q2_answer" value="incorrect">
         				<label for="q2_option4">D. The magnitude is $3$ and the direction is $\boldsymbol{u}=\langle 1,2 \rangle. </label><br><br>
         				<!-- Button to submit the answer -->
-        				<button type="button" onclick="submitAnswer('q52')">Submit</button>
+        				<button type="button" onclick="submitAnswer('q2')">Submit</button>
     				</form>
 			</div>
 
@@ -278,15 +278,20 @@ title: Vector Arithmetic
 			<div id="solution_q3" class="solution" style="display:none; border: 1px solid #ccc; padding: 10px; margin-top: 10px; background-color: #f9f9f9; border-radius: 5px;">
     				<!-- Solution text -->
     				<p>The correct answer is C.$2\sqrt{3}$. After adding the two vectors, you can find the magnitude of the resulting vector using the magnitude formula found in the "Magnitude and Direction" section. </p>
-				<p>$$
-					\begin{align*}
+				<p>
+					Add the two vectors:
+					$$\begin{align*}
 					\boldsymbol{u}+\boldsymbol{v} = \langle u_1+v_1,u_2+v_2 \rangle \\
 					\langle 3,2 \rangle + \langle -1,4 \rangle = \langle 2,2 \rangle  \\
+					\end{align*}$$
+				
+					Compute the magnitude:
+					$$\begin{align*}
 					||\boldsymbol{u}||= \sqrt{(u_1)^2+(u_2)^2} \\
 					||\boldsymbol{a}+\boldsymbol{b}|| = ||\langle 2,2 \rangle || \\
 					= \sqrt{2^2+2^2} = \sqrt{8} = 2 \sqrt{2}
-					\end{align*}
-				$$</p>
+					\end{align*}$$
+				</p>
 			</div>
 
 			<!-- Question 4: Expand -->
@@ -317,6 +322,7 @@ title: Vector Arithmetic
 				<p><table>
   					<tr>
     					<td>
+						Example of adding two vectors in the same direction:
       						$$ \begin{align*}
 							\boldsymbol{a}=\langle 2,0 \rangle,\boldsymbol{b}=\langle 2,0 \rangle \\
 							||\boldsymbol{a}|| = \sqrt{2^2+0^2} = \sqrt{4} = 2 \\
@@ -327,6 +333,7 @@ title: Vector Arithmetic
 						\end{align*}$$
     					</td>
     					<td>
+						Example of adding two vectors in different directions:
       						$$ \begin{align*}
 							\boldsymbol{a}=\langle 2,0 \rangle ,\boldsymbol{b}=\langle 0,2 \rangle \\
 							||\boldsymbol{a}|| = \sqrt{2^2+0^2} = \sqrt{4} = 2 \\
