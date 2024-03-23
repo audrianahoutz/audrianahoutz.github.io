@@ -208,7 +208,7 @@ title: Vector Arithmetic
 
 			<!-- Question 2: Mimic -->
 			<div class="question">
-    				<p><strong>2. Mimic:</strong> Given the vector $\boldsymbol{a}=\langle 1,2\rangle $, find the magnitude and direction. </p>
+    				<p><strong>level 2. Mimic:</strong> Given the vector $\boldsymbol{a}=\langle 1,2\rangle $, find the magnitude and direction. </p>
    			 	<form class="quizForm">
         				<!-- Radio buttons for answer options -->
        					<input type="radio" id="q2_option1" name="q2_answer" value="incorrect">
@@ -357,22 +357,24 @@ title: Vector Arithmetic
 </script>
 
 
+<!-- Script for submitting answers and displaying solutions -->
 <script>
     // Function to submit the answer
-    function submitAnswer() {
+    function submitAnswer(questionId) {
         // Get the selected answer
-        var selectedAnswer = document.querySelector('input[name="answer"]:checked');
+        var selectedAnswer = document.querySelector('input[name="' + questionId + '_answer"]:checked');
         // Check if an answer is selected
         if (selectedAnswer) {
             // Check if the selected answer is correct
             if (selectedAnswer.value === "correct") {
-                // Display congratulatory message if correct
-                document.getElementById("question").innerHTML += "<p><strong>Congratulations! Your answer is correct.</strong></p>";
+                // Provide feedback for correct answer
+                alert("Congratulations! Your answer is correct.");
             } else {
-                // Display message for incorrect answer
-                document.getElementById("question").innerHTML += "<p><strong>Sorry, your answer is incorrect.</strong></p>";
+                // Provide feedback for incorrect answer
+                alert("Sorry, your answer is incorrect.");
             }
             // Display solution regardless of the answer
+            var solutionElement = document.getElementById("solution_" + questionId);
             solutionElement.style.display = "block";
             // Hide the form after submission
             var questionElement = document.querySelector('.' + questionId);
