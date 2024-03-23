@@ -225,7 +225,7 @@
                 <h2>Menu</h2>
             </header>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="https://audrianahoutz.github.io/audrianahoutz/index.html">Home</a></li>
                 <!-- Uncomment the following lines if needed -->
                 <!-- <li><a href="aboutme.html">About Me</a></li> -->
                 <li><a href="research.html">Research</a></li>
