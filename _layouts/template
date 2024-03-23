@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }}</title>
+  <style>
+    body {
+      display: flex;
+    }			
+	</style> 
+
+  <!-- Link to main stylesheet -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <!-- Link to additional stylesheet for math content -->
+    <link rel="stylesheet" href="../assets/css/math.css">
+
+   <!-- MathJax Script for displaying mathematical notation -->
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+  <!-- Configuration for MathJax, including enabling inline math mode -->
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$']] // Sets the delimiters for inline math
+      }
+    };
+  </script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>AH</strong></a>
+									<ul class="icons">
+										<li><a href="https://github.com/AudrianaHoutz" class="icon brands fa-github"><span class="label">Github</span></a></li>
+
+									</ul>
+								</header>
+
+							<!-- Unique Content -->
+								<div id="content">
+                {{ content }}
+              </div>
+
+						</div>
+					</div>
+
+				<!-- Sidebar -->
+					<div id="sidebar">
+						<div class="inner">
+
+							<!-- Search -->
+							<!--	<section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section>  
+							-->
+
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="https://audrianahoutz.github.io/audrianahoutz/index.html">Home</a></li>
+										<!-- <li><a href="aboutme.html">About Me</a></li> -->
+										<li><a href="https://audrianahoutz.github.io/audrianahoutz/research.html">Research</a></li>
+										<li>
+											<span class="opener">Teaching</span>
+                      <ul>
+												<li><a href="https://audrianahoutz.github.io/audrianahoutz/calculusIII/preliminaries-home.html">Preliminaries</a></li>
+											</ul>
+											<ul>
+												<li><a href="https://audrianahoutz.github.io/audrianahoutz/calculusIII/calculusIII-home.html">Calculus III</a></li>
+											</ul>
+										</li>
+									</ul>
+								</nav>
+
+
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Get in touch</h2>
+									</header>
+									
+									<ul class="contact">
+										<li class="icon solid fa-envelope"><a href="#">apohlma2@nd.edu</a></li>
+									<!-- 	<li class="icon solid fa-phone">(000) 000-0000</li> -->
+										<li class="icon solid fa-home">University of Notre Dame<br />
+										Department of Mathematics<br />
+										B25 Hayes-Healy <br />
+										Notre Dame, IN 46556</li>
+									</ul>
+								</section> 
+
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">&copy; Audriana Houtz. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+								</footer>
+
+						</div>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
