@@ -196,9 +196,12 @@ title: Vector Arithmetic
         				<input type="radio" id="q1_option4" name="q1_answer" value="incorrect">
         				<label for="q1_option4">D. $\boldsymbol{a}+\boldsymbol{b}=\langle a_x + a_y, b_x \cdot b_y \rangle$ </label><br><br>
         				<!-- Button to submit the answer -->
-        				<button type="button" onclick="submitAnswer('q1')">Submit</button>
+					<button type="button" onclick="submitAnswer('q1')">Submit</button>
    			 	</form>
 			</div>
+			
+			<!-- Feedback message for Question 1 -->
+			<div id="feedbackMessage_q1"></div> 	
 
 			<!-- Solution for Question 1 -->
 			<div id="solution_q1" class="solution" style="display:none; border: 1px solid #ccc; padding: 10px; margin-top: 10px; background-color: #f9f9f9; border-radius: 5px;">
@@ -223,6 +226,9 @@ title: Vector Arithmetic
         				<button type="button" onclick="submitAnswer('q52')">Submit</button>
     				</form>
 			</div>
+
+			<!-- Feedback message for Question 2 -->
+			<div id="feedbackMessage_q2"></div> 
 
 			<!-- Solution for Question 2 -->
 			<div id="solution_q2" class="solution" style="display:none; border: 1px solid #ccc; padding: 10px; margin-top: 10px; background-color: #f9f9f9; border-radius: 5px;">
@@ -265,6 +271,9 @@ title: Vector Arithmetic
     				</form>
 			</div>
 
+			<!-- Feedback message for Question 3 -->
+			<div id="feedbackMessage_q3"></div> 
+
 			<!-- Solution for Question 3 -->
 			<div id="solution_q3" class="solution" style="display:none; border: 1px solid #ccc; padding: 10px; margin-top: 10px; background-color: #f9f9f9; border-radius: 5px;">
     				<!-- Solution text -->
@@ -297,6 +306,9 @@ title: Vector Arithmetic
         				<button type="button" onclick="submitAnswer('q4')">Submit</button>
     				</form>
 			</div>
+
+			<!-- Feedback message for Question 4 -->
+			<div id="feedbackMessage_q4"></div> 
 
 			<!-- Solution for Question 4 -->
 			<div id="solution_q4" class="solution" style="display:none; border: 1px solid #ccc; padding: 10px; margin-top: 10px; background-color: #f9f9f9; border-radius: 5px;">
@@ -363,15 +375,15 @@ title: Vector Arithmetic
     function submitAnswer(questionId) {
         // Get the selected answer
         var selectedAnswer = document.querySelector('input[name="' + questionId + '_answer"]:checked');
+        // Get the feedback message div
+        var feedbackMessageDiv = document.getElementById("feedbackMessage_" + questionId);
         // Check if an answer is selected
         if (selectedAnswer) {
-            // Check if the selected answer is correct
+            // Provide feedback for correct or incorrect answer
             if (selectedAnswer.value === "correct") {
-                // Provide feedback for correct answer
-                alert("Congratulations! Your answer is correct.");
+                feedbackMessageDiv.innerHTML = "<p>Congratulations! Your answer is correct.</p>";
             } else {
-                // Provide feedback for incorrect answer
-                alert("Sorry, your answer is incorrect.");
+                feedbackMessageDiv.innerHTML = "<p>Sorry, your answer is incorrect.</p>";
             }
             // Display solution regardless of the answer
             var solutionElement = document.getElementById("solution_" + questionId);
@@ -385,6 +397,7 @@ title: Vector Arithmetic
         }
     }
 </script>
+
 
 	
 
