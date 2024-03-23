@@ -215,52 +215,102 @@
 </head>
 <body>
 
+<<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+
+							<!-- Header -->
+								<header id="header">
+									<a href="index.html" class="logo"><strong>AH</strong></a>
+									<ul class="icons">
+										<li><a href="https://github.com/AudrianaHoutz" class="icon brands fa-github"><span class="label">Github</span></a></li>
+									</ul>
+								</header>
+
+							<!-- Banner -->
+								<section id="banner">
+									<div class="content">
+										<header>
+											<h1>Audriana Houtz<br />
+											</h1>
+											<p>PhD Student | Mathematics</p>
+										</header>
+										<p>Hi! Welcome to my growing website. I am currently a graduate student in the department of mathematics at the University of Notre Dame. I specialize in geometric group theory, in particular mapping class groups. This site is a current work in progress aimed at helping students learn, employers find me, and just pure enjoyment for me. </p>
+										<!-- <p>You can find <a href="/pdfs/Audriana_Houtz_CV_Resume.pdf#toolbar=0" target="_blank">my CV here</a>. -->
+									</div>
+									<span class="image object">
+										<img src="images/profilepic.jpeg" alt="" />
+									</span>
+									
+								</section>
+							
+							</div>
+							</div>
+
+							<!-- Section -->
+
 <!-- Sidebar -->
-<div id="sidebar">
-    <div class="inner">
+					<div id="sidebar">
+						<div class="inner">
 
-        <!-- Menu -->
-        <nav id="menu">
-            <header class="major">
-                <h2>Menu</h2>
-            </header>
-            <ul>
-                <li><a href="https://audrianahoutz.github.io/audrianahoutz/index.html">Home</a></li>
-                <!-- Uncomment the following lines if needed -->
-                <!-- <li><a href="aboutme.html">About Me</a></li> -->
-                <li><a href="research.html">Research</a></li>
-                <li>
-                    <span class="opener">Teaching</span>
-                    <ul>
-                        <li><a href="Calculus III.html">Calculus III</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+							<!-- Search -->
+							<!--	<section id="search" class="alt">
+									<form method="post" action="#">
+										<input type="text" name="query" id="query" placeholder="Search" />
+									</form>
+								</section>  
+							-->
 
-        <!-- Get in touch -->
-        <section>
-            <header class="major">
-                <h2>Get in touch</h2>
-            </header>
-            <ul class="contact">
-                <li class="icon solid fa-envelope"><a href="#">apohlma2@nd.edu</a></li>
-                <!-- Uncomment the following lines if needed -->
-                <!-- <li class="icon solid fa-phone">(000) 000-0000</li> -->
-                <li class="icon solid fa-home">University of Notre Dame<br />
-                    Department of Mathematics<br />
-                    B25 Hayes-Healy <br />
-                    Notre Dame, IN 46556</li>
-            </ul>
-        </section>
+							<!-- Menu -->
+								<nav id="menu">
+									<header class="major">
+										<h2>Menu</h2>
+									</header>
+									<ul>
+										<li><a href="https://audrianahoutz.github.io/audrianahoutz/index.html">Home</a></li>
+										<!-- <li><a href="aboutme.html">About Me</a></li> -->
+										<li><a href="https://audrianahoutz.github.io/audrianahoutz/research.html">Research</a></li>
+										<li>
+											<span class="opener">Teaching</span>
+                      <ul>
+												<li><a href="https://audrianahoutz.github.io/audrianahoutz/preliminaries/preliminaries-home.html#">Preliminaries</a></li>
+											</ul>
+											<ul>
+												<li><a href="https://audrianahoutz.github.io/audrianahoutz/calculusIII/calculusIII-home.html">Calculus III</a></li>
+											</ul>
+										</li>
+									</ul>
+								</nav>
 
-        <!-- Footer -->
-        <footer id="footer">
-            <p class="copyright">&copy; Audriana Houtz. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-        </footer>
+							<!-- Section -->
+								<section>
+									<header class="major">
+										<h2>Get in touch</h2>
+									</header>
+									
+									<ul class="contact">
+										<li class="icon solid fa-envelope"><a href="#">apohlma2@nd.edu</a></li>
+									<!-- 	<li class="icon solid fa-phone">(000) 000-0000</li> -->
+										<li class="icon solid fa-home">University of Notre Dame<br />
+										Department of Mathematics<br />
+										B25 Hayes-Healy <br />
+										Notre Dame, IN 46556</li>
+									</ul>
+								</section> 
 
-    </div>
-</div>
+							<!-- Footer -->
+								<footer id="footer">
+									<p class="copyright">&copy; Audriana Houtz. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+								</footer>
+
+						</div>
+					</div>
+
 
 <!-- Content -->
 <div id="content">
