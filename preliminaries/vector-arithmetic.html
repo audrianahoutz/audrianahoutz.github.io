@@ -356,22 +356,21 @@ title: Vector Arithmetic
 }
 </script>
 
+
 <script>
-    // Function to submit the answer for a specific question
-    function submitAnswer(questionId) {
-        // Get the selected answer for the given question
-        var selectedAnswer = document.querySelector('input[name="q4_answer"]:checked');
-        // Get the corresponding solution element
-        var solutionElement = document.getElementById('solution_' + questionId);
+    // Function to submit the answer
+    function submitAnswer() {
+        // Get the selected answer
+        var selectedAnswer = document.querySelector('input[name="answer"]:checked');
         // Check if an answer is selected
         if (selectedAnswer) {
             // Check if the selected answer is correct
             if (selectedAnswer.value === "correct") {
                 // Display congratulatory message if correct
-                solutionElement.innerHTML = "<p><strong>Congratulations! Your answer is correct.</strong></p>";
+                document.getElementById("question").innerHTML += "<p><strong>Congratulations! Your answer is correct.</strong></p>";
             } else {
                 // Display message for incorrect answer
-                solutionElement.innerHTML = "<p><strong>Sorry, your answer is incorrect.</strong></p>";
+                document.getElementById("question").innerHTML += "<p><strong>Sorry, your answer is incorrect.</strong></p>";
             }
             // Display solution regardless of the answer
             solutionElement.style.display = "block";
