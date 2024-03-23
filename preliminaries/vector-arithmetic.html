@@ -289,10 +289,11 @@ title: Vector Arithmetic
         var selectedAnswer = document.querySelector('input[name="answer"]:checked');
         // Check if an answer is selected
         if (selectedAnswer) {
+            // Display solution regardless of the answer
+            document.getElementById("solution").style.display = "block";
             // Check if the selected answer is correct
             if (selectedAnswer.value === "correct") {
-                // Display solution and congratulatory message if correct
-                document.getElementById("solution").style.display = "block";
+                // Display congratulatory message if correct
                 document.getElementById("question").innerHTML += "<p><strong>Congratulations! Your answer is correct.</strong></p>";
             } else {
                 // Display message for incorrect answer
