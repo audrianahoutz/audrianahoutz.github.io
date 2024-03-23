@@ -66,31 +66,27 @@ title: Vector Arithmetic
                         	<img src="../images/coming-soon-photo.jpg" width="600" height="400" alt="Coming soon: video lecture">
                     		</figure>
 			</div>
-			<!-- Transcript Button -->
-			<button class="transcript-button" onclick="toggleTranscript('transcript1')">What is a vector?</button>
-
-			<!-- Transcript Box -->
-			<div id="transcript1" class="transcript" style="display: none;">
-    				<!-- Transcript Content -->
-    				<div class="transcript-content">
-        				<!-- Definition of vectors -->
-                        		<p> Vectors are used to represent mathematical quantities that hold both a magnitude and a direction. You may have seen them before in physics when working with force or velocity. For example, a force vector would be described by something like: a person is pushing a toy car forward with a power of 5 Newtons. We would depict this vector with an arrow starting at the point of impact and ending some distance away in the described direction. </p>
-                        		<!-- Image of a toy car -->
-                        		<figure>
-                            			<img src="../images/coming-soon-photo.jpg" width="300" height="200" alt="Coming soon: photo">
-                            			<figcaption>Coming soon: photo of little toy car being pushed 5 newtons forward. </figcaption>
-                        		</figure>
-                        		<!-- Description of position vectors -->
-                        		<p> Notice that the point of impact does not define the vector, only the magnitude and the direction. </p>
-                        		<p> Consider this sketch of vectors in a 2-Dimensional coordinate plane. </p>
-                        		<!-- Image of vectors in 2D -->
-                        		<div class="image left">
-                            			<figure>
-                                			<img src="../images/coming-soon-photo.jpg" width="300" height="200" alt="Coming soon: photo">
-                                			<figcaption>Coming soon: photo of multiple vectors in 2D </figcaption>
-                           		 	</figure>
-                        		</div>
-                       		 <div>
+			<!-- Transcript button  -->
+        		<button onclick="toggleTranscript('transcript1')">What is a Vector?</button>
+        		<!-- Solution Content -->
+        		<div id="transcript1" style="display:none; border: 1px solid #ccc; padding: 10px; margin-top: 10px; background-color: #f9f9f9; border-radius: 5px;">
+        			<!-- Definition of vectors -->
+                        	<p> Vectors are used to represent mathematical quantities that hold both a magnitude and a direction. You may have seen them before in physics when working with force or velocity. For example, a force vector would be described by something like: a person is pushing a toy car forward with a power of 5 Newtons. We would depict this vector with an arrow starting at the point of impact and ending some distance away in the described direction. </p>
+                        	<!-- Image of a toy car -->
+                        	<figure>
+                            		<img src="../images/coming-soon-photo.jpg" width="300" height="200" alt="Coming soon: photo">
+                            		<figcaption>Coming soon: photo of little toy car being pushed 5 newtons forward. </figcaption>
+                        	</figure>
+                		<!-- Description of position vectors -->
+                		<p> Notice that the point of impact does not define the vector, only the magnitude and the direction. </p>
+                		<p> Consider this sketch of vectors in a 2-Dimensional coordinate plane. </p>                        		<!-- Image of vectors in 2D -->
+                        	<div class="image left">
+                    			<figure>
+                        			<img src="../images/coming-soon-photo.jpg" width="300" height="200" alt="Coming soon: photo">
+                        			<figcaption>Coming soon: photo of multiple vectors in 2D </figcaption>  
+					</figure>
+                        	</div>
+                       		<div>
                             		<p> While all of these directed line segments originate from different points, each of them depicts the same vector. In particular, they depict a vector that moves X units left and Y units up. We denote this vector by <b>v</b>=&ltX, Y&gt; with the bolded <b>v</b> and angled brackets to differentiate between a point and a vector. </p>
                            	 	<p> Notice that we obtain the vector <b>v</b> from a directed line segment \(\overrightarrow{AB}\) from the point A=(x<sub>1</sub>, y<sub>1</sub>) to the point B=(x<sub>2</sub>, y<sub>2</sub>) by using the equation <b>v</b>=&lt;x<sub>2</sub>-x<sub>1</sub>, y<sub>2</sub>-y<sub>1</sub>&gt;. Also, note that the vector from point A to point B is different from the reverse vector going from point B to point A. </p>
                         	</div>
@@ -116,17 +112,12 @@ title: Vector Arithmetic
                         	<img src="../images/coming-soon-photo.jpg" width="600" height="400" alt="Coming soon: video lecture">
                     		</figure>
 			</div>
-			<!-- Transcript Button -->
-			<button class="transcript-button" onclick="toggleTranscript('transcript2')">Magnitude and Direction</button>
-
-			<!-- Transcript Box -->
-			<div id="transcript2" class="transcript" style="display: none;">
-    				<!-- Transcript Content -->
-    				<div class="transcript-content">
-        				<!-- Content goes here -->
-       				 	<p>This is the transcript for Video 2...</p>
-    				</div>
-			</div>
+			<!-- Transcript button  -->
+        		<button onclick="toggleTranscript('transcript2')">Magnitude and Direction</button>
+        		<!-- Solution Content -->
+        		<div id="transcript4" style="display:none; border: 1px solid #ccc; padding: 10px; margin-top: 10px; background-color: #f9f9f9; border-radius: 5px;">
+           	 		<p>This is the transcript for Video 2...</p>
+        		</div>
 
 		</section>
 
@@ -148,17 +139,12 @@ title: Vector Arithmetic
                         	<img src="../images/coming-soon-photo.jpg" width="600" height="400" alt="Coming soon: video lecture">
                     		</figure>
 			</div>
-        		<!-- Transcript Button -->
-			<button class="transcript-button" onclick="toggleTranscript('transcript3')">Addition and Subtraction</button>
-
-			<!-- Transcript Box -->
-			<div id="transcript3" class="transcript" style="display: none;">
-    				<!-- Transcript Content -->
-    				<div class="transcript-content">
-        				<!-- Content goes here -->
-       				 	<p>This is the transcript for Video 3...</p>
-    				</div>
-			</div>
+        		<!-- Transcript button  -->
+        		<button onclick="toggleTranscript('transcript3')">Addition and Subtraction</button>
+        		<!-- Solution Content -->
+        		<div id="transcript3" style="display:none; border: 1px solid #ccc; padding: 10px; margin-top: 10px; background-color: #f9f9f9; border-radius: 5px;">
+           	 		<p>This is the transcript for Video 3...</p>
+        		</div>
 
 		</section>
 
@@ -292,6 +278,31 @@ title: Vector Arithmetic
             solution.style.display = "block";
         } else {
             solution.style.display = "none";
+        }
+    }
+</script>
+
+<script>
+    // Function to submit the answer
+    function submitAnswer() {
+        // Get the selected answer
+        var selectedAnswer = document.querySelector('input[name="answer"]:checked');
+        // Check if an answer is selected
+        if (selectedAnswer) {
+            // Check if the selected answer is correct
+            if (selectedAnswer.value === "correct") {
+                // Display solution and congratulatory message if correct
+                document.getElementById("solution").style.display = "block";
+                document.getElementById("question").innerHTML += "<p><strong>Congratulations! Your answer is correct.</strong></p>";
+            } else {
+                // Display message for incorrect answer
+                document.getElementById("question").innerHTML += "<p><strong>Sorry, your answer is incorrect.</strong></p>";
+            }
+            // Hide the form after submission
+            document.getElementById("quizForm").style.display = "none";
+        } else {
+            // Alert if no answer is selected
+            alert("Please select an answer before submitting.");
         }
     }
 </script>
