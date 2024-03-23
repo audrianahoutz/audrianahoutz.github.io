@@ -87,7 +87,7 @@ title: Vector Arithmetic
 					</figure>
                         	</div>
                        		<div>
-                            		<p> While all of these directed line segments originate from different points, each of them depicts the same vector. In particular, they depict a vector that moves X units left and Y units up. We denote this vector by <b>v</b>=&ltX, Y&gt; with the bolded <b>v</b> and angled brackets to differentiate between a point and a vector. </p>
+                            		<p> While all of these directed line segments originate from different points, each of them depicts the same vector. In particular, they depict a vector that moves X units left and Y units up. We denote this vector by <b>v</b>= &lt X, Y&gt; with the bolded <b>v</b> and angled brackets to differentiate between a point and a vector. </p>
                            	 	<p> Notice that we obtain the vector <b>v</b> from a directed line segment \(\overrightarrow{AB}\) from the point A=(x<sub>1</sub>, y<sub>1</sub>) to the point B=(x<sub>2</sub>, y<sub>2</sub>) by using the equation <b>v</b>=&lt;x<sub>2</sub>-x<sub>1</sub>, y<sub>2</sub>-y<sub>1</sub>&gt;. Also, note that the vector from point A to point B is different from the reverse vector going from point B to point A. </p>
                         	</div>
                        		 	<p> Since the initial point of the vector is not important, we often denote all vectors as originating from the origin. We call these vectors <u>position vectors</u>. </p>
@@ -175,122 +175,172 @@ title: Vector Arithmetic
 
 		</section>
 
-		<!-- Questions Section -->
+		<!-- Questions Section --> 	
 		<section>
-    			<header class="main">
-        		<h2>Self-assessment Questions</h2>
-   			 </header>
+			<header class="main">
+        			<h2>Self-assessment Questions</h2>
+   			 	</header>
 
-    			<!-- Question 1: Remembering -->
-    			<div>
-        			<p><strong>1. Remembering:</strong> What is a vector?</p>
-        			<!-- Dropdown button for solution -->
-        			<button onclick="toggleSolution('solution1')">Show Solution</button>
-       			 	<!-- Solution Content -->
-       				 <div id="solution1" style="display:none; border: 1px solid #ccc; padding: 10px; margin-top: 10px; background-color: #f9f9f9; border-radius: 5px;">
-            				<p>A vector is a quantity that has both magnitude and direction.</p>
-        			</div>
-   		 	</div>
-
-   		 	<!-- Question 2: Understanding -->
-   		 	<div>
-        			<p><strong>2. Understanding:</strong> Explain the difference between a vector and a scalar quantity.</p>
-        			<!-- Dropdown button for solution -->
-        			<button onclick="toggleSolution('solution2')">Show Solution</button>
-        			<!-- Solution Content -->
-        			<div id="solution2" style="display:none; border: 1px solid #ccc; padding: 10px; margin-top: 10px; background-color: #f9f9f9; border-radius: 5px;">
-           		 		<p>A vector has both magnitude and direction, while a scalar has only magnitude.</p>
-        			</div>
-    			</div>
-
-   		 	<!-- Question 3: Applying -->
-  		  	<div>
-        			<p><strong>3. Applying:</strong> Given two vectors A and B, how do you calculate their sum?</p>
-        			<!-- Dropdown button for solution -->
-        			<button onclick="toggleSolution('solution3')">Show Solution</button>
-        			<!-- Solution Content -->
-        			<div id="solution3" style="display:none; border: 1px solid #ccc; padding: 10px; margin-top: 10px; background-color: #f9f9f9; border-radius: 5px;">
-            				<p>To calculate the sum of vectors A and B, add their corresponding components.</p>
-        			</div>
-    			</div>
-
-   		 	<!-- Question 4: Analyzing -->
-   		 	<div>
-        			<p><strong>4. Analyzing:</strong> What happens to the resultant vector when two vectors are added together?</p>
-        			<!-- Dropdown button for solution -->
-        			<button onclick="toggleSolution('solution4')">Show Solution</button>
-        			<!-- Solution Content -->
-        			<div id="solution4" style="display:none; border: 1px solid #ccc; padding: 10px; margin-top: 10px; background-color: #f9f9f9; border-radius: 5px;">
-            				<p>The resultant vector is the vector sum of the individual vectors, obtained by combining their magnitudes and directions.</p>
-        			</div>
-    			</div>
-
-   		 	<!-- Question 5: Evaluating -->
-    			<div id="question">
-    				<p><strong>5. Evaluating:</strong> Discuss the significance of vector arithmetic in various fields.</p>
-    				<!-- Dropdown button for solution -->
-        			<button onclick="toggleSolution('solution5')">Show Solution</button>
-				<!-- Solution Content -->
-				<div id="solution5" style="display:none; border: 1px solid #ccc; padding: 10px; margin-top: 10px; background-color: #f9f9f9; border-radius: 5px;">
-    				<p>Vector arithmetic is fundamental in physics, engineering, computer science, and mathematics, where it is used to model and solve real-world problems involving forces, velocities, motions, and more.</p>
-				</div>
-			</div>
-		</section>
-
-	<section>
-		<header class="main">
-        		<h2>Self-assessment Questions</h2>
-   			 </header>
-
-		<!-- Question 1: Evaluating -->
-		<div class="question">
-    			<p><strong>1. Evaluating:</strong> Discuss the significance of vector arithmetic in physics.</p>
-    			<form class="quizForm">
-        			<!-- Radio buttons for answer options -->
-        			<input type="radio" id="q1_option1" name="q1_answer" value="incorrect">
-        			<label for="q1_option1">A. Force calculations only</label><br>
-        			<input type="radio" id="q1_option2" name="q1_answer" value="incorrect">
-        			<label for="q1_option2">B. Velocity calculations only</label><br>
-        			<input type="radio" id="q1_option3" name="q1_answer" value="incorrect">
-        			<label for="q1_option3">C. Motion analysis only</label><br>
-        			<input type="radio" id="q1_option4" name="q1_answer" value="correct">
-        			<label for="q1_option4">D. Force, velocity, and motion analysis</label><br><br>
+			<!-- Question 1: Remembering -->
+			<div class="question">
+    				<p><strong>1. Remembering(Knowlegde):</strong> What is the formula for adding two vectors <b>a</b> and <b>b</b> in component form?</p>
+    				<form class="quizForm">
+        				<!-- Radio buttons for answer options -->
+        				<input type="radio" id="q1_option1" name="q1_answer" value="correct">
+        				<label for="q1_option1">A. \(<b>a</b>+<b>b</b>=&lt a<sub>x</sub> + b<sub>x</sub>, a<sub>y</sub> + b<sub>y</sub> &gt\)</label><br>
+        				<input type="radio" id="q1_option2" name="q1_answer" value="incorrect">
+        				<label for="q1_option2">B. \(<b>a</b>+<b>b</b>=&lt a<sub>x</sub> - b<sub>x</sub>, a<sub>y</sub> - b<sub>y</sub>\)</label><br>
+        				<input type="radio" id="q1_option3" name="q1_answer" value="incorrect">
+        				<label for="q1_option3">C. \(<b>a</b>+<b>b</b>=&lt a<sub>x</sub> \cdot b<sub>x</sub>, a<sub>y</sub> \cdot b<sub>y</sub>\)</label><br>
+        				<input type="radio" id="q1_option4" name="q1_answer" value="incorrect">
+        				<label for="q1_option4">D. F\(<b>a</b>+<b>b</b>=&lt a<sub>x</sub> + a<sub>y</sub>, b<sub>x</sub> \cdot b<sub>y</sub>\)</label><br><br>
         				<!-- Button to submit the answer -->
         				<button type="button" onclick="submitAnswer('q1')">Submit</button>
-   			 </form>
-		</div>
+   			 	</form>
+			</div>
 
-		<!-- Solution for Question 1 -->
-		<div id="solution_q1" class="solution" style="display:none;">
-    			<!-- Solution text -->
-    			<p>Vector arithmetic is essential in physics for analyzing forces, velocities, and motions. It allows for the representation and calculation of these quantities in both magnitude and direction.</p>
-		</div>
+			<!-- Solution for Question 1 -->
+			<div id="solution_q1" class="solution" style="display:none; border: 1px solid #ccc; padding: 10px; margin-top: 10px; background-color: #f9f9f9; border-radius: 5px;">
+    				<!-- Solution text -->
+    				<p>The correct answer is A. \(<b>a</b>+<b>b</b>=&lt a<sub>x</sub> + b<sub>x</sub>, a<sub>y</sub> + b<sub>y</sub> &gt\). This is the formula for adding two vectors in component form given in the section titled "Addition and Subtraction." </p>
+			</div>
 
-		<!-- Question 2: Evaluating -->
-		<div class="question">
-    			<p><strong>2. Evaluating:</strong> How is vector arithmetic used in engineering?</p>
-   			 <form class="quizForm">
-        			<!-- Radio buttons for answer options -->
-       				<input type="radio" id="q2_option1" name="q2_answer" value="incorrect">
-       				<label for="q2_option1">A. Electrical circuit analysis only</label><br>
-        			<input type="radio" id="q2_option2" name="q2_answer" value="correct">
-        			<label for="q2_option2">B. Structural analysis, stress calculations, and optimization</label><br>
-        			<input type="radio" id="q2_option3" name="q2_answer" value="incorrect">
-        			<label for="q2_option3">C. Software development only</label><br>
-        			<input type="radio" id="q2_option4" name="q2_answer" value="incorrect">
-        			<label for="q2_option4">D. None of the above</label><br><br>
+			<!-- Question 2: Understanding -->
+			<div class="question">
+    				<p><strong>2. Understanding(Comprehension):</strong> If vectors <b>a</b> and <b>b</b> are given by \(<b>a</b>=2<b>i</b>+3<b>j</b>\) and \(<b>b</b>=-<b>i</b>+4<b>j</b>\), what is <b>a</b>-<b>b</b>?</p>
+   			 	<form class="quizForm">
+        				<!-- Radio buttons for answer options -->
+       					<input type="radio" id="q2_option1" name="q2_answer" value="correct">
+       					<label for="q2_option1">A. \(3<b>i</b>-<b>j</b>\)</label><br>
+        				<input type="radio" id="q2_option2" name="q2_answer" value="incorrect">
+        				<label for="q2_option2">B. \(<b>i</b>-7<b>j</b>\)</label><br>
+        				<input type="radio" id="q2_option3" name="q2_answer" value="incorrect">
+        				<label for="q2_option3">C. \(3<b>i</b>+7<b>j</b>\)</label><br>
+        				<input type="radio" id="q2_option4" name="q2_answer" value="incorrect">
+        				<label for="q2_option4">D. \(<b>i</b>+7<b>j</b>\)</label><br><br>
         				<!-- Button to submit the answer -->
         				<button type="button" onclick="submitAnswer('q2')">Submit</button>
-    			</form>
-		</div>
+    				</form>
+			</div>
 
-		<!-- Solution for Question 2 -->
-		<div id="solution_q2" class="solution" style="display:none;">
-    			<!-- Solution text -->
-    			<p>In engineering, vector arithmetic is used for structural analysis, stress calculations, and optimization, among other applications. It allows engineers to model and solve complex problems involving forces, motions, and material properties.</p>
-		</div>
-		
-	</section>
+			<!-- Solution for Question 2 -->
+			<div id="solution_q2" class="solution" style="display:none; border: 1px solid #ccc; padding: 10px; margin-top: 10px; background-color: #f9f9f9; border-radius: 5px;">
+    				<!-- Solution text -->
+    				<p>The correct answer is A. \(3<b>i</b>-<b>j</b>\). After converting the vectors to the standard notation, we can use the subtraction formula from the "Addition and Subtraction" section: </p>
+				<p>$$
+					\begin{align*}
+					$lt2, 3&gt + &lt -1, 4&gt \\
+					&lt2-(-1), 3-4&gt\\
+					&lt3,-1&gt
+					\end{align*}
+				$$</p>
+			</div>
+
+			<!-- Question 3: Applying -->
+			<div class="question">
+    				<p><strong>3. Applying(Application):</strong> If \(<b>a</b>=$lt3,2&gt\) and \(<b>b</b>=&lt-1,4&gt\), find the magnitude of <b>a</b>+<b>b</b>.</p>
+   			 	<form class="quizForm">
+        				<!-- Radio buttons for answer options -->
+       					<input type="radio" id="q3_option1" name="q3_answer" value="incorrect">
+       					<label for="q3_option1">A. 2\sqrt{3}</label><br>
+        				<input type="radio" id="q3_option2" name="q3_answer" value="incorrect">
+        				<label for="q3_option2">B. \sqrt{10}</label><br>
+        				<input type="radio" id="q3_option3" name="q3_answer" value="correct">
+        				<label for="q3_option3">C. 2\sqrt{2}</label><br>
+        				<input type="radio" id="q3_option4" name="q3_answer" value="incorrect">
+        				<label for="q3_option4">D. \sqrt{6}</label><br><br>
+        				<!-- Button to submit the answer -->
+        				<button type="button" onclick="submitAnswer('q3')">Submit</button>
+    				</form>
+			</div>
+
+			<!-- Solution for Question 3 -->
+			<div id="solution_q3" class="solution" style="display:none; border: 1px solid #ccc; padding: 10px; margin-top: 10px; background-color: #f9f9f9; border-radius: 5px;">
+    				<!-- Solution text -->
+    				<p>The correct answer is C.\(2\sqrt{3}\). After adding the two vectors, you can find the magnitude of the resulting vector using the magnitude formula found in the "Magnitude and Direction" section. </p>
+				<p>$$
+					\begin{align*}
+					<b>a</b>+<b>b</b>=$lt2,2&gt \\
+					||<b>a</b>+<b>b</b>|| = \sqrt{2^2+2^2} \\
+					= \sqrt{8} \\
+					= 2 \sqrt{2}
+					\end{align*}
+				$$</p>
+			</div>
+
+			<!-- Question 4: Analyzing -->
+			<div class="question">
+    				<p><strong>4. Analyzing(Analysis):</strong> Which of the following statements is true regarding the addition of two vectors?</p>
+   			 	<form class="quizForm">
+        				<!-- Radio buttons for answer options -->
+       					<input type="radio" id="q4_option1" name="q4_answer" value="incorrect">
+       					<label for="q4_option1">A. The magnitude of the sum is always equal to the sum of the magnitudes of the individual vectors. </label><br>
+        				<input type="radio" id="q4_option2" name="q4_answer" value="incorrect">
+        				<label for="q4_option2">B. The magnitude of the sum is always greater than the magnitude of either individual vector. </label><br>
+        				<input type="radio" id="q4_option3" name="q4_answer" value="incorrect">
+        				<label for="q4_option3">C. The magnitude of the sum is always less than the magnitude of either individual vector. </label><br>
+        				<input type="radio" id="q4_option4" name="q4_answer" value="correct">
+        				<label for="q4_option4">D. The magnitude of the sum can be equal to or less than, but not greater than, the sum of the magnitude of the individual vectors, depending on their directions.</label><br><br>
+        				<!-- Button to submit the answer -->
+        				<button type="button" onclick="submitAnswer('q4')">Submit</button>
+    				</form>
+			</div>
+
+			<!-- Solution for Question 4 -->
+			<div id="solution_q4" class="solution" style="display:none; border: 1px solid #ccc; padding: 10px; margin-top: 10px; background-color: #f9f9f9; border-radius: 5px;">
+    				<!-- Solution text -->
+    				<p>The correct answer is D. The magnitude of the sum can be equal to or less than, but not greater than, the sum of the magnitudes of the individual vectors, depending on their directions. The two sums will be equal when the vectors point in the same direction. Otherwise, the magnitude of the sum will be shorter due to the triangle inequality theorem. To see a visual of this, go to the "Magnitude and Direction" section of this page. </p>
+				<p><table>
+  					<tr>
+    					<td>
+      						$$ \begin{align*}
+							<b>a</b>=$lt2,0&gt,<b>b</b>-&lt2,0*gt
+							<b>a</b>+<b>b</b>=$lt2,2&gt \\
+							||<b>a</b>|| = \sqrt{2^2+0^2} = \sqrt{4} = 2 \\
+							||<b>b</b>|| = \sqrt{2^2+0^2} = \sqrt{4} = 2 \\
+							||<b>a</b>|| + ||<b>b</b>|| = 2 + 2 = 4 \\
+							||<b>a</b>+<b>b</b>|| = \sqrt{4^2+0^2} = \sqrt{16} = 4
+						\end{align*}$$
+    					</td>
+    					<td>
+      						$$ \begin{align*}
+							<b>a</b>=$lt2,0&gt,<b>b</b>-&lt0,2*gt
+							<b>a</b>+<b>b</b>=$lt2,2&gt \\
+							||<b>a</b>|| = \sqrt{2^2+0^2} = \sqrt{4} = 2 \\
+							||<b>b</b>|| = \sqrt{0^2+2^2} = \sqrt{4} = 2 \\
+							||<b>a</b>|| + ||<b>b</b>|| = 2 + 2 = 4 \\
+							||<b>a</b>+<b>b</b>|| = \sqrt{2^2+2^2} = \sqrt{8} = 2\sqrt{2}
+						\end{align*}$$
+    					</td>
+  					</tr>
+				</table></p>
+			</div>
+
+			<!-- Question 5: Evaluating -->
+			<div class="question">
+    				<p><strong>5. Evaluating(Evaluate):</strong> Given the vector \(<b>a</b>=&lt1,2&gt\), find the magnitude and direction. </p>
+   			 	<form class="quizForm">
+        				<!-- Radio buttons for answer options -->
+       					<input type="radio" id="q5_option1" name="q5_answer" value="incorrect">
+       					<label for="q5_option1">A. The magnitude is \(1\) and the direction is \(<b>u</b>=&lt 1,2&gt\).  </label><br>
+        				<input type="radio" id="q5_option2" name="q5_answer" value="correct">
+        				<label for="q5_option2">B. The magnitude is \(\sqrt{5}\) and the direction is \(<b>u</b>=&lt \frac{1}{\sqrt{5}}, \frac{2}{\sqrt{5}}&gt\). </label><br>
+        				<input type="radio" id="q5_option3" name="q5_answer" value="incorrect">
+        				<label for="q5_option3">C. The magnitude is \(3\) and the direction is \(<b>u</b>=&lt \frac{1}{\sqrt{3}}, \frac{2}{\sqrt{3}}&gt\). </label><br>
+        				<input type="radio" id="q5_option4" name="q5_answer" value="incorrect">
+        				<label for="q5_option4">D. The magnitude is \(3\) and the direction is \(<b>u</b>=&lt 1,2&gt\). </label><br><br>
+        				<!-- Button to submit the answer -->
+        				<button type="button" onclick="submitAnswer('q5')">Submit</button>
+    				</form>
+			</div>
+
+			<!-- Solution for Question 5 -->
+			<div id="solution_q5" class="solution" style="display:none; border: 1px solid #ccc; padding: 10px; margin-top: 10px; background-color: #f9f9f9; border-radius: 5px;">
+    				<!-- Solution text -->
+    				<p>The correct answer is D. It could be any value between 3 and 8. The magnitude of the sum of two vectors can vary depending on the angle between them, but it must be greater than or equal to the absolute difference of their magnitudes and less than or equal to the sum of their magitudes. See section "Magnitude and Direction" for a visual of adding two vectors.</p>
+			</div>
+
+		</section>
 
 
 
@@ -318,18 +368,6 @@ title: Vector Arithmetic
 }
 </script>
 
-<!-- Scripts and Function for Solution Toggle -->
-<<script>
-    function toggleSolution(solutionId) {
-        var solution = document.getElementById(solutionId);
-        if (solution.style.display === "none") {
-            solution.style.display = "block";
-        } else {
-            solution.style.display = "none";
-        }
-    }
-</script>
-
 <script>
     // Function to submit the answer for a specific question
     function submitAnswer(questionId) {
@@ -339,8 +377,6 @@ title: Vector Arithmetic
         var solutionElement = document.getElementById('solution_' + questionId);
         // Check if an answer is selected
         if (selectedAnswer) {
-            // Display solution regardless of the answer
-            solutionElement.style.display = "block";
             // Check if the selected answer is correct
             if (selectedAnswer.value === "correct") {
                 // Display congratulatory message if correct
@@ -352,6 +388,8 @@ title: Vector Arithmetic
             // Hide the form after submission
             var questionElement = document.querySelector('.' + questionId);
             questionElement.querySelector('.quizForm').style.display = "none";
+	// Display solution regardless of the answer
+        solutionElement.style.display = "block";
         } else {
             // Alert if no answer is selected
             alert("Please select an answer before submitting.");
