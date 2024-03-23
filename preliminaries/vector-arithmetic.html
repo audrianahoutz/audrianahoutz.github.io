@@ -79,7 +79,8 @@ title: Vector Arithmetic
                         	</figure>
                 		<!-- Description of position vectors -->
                 		<p> Notice that the point of impact does not define the vector, only the magnitude and the direction. </p>
-                		<p> Consider this sketch of vectors in a 2-Dimensional coordinate plane. </p>                        		<!-- Image of vectors in 2D -->
+                		<p> Consider this sketch of vectors in a 2-Dimensional coordinate plane. </p>                        		
+				<!-- Image of vectors in 2D -->
                         	<div class="image left">
                     			<figure>
                         			<img src="../images/coming-soon-photo.jpg" width="300" height="200" alt="Coming soon: photo">
@@ -87,10 +88,10 @@ title: Vector Arithmetic
 					</figure>
                         	</div>
                        		<div>
-                            		<p> While all of these directed line segments originate from different points, each of them depicts the same vector. In particular, they depict a vector that moves X units left and Y units up. We denote this vector by <b>v</b>= &lt X, Y&gt; with the bolded <b>v</b> and angled brackets to differentiate between a point and a vector. </p>
-                           	 	<p> Notice that we obtain the vector <b>v</b> from a directed line segment \(\overrightarrow{AB}\) from the point A=(x<sub>1</sub>, y<sub>1</sub>) to the point B=(x<sub>2</sub>, y<sub>2</sub>) by using the equation <b>v</b>=&lt;x<sub>2</sub>-x<sub>1</sub>, y<sub>2</sub>-y<sub>1</sub>&gt;. Also, note that the vector from point A to point B is different from the reverse vector going from point B to point A. </p>
+                            		<p> While all of these directed line segments originate from different points, each of them depicts the same vector. In particular, they depict a vector that moves $X$ units left and $Y$ units up. We denote this vector by $\boldsymbol{v}= \langle X, Y \rangle$ with the bolded $\boldsymbol{v}$ and angled brackets to differentiate between a point and a vector. </p>
+                           	 	<p> Notice that we obtain the vector $\boldsymbol{v}$ from a directed line segment $\overrightarrow{AB}$ from the point $A=(x_1, y_1)$ to the point $B=(x_2, y_2)$ by using the equation $\boldsymbol{v}=\langle x_2-x_1, y_2-y_1 \rangle $. Also, note that the vector from point $A$ to point $B$ is different from the reverse vector going from point $B$ to point $A$. </p>
                         	</div>
-                       		 	<p> Since the initial point of the vector is not important, we often denote all vectors as originating from the origin. We call these vectors <u>position vectors</u>. </p>
+                       		 	<p> Since the initial point of the vector is not important, we often denote all vectors as originating from the origin. We call these vectors <b>position vectors</b>. </p>
        			</div>
 		</section>
 
@@ -181,19 +182,19 @@ title: Vector Arithmetic
         			<h2>Self-assessment Questions</h2>
    			 	</header>
 
-			<!-- Question 1: Remembering -->
+			<!-- Question 1: Recall -->
 			<div class="question">
-    				<p><strong>1. Remembering(Knowlegde):</strong> What is the formula for adding two vectors <b>a</b> and <b>b</b> in component form?</p>
+    				<p><strong>level 1. Recall:</strong> What is the formula for adding two vectors $\boldsymbol{a}$ and $\boldsymbol{b}$ in component form?</p>
     				<form class="quizForm">
         				<!-- Radio buttons for answer options -->
         				<input type="radio" id="q1_option1" name="q1_answer" value="correct">
-        				<label for="q1_option1">A. \(<b>a</b>+<b>b</b>=&lt a<sub>x</sub> + b<sub>x</sub>, a<sub>y</sub> + b<sub>y</sub> &gt\)</label><br>
+        				<label for="q1_option1">A. $\boldsymbol{a}+\boldsymbol{b}=\langle a_x + b_x, a_y + b_y \rangle$ </label><br>
         				<input type="radio" id="q1_option2" name="q1_answer" value="incorrect">
-        				<label for="q1_option2">B. \(<b>a</b>+<b>b</b>=&lt a<sub>x</sub> - b<sub>x</sub>, a<sub>y</sub> - b<sub>y</sub>\)</label><br>
+        				<label for="q1_option2">B. $\boldsymbol{a}+\boldsymbol{b}=\langle a_x - b_x, a_y - b_y \rangle$ </label><br>
         				<input type="radio" id="q1_option3" name="q1_answer" value="incorrect">
-        				<label for="q1_option3">C. \(<b>a</b>+<b>b</b>=&lt a<sub>x</sub> \cdot b<sub>x</sub>, a<sub>y</sub> \cdot b<sub>y</sub>\)</label><br>
+        				<label for="q1_option3">C. $\boldsymbol{a}+\boldsymbol{b}=\langle a_x \cdot b_x, a_y \cdot b_y \rangle$ </label><br>
         				<input type="radio" id="q1_option4" name="q1_answer" value="incorrect">
-        				<label for="q1_option4">D. F\(<b>a</b>+<b>b</b>=&lt a<sub>x</sub> + a<sub>y</sub>, b<sub>x</sub> \cdot b<sub>y</sub>\)</label><br><br>
+        				<label for="q1_option4">D. $\boldsymbol{a}+\boldsymbol{b}=\langle a_x + a_y, b_x \cdot b_y \rangle$ </label><br><br>
         				<!-- Button to submit the answer -->
         				<button type="button" onclick="submitAnswer('q1')">Submit</button>
    			 	</form>
@@ -202,53 +203,63 @@ title: Vector Arithmetic
 			<!-- Solution for Question 1 -->
 			<div id="solution_q1" class="solution" style="display:none; border: 1px solid #ccc; padding: 10px; margin-top: 10px; background-color: #f9f9f9; border-radius: 5px;">
     				<!-- Solution text -->
-    				<p>The correct answer is A. \(<b>a</b>+<b>b</b>=&lt a<sub>x</sub> + b<sub>x</sub>, a<sub>y</sub> + b<sub>y</sub> &gt\). This is the formula for adding two vectors in component form given in the section titled "Addition and Subtraction." </p>
+    				<p>The correct answer is A. $\boldsymbol{a}+\boldsymbol{b}=\langle a_x + b_x, a_y + b_y \rangle$. This is the formula for adding two vectors in component form given in the section titled "Addition and Subtraction." </p>
 			</div>
 
-			<!-- Question 2: Understanding -->
+			<!-- Question 2: Mimic -->
 			<div class="question">
-    				<p><strong>2. Understanding(Comprehension):</strong> If vectors <b>a</b> and <b>b</b> are given by \(<b>a</b>=2<b>i</b>+3<b>j</b>\) and \(<b>b</b>=-<b>i</b>+4<b>j</b>\), what is <b>a</b>-<b>b</b>?</p>
+    				<p><strong>2. Mimic:</strong> Given the vector $\boldsymbol{a}=\langle 1,2\rangle $, find the magnitude and direction. </p>
    			 	<form class="quizForm">
         				<!-- Radio buttons for answer options -->
-       					<input type="radio" id="q2_option1" name="q2_answer" value="correct">
-       					<label for="q2_option1">A. \(3<b>i</b>-<b>j</b>\)</label><br>
-        				<input type="radio" id="q2_option2" name="q2_answer" value="incorrect">
-        				<label for="q2_option2">B. \(<b>i</b>-7<b>j</b>\)</label><br>
+       					<input type="radio" id="q2_option1" name="q2_answer" value="incorrect">
+       					<label for="q2_option1">A. The magnitude is $1$ and the direction is $\boldsymbol{u}=\langle 1,2 \rangle$.  </label><br>
+        				<input type="radio" id="q2_option2" name="q2_answer" value="correct">
+        				<label for="q2_option2">B. The magnitude is $\sqrt{5}$ and the direction is $\boldsymbol{u}=\langle\frac{1}{\sqrt{5}}, \frac{2}{\sqrt{5}}\rangle$. </label><br>
         				<input type="radio" id="q2_option3" name="q2_answer" value="incorrect">
-        				<label for="q2_option3">C. \(3<b>i</b>+7<b>j</b>\)</label><br>
+        				<label for="q2_option3">C. The magnitude is $3$ and the direction is $\boldsymbol{u}=\langle \frac{1}{\sqrt{3}}, \frac{2}{\sqrt{3}} \rangle$. </label><br>
         				<input type="radio" id="q2_option4" name="q2_answer" value="incorrect">
-        				<label for="q2_option4">D. \(<b>i</b>+7<b>j</b>\)</label><br><br>
+        				<label for="q2_option4">D. The magnitude is $3$ and the direction is $\boldsymbol{u}=\langle 1,2 \rangle. </label><br><br>
         				<!-- Button to submit the answer -->
-        				<button type="button" onclick="submitAnswer('q2')">Submit</button>
+        				<button type="button" onclick="submitAnswer('q52')">Submit</button>
     				</form>
 			</div>
 
 			<!-- Solution for Question 2 -->
 			<div id="solution_q2" class="solution" style="display:none; border: 1px solid #ccc; padding: 10px; margin-top: 10px; background-color: #f9f9f9; border-radius: 5px;">
     				<!-- Solution text -->
-    				<p>The correct answer is A. \(3<b>i</b>-<b>j</b>\). After converting the vectors to the standard notation, we can use the subtraction formula from the "Addition and Subtraction" section: </p>
-				<p>$$
-					\begin{align*}
-					$lt2, 3&gt + &lt -1, 4&gt \\
-					&lt2-(-1), 3-4&gt\\
-					&lt3,-1&gt
-					\end{align*}
-				$$</p>
+    				<p>The correct answer is B. The magnitude is $\sqrt{5}$ and the direction is $\boldsymbol{u}=\langle \frac{1}{\sqrt{5}}, \frac{2}{\sqrt{5}} \rangle$. See the section "Magnitude and Direction" for thei respective formulas.</p>
+				<p><table>
+  					<tr>
+    					<td>
+      						$$ \begin{align*}
+							||\boldsymbol{v}|| = \sqrt{(v_1)^2+(v_2)^2} \\
+							||\boldsymbol{a}|| = \sqrt{1^2+2^2} = \sqrt{5} 
+							
+						\end{align*}$$
+    					</td>
+    					<td>
+      						$$ \begin{align*}
+							\boldsymbol{u} = \frac{\boldsymbol{u}}{||\boldsymbol{u}||} \\
+							\boldsymbol{u} = \langle \frac{1}{\sqrt{5}}, \frac{2}{\sqrt{5}} \rangle
+						\end{align*}$$
+    					</td>
+  					</tr>
+				</table></p>
 			</div>
 
-			<!-- Question 3: Applying -->
+			<!-- Question 3: Apply -->
 			<div class="question">
-    				<p><strong>3. Applying(Application):</strong> If \(<b>a</b>=$lt3,2&gt\) and \(<b>b</b>=&lt-1,4&gt\), find the magnitude of <b>a</b>+<b>b</b>.</p>
+    				<p><strong>level 3. Apply:</strong> If $\boldsymbol{a}=\langle 3,2 \rangle$ and $\boldsymbol{b}=\langle -1,4 \rangle$, find the magnitude of $\boldsymbol{a}+\boldsymbol{b}$.</p>
    			 	<form class="quizForm">
         				<!-- Radio buttons for answer options -->
        					<input type="radio" id="q3_option1" name="q3_answer" value="incorrect">
-       					<label for="q3_option1">A. 2\sqrt{3}</label><br>
+       					<label for="q3_option1">A. $2\sqrt{3}$ </label><br>
         				<input type="radio" id="q3_option2" name="q3_answer" value="incorrect">
-        				<label for="q3_option2">B. \sqrt{10}</label><br>
+        				<label for="q3_option2">B. $\sqrt{10}$ </label><br>
         				<input type="radio" id="q3_option3" name="q3_answer" value="correct">
-        				<label for="q3_option3">C. 2\sqrt{2}</label><br>
+        				<label for="q3_option3">C. $2\sqrt{2}$ </label><br>
         				<input type="radio" id="q3_option4" name="q3_answer" value="incorrect">
-        				<label for="q3_option4">D. \sqrt{6}</label><br><br>
+        				<label for="q3_option4">D. $\sqrt{6}$ </label><br><br>
         				<!-- Button to submit the answer -->
         				<button type="button" onclick="submitAnswer('q3')">Submit</button>
     				</form>
@@ -257,20 +268,21 @@ title: Vector Arithmetic
 			<!-- Solution for Question 3 -->
 			<div id="solution_q3" class="solution" style="display:none; border: 1px solid #ccc; padding: 10px; margin-top: 10px; background-color: #f9f9f9; border-radius: 5px;">
     				<!-- Solution text -->
-    				<p>The correct answer is C.\(2\sqrt{3}\). After adding the two vectors, you can find the magnitude of the resulting vector using the magnitude formula found in the "Magnitude and Direction" section. </p>
+    				<p>The correct answer is C.$2\sqrt{3}$. After adding the two vectors, you can find the magnitude of the resulting vector using the magnitude formula found in the "Magnitude and Direction" section. </p>
 				<p>$$
 					\begin{align*}
-					<b>a</b>+<b>b</b>=$lt2,2&gt \\
-					||<b>a</b>+<b>b</b>|| = \sqrt{2^2+2^2} \\
-					= \sqrt{8} \\
-					= 2 \sqrt{2}
+					\boldsymbol{u}+\boldsymbol{v} = \langle u_1+v_1,u_2+v_2 \rangle \\
+					\langle 3,2 \rangle + \langle -1,4 \rangle = \langle 2,2 \rangle  \\
+					||\boldsymbol{u}||= \sqrt{(u_1)^2+(u_2)^2} \\
+					||\boldsymbol{a}+\boldsymbol{b}|| = ||\langle 2,2 \rangle || \\
+					= \sqrt{2^2+2^2} = \sqrt{8} = 2 \sqrt{2}
 					\end{align*}
 				$$</p>
 			</div>
 
-			<!-- Question 4: Analyzing -->
+			<!-- Question 4: Expand -->
 			<div class="question">
-    				<p><strong>4. Analyzing(Analysis):</strong> Which of the following statements is true regarding the addition of two vectors?</p>
+    				<p><strong>level 4. Expand: </strong> Which of the following statements is true regarding the addition of two vectors?</p>
    			 	<form class="quizForm">
         				<!-- Radio buttons for answer options -->
        					<input type="radio" id="q4_option1" name="q4_answer" value="incorrect">
@@ -294,63 +306,22 @@ title: Vector Arithmetic
   					<tr>
     					<td>
       						$$ \begin{align*}
-							<b>a</b>=$lt2,0&gt,<b>b</b>-&lt2,0*gt
-							<b>a</b>+<b>b</b>=$lt2,2&gt \\
-							||<b>a</b>|| = \sqrt{2^2+0^2} = \sqrt{4} = 2 \\
-							||<b>b</b>|| = \sqrt{2^2+0^2} = \sqrt{4} = 2 \\
-							||<b>a</b>|| + ||<b>b</b>|| = 2 + 2 = 4 \\
-							||<b>a</b>+<b>b</b>|| = \sqrt{4^2+0^2} = \sqrt{16} = 4
+							\boldsymbol{a}=\langle 2,0 \rangle,\boldsymbol{b}=\langle 2,0 \rangle \\
+							||\boldsymbol{a}|| = \sqrt{2^2+0^2} = \sqrt{4} = 2 \\
+							||\boldsymbol{b}|| = \sqrt{2^2+0^2} = \sqrt{4} = 2 \\
+							||\boldsymbol{a}|| + ||\boldsymbol{b}|| = 2 + 2 = 4 \\
+							\boldsymbol{a}+\boldsymbol{b}=\langle 4,0 \rangle \\
+							||\boldsymbol{a}+\boldsymbol{b}|| = \sqrt{4^2+0^2} = \sqrt{16} = 4
 						\end{align*}$$
     					</td>
     					<td>
       						$$ \begin{align*}
-							<b>a</b>=$lt2,0&gt,<b>b</b>-&lt0,2*gt
-							<b>a</b>+<b>b</b>=$lt2,2&gt \\
-							||<b>a</b>|| = \sqrt{2^2+0^2} = \sqrt{4} = 2 \\
-							||<b>b</b>|| = \sqrt{0^2+2^2} = \sqrt{4} = 2 \\
-							||<b>a</b>|| + ||<b>b</b>|| = 2 + 2 = 4 \\
-							||<b>a</b>+<b>b</b>|| = \sqrt{2^2+2^2} = \sqrt{8} = 2\sqrt{2}
-						\end{align*}$$
-    					</td>
-  					</tr>
-				</table></p>
-			</div>
-
-			<!-- Question 5: Evaluating -->
-			<div class="question">
-    				<p><strong>5. Evaluating(Evaluate):</strong> Given the vector \(<b>a</b>=&lt1,2&gt\), find the magnitude and direction. </p>
-   			 	<form class="quizForm">
-        				<!-- Radio buttons for answer options -->
-       					<input type="radio" id="q5_option1" name="q5_answer" value="incorrect">
-       					<label for="q5_option1">A. The magnitude is \(1\) and the direction is \(<b>u</b>=&lt 1,2&gt\).  </label><br>
-        				<input type="radio" id="q5_option2" name="q5_answer" value="correct">
-        				<label for="q5_option2">B. The magnitude is \(\sqrt{5}\) and the direction is \(<b>u</b>=&lt\frac{1}{\sqrt{5}}, \frac{2}{\sqrt{5}}&gt\). </label><br>
-        				<input type="radio" id="q5_option3" name="q5_answer" value="incorrect">
-        				<label for="q5_option3">C. The magnitude is \(3\) and the direction is \(<b>u</b>=&lt\frac{1}{\sqrt{3}}, \frac{2}{\sqrt{3}}&gt\). </label><br>
-        				<input type="radio" id="q5_option4" name="q5_answer" value="incorrect">
-        				<label for="q5_option4">D. The magnitude is \(3\) and the direction is \(<b>u</b>=&lt 1,2&gt\). </label><br><br>
-        				<!-- Button to submit the answer -->
-        				<button type="button" onclick="submitAnswer('q5')">Submit</button>
-    				</form>
-			</div>
-
-			<!-- Solution for Question 5 -->
-			<div id="solution_q5" class="solution" style="display:none; border: 1px solid #ccc; padding: 10px; margin-top: 10px; background-color: #f9f9f9; border-radius: 5px;">
-    				<!-- Solution text -->
-    				<p>The correct answer is B. The magnitude is \(\sqrt{5}\) and the direction is \(<b>u</b>=&lt\frac{1}{\sqrt{5}}, \frac{2}{\sqrt{5}}&gt\). See the section "Magnitude and Direction" for thei respective formulas.</p>
-				<p><table>
-  					<tr>
-    					<td>
-      						$$ \begin{align*}
-							||<b>a</b>|| = \sqrt{1^2+2^2} \\
-							= \sqrt{5} 
-							
-						\end{align*}$$
-    					</td>
-    					<td>
-      						$$ \begin{align*}
-							<b>u</b>=\frac{<b>a</b>}{||<b>a</b>||} \\
-							= $lt\frac{1}{\sqrt{5}}, \frac{2}{\sqrt{5}}&gt
+							\boldsymbol{a}=\langle 2,0 \rangle ,\boldsymbol{b}=\langle 0,2 \rangle \\
+							||\boldsymbol{a}|| = \sqrt{2^2+0^2} = \sqrt{4} = 2 \\
+							||\boldsymbol{b}|| = \sqrt{0^2+2^2} = \sqrt{4} = 2 \\
+							||\boldsymbol{a}|| + ||\boldsymbol{b}|| = 2 + 2 = 4 \\
+							\boldsymbol{a}+\boldsymbol{b}=\langle 2,2 \rangle \\
+							||\boldsymbol{a}+\boldsymbol{b}|| = \sqrt{2^2+2^2} = \sqrt{8} = 2\sqrt{2}
 						\end{align*}$$
     					</td>
   					</tr>
@@ -397,16 +368,16 @@ title: Vector Arithmetic
             // Check if the selected answer is correct
             if (selectedAnswer.value === "correct") {
                 // Display congratulatory message if correct
-                solutionElement.innerHTML += "<p><strong>Congratulations! Your answer is correct.</strong></p>";
+                solutionElement.innerHTML = "<p><strong>Congratulations! Your answer is correct.</strong></p>";
             } else {
                 // Display message for incorrect answer
-                solutionElement.innerHTML += "<p><strong>Sorry, your answer is incorrect.</strong></p>";
+                solutionElement.innerHTML = "<p><strong>Sorry, your answer is incorrect.</strong></p>";
             }
+            // Display solution regardless of the answer
+            solutionElement.style.display = "block";
             // Hide the form after submission
             var questionElement = document.querySelector('.' + questionId);
             questionElement.querySelector('.quizForm').style.display = "none";
-	// Display solution regardless of the answer
-        solutionElement.style.display = "block";
         } else {
             // Alert if no answer is selected
             alert("Please select an answer before submitting.");
