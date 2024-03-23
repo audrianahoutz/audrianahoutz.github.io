@@ -180,17 +180,12 @@ title: Vector Arithmetic
                         	<img src="../images/coming-soon-photo.jpg" width="600" height="400" alt="Coming soon: video lecture">
                     		</figure>
 			</div>
-			<!-- Transcript Button -->
-			<button class="transcript-button" onclick="toggleTranscript('transcript4')">Scalar Multiplication</button>
-
-			<!-- Transcript Box -->
-			<div id="transcript4" class="transcript" style="display: none;">
-    				<!-- Transcript Content -->
-    				<div class="transcript-content">
-        				<!-- Content goes here -->
-       				 	<p>This is the transcript for Video 4...</p>
-    				</div>
-			</div>
+			<!-- Transcript button  -->
+        		<button onclick="toggleTranscript('transcript4')">Scalar Multiplication</button>
+        		<!-- Solution Content -->
+        		<div id="transcript4" style="display:none; border: 1px solid #ccc; padding: 10px; margin-top: 10px; background-color: #f9f9f9; border-radius: 5px;">
+           	 		<p>This is the transcript for Video 4...</p>
+        		</div>
 
 		</section>
 
@@ -245,15 +240,20 @@ title: Vector Arithmetic
     			</div>
 
    		 	<!-- Question 5: Evaluating -->
-    			<div>
-        			<p><strong>5. Evaluating:</strong> Discuss the significance of vector arithmetic in various fields.</p>
-        			<!-- Dropdown button for solution -->
-        			<button onclick="toggleSolution('solution5')">Show Solution</button>
-        			<!-- Solution Content -->
-        			<div id="solution5" style="display:none; border: 1px solid #ccc; padding: 10px; margin-top: 10px; background-color: #f9f9f9; border-radius: 5px;">
-            				<p>Vector arithmetic is fundamental in physics, engineering, computer science, and mathematics, where it is used to model and solve real-world problems involving forces, velocities, motions, and more.</p>
-        			</div>
-    			</div>
+    			<div id="question">
+    				<p><strong>5. Evaluating:</strong> Discuss the significance of vector arithmetic in various fields.</p>
+    				<form id="quizForm">
+       					<input type="radio" id="option1" name="answer" value="incorrect">
+        				<label for="option1">A. Physics only</label><br>
+        				<input type="radio" id="option2" name="answer" value="incorrect">
+        				<label for="option2">B. Engineering only</label><br>
+        				<input type="radio" id="option3" name="answer" value="incorrect">
+        				<label for="option3">C. Computer science only</label><br>
+        				<input type="radio" id="option4" name="answer" value="correct">
+        				<label for="option4">D. Physics, engineering, computer science, and mathematics</label><br><br>
+        					<button type="button" onclick="submitAnswer()">Submit</button>
+    				</form>
+			</div>
 		</section>
 
 	   
