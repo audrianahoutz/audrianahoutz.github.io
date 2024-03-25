@@ -35,3 +35,37 @@
   font-weight: bold; /* Set font weight */
   font-style: italic; /* Set font style to italic */
 }
+
+/* Examples inside a transcript */
+/* Styles for the example container */
+.example {
+    border: 1px solid #ddd;
+    background-color: #f0f0f0; /* Light gray background color */
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px; /* Spacing between examples */
+}
+
+
+/* Styles for the example description */
+.example p {
+    margin-bottom: 10px; /* Spacing below paragraphs */
+}
+
+/* Styles for the example steps container */
+.example-steps {
+    background-color: #e5e5e5; /* Light background color */
+    padding: 15px; /* Padding inside the steps container */
+    border-radius: 5px; /* Rounded corners */
+    margin-top: 15px; /* Spacing above the steps container */
+}
+
+/* Styles for the ordered list inside the example steps */
+.example-steps ol {
+    margin-left: 20px; /* Indentation of the list */
+}
+
+/* Styles for each step in the example */
+.example-steps li {
+    margin-bottom: 5px; /* Spacing between list items */
+}
