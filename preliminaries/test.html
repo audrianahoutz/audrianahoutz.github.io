@@ -1,0 +1,232 @@
+---
+layout: template
+title: Note Title
+---
+
+<!-- Content section -->
+<section>
+    <header class="main">
+	<h1>Note Title</h1>
+    </header>
+    <p> Summary of topics</p>
+</section>
+<!-- Subheader 1-->
+<section>
+    <header class="main">
+	<h2> Subheader 1</h2>
+    </header>
+	<!-- Video Player for Video 1 -->
+	<div class="video-container">
+		<!-- Placeholder for video player -->
+		<!-- Uncomment the following lines to add video player -->
+		<!-- 
+		 <div style="position: relative; padding-bottom: 56.25%; height: 0;">
+		 <iframe src="VIDEO_URL" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+		</div>
+		-->
+		<figure>
+		<img src="../images/coming-soon-photo.jpg" width="600" height="400" alt="Coming soon: video lecture">
+		</figure>
+	</div>
+	<!-- Transcript button  -->
+	<button onclick="toggleTranscript('transcript1')">What is a Vector?</button>
+	<!-- Transcript Content -->
+	<div id="transcript1" style="display:none; border: 1px solid #ccc; padding: 10px; margin-top: 10px; background-color: #f9f9f9; border-radius: 5px;">
+		<!-- SubSubHeading 1 -->
+		<p> SubSubHeading 1 </p>
+		<!-- Image Code-->
+		<figure>
+			<img src="../images/coming-soon-photo.jpg" width="300" height="200" alt="Coming soon: photo">
+			<figcaption>Coming soon: photo of little toy car being pushed 5 newtons forward. </figcaption>
+		</figure>
+<!-- Example 1 -->
+		<div class="example">
+			<p><strong>Example:</strong> Sample Question.</p>
+				<div class="example-steps">
+				<strong>Steps:</strong>
+						<ol>
+						<li> Step 1 pring </li>
+						<li> Step 2 print </li>
+						</ol>
+					<p><strong>Answer:</strong> answer </p>
+				</div>
+		</div>
+
+		<!-- Close Transcript button  -->
+		<button onclick="toggleTranscript('transcript1')">Close: Subheading title</button>
+	</div>
+</section>
+
+<!-- Subheading 2 -->
+<section>
+    <header class="main">
+	<h2> Subheading 2</h2>
+    </header>
+	<!-- Video Player for Video 2 -->
+	<div class="video-container">
+		<!-- Placeholder for video player -->
+		<!-- Uncomment the following lines to add video player -->
+		<!-- 
+		 <div style="position: relative; padding-bottom: 56.25%; height: 0;">
+		 <iframe src="VIDEO_URL" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+		</div>
+		-->
+		<figure>
+		<img src="../images/coming-soon-photo.jpg" width="600" height="400" alt="Coming soon: video lecture">
+		</figure>
+	</div>
+	<!-- Transcript button  -->
+	<button onclick="toggleTranscript('transcript2')">Subheading 2</button>
+	<!-- Solution Content -->
+	<div id="transcript2" style="display:none; border: 1px solid #ccc; padding: 10px; margin-top: 10px; background-color: #f9f9f9; border-radius: 5px;">
+		<p>This is the transcript for Video 2...</p>
+	</div>
+
+</section>
+
+<!-- Subheading 3 -->
+<section>
+    <header class="main">
+	<h2> Subheading 3</h2>
+    </header>
+	<!-- Video Player for Video 3 -->
+	<div class="video-container">
+		<!-- Placeholder for video player -->
+		<!-- Uncomment the following lines to add video player -->
+		<!-- 
+		 <div style="position: relative; padding-bottom: 56.25%; height: 0;">
+		 <iframe src="VIDEO_URL" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+		</div>
+		-->
+		<figure>
+		<img src="../images/coming-soon-photo.jpg" width="600" height="400" alt="Coming soon: video lecture">
+		</figure>
+	</div>
+	<!-- Transcript button  -->
+	<button onclick="toggleTranscript('transcript3')">Subheading 3</button>
+	<!-- Solution Content -->
+	<div id="transcript3" style="display:none; border: 1px solid #ccc; padding: 10px; margin-top: 10px; background-color: #f9f9f9; border-radius: 5px;">
+		<p>This is the transcript for Video 3...</p>
+	</div>
+
+</section>
+
+<!-- Subheading 4 -->
+<section>
+    <header class="main">
+	<h2> Sbheading 4</h2>
+    </header>
+	<!-- Video Player for Video 4 -->
+	<div class="video-container">
+		<!-- Placeholder for video player -->
+		<!-- Uncomment the following lines to add video player -->
+		<!-- 
+		 <div style="position: relative; padding-bottom: 56.25%; height: 0;">
+		 <iframe src="VIDEO_URL" frameborder="0" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+		</div>
+		-->
+		<figure>
+		<img src="../images/coming-soon-photo.jpg" width="600" height="400" alt="Coming soon: video lecture">
+		</figure>
+	</div>
+	<!-- Transcript button  -->
+	<button onclick="toggleTranscript('transcript4')">Subheading 4</button>
+	<!-- Solution Content -->
+	<div id="transcript4" style="display:none; border: 1px solid #ccc; padding: 10px; margin-top: 10px; background-color: #f9f9f9; border-radius: 5px;">
+		<p>This is the transcript for Video 4...</p>
+	</div>
+
+</section>
+
+<!-- Questions Section --> 	
+<section>
+	<header class="main">
+		<h2>Self-assessment Questions</h2>
+		</header>
+
+    // Example usage:
+    const questions = document.getElementById('questionSection');
+
+    // Create question 1
+    questions.innerHTML += createQuestion(1, "Recall: What is the formula for adding two vectors in component form?", [
+      { text: "A. $\\boldsymbol{a}+\\boldsymbol{b}=\\langle a_x + b_x, a_y + b_y \\rangle$" },
+      { text: "B. $\\boldsymbol{a}+\\boldsymbol{b}=\\langle a_x - b_x, a_y - b_y \\rangle$" },
+      { text: "C. $\\boldsymbol{a}+\\boldsymbol{b}=\\langle a_x \\cdot b_x, a_y \\cdot b_y \\rangle$" },
+      { text: "D. $\\boldsymbol{a}+\\boldsymbol{b}=\\langle a_x + a_y, b_x \\cdot b_y \\rangle$" }
+    ]);
+
+    // Create question 2
+    questions.innerHTML += createQuestion(2, "Mimic: Given the vector $\\boldsymbol{a}=\\langle 1,2\\rangle $, find the magnitude and direction.", [
+        { text: "A. The magnitude is $1$ and the direction is $\\boldsymbol{u}=\\langle 1,2 \\rangle$." },
+        { text: "B. The magnitude is $\\sqrt{5}$ and the direction is $\\boldsymbol{u}=\\left\\langle\\frac{1}{\\sqrt{5}}, \\frac{2}{\\sqrt{5}}\\right\\rangle$." },
+        { text: "C. The magnitude is $3$ and the direction is $\\boldsymbol{u}=\\left\\langle \\frac{1}{\\sqrt{3}}, \\frac{2}{\\sqrt{3}} \\right\\rangle$." },
+        { text: "D. The magnitude is $3$ and the direction is $\\boldsymbol{u}=\\langle 1,2 \\rangle$." }
+    ]);
+
+</section>
+
+<!-- Scripts and Function for Transcript Toggle -->
+<script>
+    function toggleTranscript(transcriptId) {
+    var transcript = document.getElementById(transcriptId);
+    if (transcript.style.display === "none") {
+        transcript.style.display = "block";
+    } else {
+        transcript.style.display = "none";
+    }
+}
+</script>
+
+<!-- Dynamically creates questions -->
+function createQuestion(questionNumber, questionText, options) {
+    let questionHTML = `
+        <!-- Question ${questionNumber}: ${questionText} -->
+        <div class="question ${questionNumber}">
+            <p><strong>${questionNumber}. ${questionText}</strong></p>
+            <form class="quizForm">`;
+
+    options.forEach((option, index) => {
+        questionHTML += `
+            <input type="radio" id="q${questionNumber}_option${index + 1}" name="q${questionNumber}_answer" value="${index === 0 ? 'correct' : 'incorrect'}">
+            <label for="q${questionNumber}_option${index + 1}">${option.text}</label><br>`;
+    });
+
+    questionHTML += `
+            <!-- Button to submit the answer -->
+            <button type="button" onclick="submitAnswer('q${questionNumber}')">Submit</button>
+            </form>
+        </div>`;
+
+    return questionHTML;
+}
+
+
+
+<!-- Script for submitting answers and displaying solutions -->
+<script>
+    // Function to submit the answer
+    function submitAnswer(questionId) {
+        // Get the selected answer
+        var selectedAnswer = document.querySelector('input[name="' + questionId + '_answer"]:checked');
+        // Get the feedback message div
+        var feedbackMessageDiv = document.getElementById("feedbackMessage_" + questionId);
+        // Check if an answer is selected
+        if (selectedAnswer) {
+            // Provide feedback for correct or incorrect answer
+            if (selectedAnswer.value === "correct") {
+                feedbackMessageDiv.innerHTML = "<p>Congratulations! Your answer is correct.</p>";
+            } else {
+                feedbackMessageDiv.innerHTML = "<p>Sorry, your answer is incorrect.</p>";
+            }
+            // Display solution regardless of the answer
+            var solutionElement = document.getElementById("solution_" + questionId);
+            solutionElement.style.display = "block";
+            // Hide the form after submission
+            var questionElement = document.querySelector('.' + questionId);
+            questionElement.querySelector('.quizForm').style.display = "none";
+        } else {
+            // Alert if no answer is selected
+            alert("Please select an answer before submitting.");
+        }
+    }
+</script>
