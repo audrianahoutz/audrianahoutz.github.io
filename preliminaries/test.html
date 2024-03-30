@@ -160,7 +160,7 @@ questions.innerHTML += createQuestion(1, "Recall: What is the formula for adding
     { text: "B. $\\boldsymbol{a}+\\boldsymbol{b}=\\langle a_x - b_x, a_y - b_y \\rangle$" },
     { text: "C. $\\boldsymbol{a}+\\boldsymbol{b}=\\langle a_x \\cdot b_x, a_y \\cdot b_y \\rangle$" },
     { text: "D. $\\boldsymbol{a}+\\boldsymbol{b}=\\langle a_x + a_y, b_x \\cdot b_y \\rangle$" }
-]);
+], 0); // Assuming option A is correct (index 0)
 
 // Create question 2
 questions.innerHTML += createQuestion(2, "Mimic: Given the vector $\\boldsymbol{a}=\\langle 1,2\\rangle $, find the magnitude and direction.", [
@@ -168,7 +168,7 @@ questions.innerHTML += createQuestion(2, "Mimic: Given the vector $\\boldsymbol{
     { text: "B. The magnitude is $\\sqrt{5}$ and the direction is $\\boldsymbol{u}=\\left\\langle\\frac{1}{\\sqrt{5}}, \\frac{2}{\\sqrt{5}}\\right\\rangle$." },
     { text: "C. The magnitude is $3$ and the direction is $\\boldsymbol{u}=\\left\\langle \\frac{1}{\\sqrt{3}}, \\frac{2}{\\sqrt{3}} \\right\\rangle$." },
     { text: "D. The magnitude is $3$ and the direction is $\\boldsymbol{u}=\\langle 1,2 \\rangle$." }
-]);
+], 2); // Assuming option B is correct (index 1)
 
 // Repeat the process for other questions...
 </script>
@@ -214,14 +214,9 @@ function submitAnswer(questionId) {
 }
 </script>
 
-
-
-<section id="questionSection">
-    <!-- Questions will be dynamically generated here -->
-</section>
-
+<!-- Dynamically creates questions -->
 <script>
-function createQuestion(questionNumber, questionText, options) {
+function createQuestion(questionNumber, questionText, options, correctIndex) {
     let questionHTML = `
         <!-- Question ${questionNumber}: ${questionText} -->
         <div class="question" id="question_${questionNumber}">
@@ -230,7 +225,7 @@ function createQuestion(questionNumber, questionText, options) {
 
     options.forEach((option, index) => {
         questionHTML += `
-            <input type="radio" id="q${questionNumber}_option${index + 1}" name="q${questionNumber}_answer" value="${index === 0 ? 'correct' : 'incorrect'}">
+            <input type="radio" id="q${questionNumber}_option${index + 1}" name="q${questionNumber}_answer" value="${index === correctIndex ? 'correct' : 'incorrect'}">
             <label for="q${questionNumber}_option${index + 1}">${option.text}</label><br>`;
     });
 
@@ -247,3 +242,4 @@ function createQuestion(questionNumber, questionText, options) {
     return questionHTML;
 }
 </script>
+
