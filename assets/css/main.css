@@ -1257,17 +1257,6 @@ a.image {
     -ms-transform: scale(1.075);
     transform: scale(1.075); }
 
-/* Text next to image */
-.text-container-right {
-  float: right; /* Align content to the right */
-  width: calc(60% - 1.5em); /* Adjust width as needed */
-  padding: 0 0 1em 1.5em; /* Adjust padding as needed */
-}
-
-.text-container-right p {
-  margin: 0; /* Reset paragraph margins */
-}
-
 
 /* List */
 ol {
