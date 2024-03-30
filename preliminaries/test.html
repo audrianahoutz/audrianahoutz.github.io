@@ -149,6 +149,30 @@ title: Note Title
     <!-- Questions will be dynamically generated here -->
 </section>
 
+<!-- Example usage -->
+<script>
+// Example usage:
+const questions = document.getElementById('questionSection');
+
+// Create question 1
+questions.innerHTML += createQuestion(1, "Recall: What is the formula for adding two vectors in component form?", [
+    { text: "A. $\\boldsymbol{a}+\\boldsymbol{b}=\\langle a_x + b_x, a_y + b_y \\rangle$" },
+    { text: "B. $\\boldsymbol{a}+\\boldsymbol{b}=\\langle a_x - b_x, a_y - b_y \\rangle$" },
+    { text: "C. $\\boldsymbol{a}+\\boldsymbol{b}=\\langle a_x \\cdot b_x, a_y \\cdot b_y \\rangle$" },
+    { text: "D. $\\boldsymbol{a}+\\boldsymbol{b}=\\langle a_x + a_y, b_x \\cdot b_y \\rangle$" }
+]);
+
+// Create question 2
+questions.innerHTML += createQuestion(2, "Mimic: Given the vector $\\boldsymbol{a}=\\langle 1,2\\rangle $, find the magnitude and direction.", [
+    { text: "A. The magnitude is $1$ and the direction is $\\boldsymbol{u}=\\langle 1,2 \\rangle$." },
+    { text: "B. The magnitude is $\\sqrt{5}$ and the direction is $\\boldsymbol{u}=\\left\\langle\\frac{1}{\\sqrt{5}}, \\frac{2}{\\sqrt{5}}\\right\\rangle$." },
+    { text: "C. The magnitude is $3$ and the direction is $\\boldsymbol{u}=\\left\\langle \\frac{1}{\\sqrt{3}}, \\frac{2}{\\sqrt{3}} \\right\\rangle$." },
+    { text: "D. The magnitude is $3$ and the direction is $\\boldsymbol{u}=\\langle 1,2 \\rangle$." }
+]);
+
+// Repeat the process for other questions...
+</script>
+
 
 <!-- Scripts and Function for Transcript Toggle -->
 <script>
@@ -222,26 +246,4 @@ function createQuestion(questionNumber, questionText, options) {
 
     return questionHTML;
 }
-
-// Example usage:
-const questions = document.getElementById('questionSection');
-
-// Create question 1
-questions.innerHTML += createQuestion(1, "Recall: What is the formula for adding two vectors in component form?", [
-    { text: "A. $\\boldsymbol{a}+\\boldsymbol{b}=\\langle a_x + b_x, a_y + b_y \\rangle$" },
-    { text: "B. $\\boldsymbol{a}+\\boldsymbol{b}=\\langle a_x - b_x, a_y - b_y \\rangle$" },
-    { text: "C. $\\boldsymbol{a}+\\boldsymbol{b}=\\langle a_x \\cdot b_x, a_y \\cdot b_y \\rangle$" },
-    { text: "D. $\\boldsymbol{a}+\\boldsymbol{b}=\\langle a_x + a_y, b_x \\cdot b_y \\rangle$" }
-]);
-
-// Create question 2
-questions.innerHTML += createQuestion(2, "Mimic: Given the vector $\\boldsymbol{a}=\\langle 1,2\\rangle $, find the magnitude and direction.", [
-    { text: "A. The magnitude is $1$ and the direction is $\\boldsymbol{u}=\\langle 1,2 \\rangle$." },
-    { text: "B. The magnitude is $\\sqrt{5}$ and the direction is $\\boldsymbol{u}=\\left\\langle\\frac{1}{\\sqrt{5}}, \\frac{2}{\\sqrt{5}}\\right\\rangle$." },
-    { text: "C. The magnitude is $3$ and the direction is $\\boldsymbol{u}=\\left\\langle \\frac{1}{\\sqrt{3}}, \\frac{2}{\\sqrt{3}} \\right\\rangle$." },
-    { text: "D. The magnitude is $3$ and the direction is $\\boldsymbol{u}=\\langle 1,2 \\rangle$." }
-]);
-
-// Repeat the process for other questions...
-
 </script>
