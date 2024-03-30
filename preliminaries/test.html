@@ -138,13 +138,6 @@ title: Note Title
 
 </section>
 
-<!-- Questions Section --> 
-
-<section>
-	<header class="main">
-		<h2>Self-assessment Questions</h2>
-	</header>
-</section>
 <section id="questionSection">
     <!-- Questions will be dynamically generated here -->
 </section>
@@ -168,7 +161,7 @@ questions.innerHTML += createQuestion(2, "Mimic: Given the vector $\\boldsymbol{
     { text: "B. The magnitude is $\\sqrt{5}$ and the direction is $\\boldsymbol{u}=\\left\\langle\\frac{1}{\\sqrt{5}}, \\frac{2}{\\sqrt{5}}\\right\\rangle$." },
     { text: "C. The magnitude is $3$ and the direction is $\\boldsymbol{u}=\\left\\langle \\frac{1}{\\sqrt{3}}, \\frac{2}{\\sqrt{3}} \\right\\rangle$." },
     { text: "D. The magnitude is $3$ and the direction is $\\boldsymbol{u}=\\langle 1,2 \\rangle$." }
-], 2); // Assuming option B is correct (index 1)
+], 1); // Assuming option B is correct (index 1)
 
 // Repeat the process for other questions...
 </script>
@@ -242,4 +235,5 @@ function createQuestion(questionNumber, questionText, options, correctIndex) {
     return questionHTML;
 }
 </script>
+
 
