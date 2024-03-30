@@ -178,6 +178,7 @@ title: Note Title
 </script>
 
 <!-- Dynamically creates questions -->
+<script>
 function createQuestion(questionNumber, questionText, options) {
     let questionHTML = `
         <!-- Question ${questionNumber}: ${questionText} -->
@@ -199,6 +200,7 @@ function createQuestion(questionNumber, questionText, options) {
 
     return questionHTML;
 }
+</script>
 
 
 
