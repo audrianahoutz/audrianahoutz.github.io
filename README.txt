@@ -1,4 +1,4 @@
-This is the code to generate my PhD website: audrianapohlman.github.io
+This is the code to generate my PhD website: audrianahoutz.github.io
 
 The template comes from HTML5 UP and is originally called "Editorial." Below is their original readme file.
 
