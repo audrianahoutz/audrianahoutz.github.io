@@ -163,10 +163,96 @@ title: Vector Arithmetic
 			</div>
 		</div>
 		<h3>Direction</h3>
-		
-		
-	</div>
+		<p> Similiarly, one might want to know the direction a vector points in. This information is not immediately obvious; for example, the position vectors $\lanngle 1,2 \rangle$ and $\langle 3,6 \rangle$ both point in the same direction. In fact, there are ifninitely many vectors that point in one direction (one for each magnitude possible).  </p>
 
+		<p> So, how do we remove magnitude from the vector in order to see the direction more clearly? </p>
+
+		<div class="example">
+			<p><strong>Definition:</strong> The <b>unit vector</b>, or direction, of the vector $\boldsymbol{v}=\langle x_1,x_2,x_3 \rangle $ is given by $\boldsymbol{u}=\frac{\boldsymbol{v}}{||\boldsymbol{v}||}$.</p>
+			<p>Notice, that a unit vector always has magnitude 1. To see why, click proof. </p>
+			<details>
+    				<summary>Proof</summary>
+    				<!-- Your proof content goes here -->
+    				$$ \begin{align*}
+				\text{Given a vector } \boldsymbol{v}=\langle x_1,x_2,x_3 \rangle \text{with magnitude }||\boldsymbol{v}||=\sqrt{ x_1^2 + x_2^2 + x_3^2 } \\
+				\text{we have the unit vector } \boldsymbol{u}= & \frac{\boldsymbol{v}}{||\boldsymbol{v}||} \\
+						& \langle \frac{x_1}{\sqrt{x_1^2 + x_2^2 + x_3^2}} , \frac{x_2}{\sqrt{x_1^2 + x_2^2 + x_3^2}} , \frac{x_3}{\sqrt{x_1^2 + x_2^2 + x_3^2}}  \rangle \\
+				\end{align*} $$
+				$$ \begin{align*}
+				\text{therefore, the magnitude of \boldsymbol{u} is } ||\boldsymbol{u}|| & =  \sqrt{ (\frac{x_1}{\sqrt{x_1^2 + x_2^2 + x_3^2}})^2 + (\frac{x_2}{\sqrt{x_1^2 + x_2^2 + x_3^2}})^2 + (\frac{x_3}{\sqrt{x_1^2 + x_2^2 + x_3^2}})^2 } \\
+											& = \sqrt{ \frac{x_1^2}{(\sqrt{x_1^2 + x_2^2 + x_3^2})^2} + \frac{x_2^2}{(\sqrt{x_1^2 + x_2^2 + x_3^2})^2} + \frac{x_3^2}{(\sqrt{x_1^2 + x_2^2 + x_3^2})^2} } \\
+											& = \sqrt{ \frac{x_1^2}{(x_1^2 + x_2^2 + x_3^2)} + \frac{x_2^2}{(x_1^2 + x_2^2 + x_3^2)}} + \frac{x_3^2}{(x_1^2 + x_2^2 + x_3^2)} } \\
+											& = \sqrt{ \frac{x_1^2 + x_2^2 +x_3^2)}{(x_1^2 + x_2^2 + x_3^2)} \\
+											&  = 1
+				
+
+				\end{align*}$$
+  			</details>
+
+			<div class="example">
+			 <p><strong>Example:</strong> Find the unit vector of the following vectors:</p>
+			    <ol type="a">
+				<li>$\boldsymbol{a} = \langle 3, -5, 10 \rangle$</li>
+				<li>$\boldsymbol{b} = \langle \frac{1}{\sqrt{5}},\frac{-2}{\sqrt{5}}\rangle$</li>
+				<li>$\boldsymbol{c} = \langle 0, 0 \rangle$</li>
+				<li>$\boldsymbol{d} = \langle 1, 0, 0 \rangle$</li>
+			    </ol>
+			<div class="example-steps">
+			    <strong>Part a: Unit Vector of Vector $\boldsymbol{a}$</strong>
+			    <ol>
+				<li>Use the formula for the magnitude of a vector: $||\boldsymbol{a}|| = \sqrt{a_1^2 + a_2^2 + a_3^2}$.</li>
+				<li>Substitute the given values: $||\boldsymbol{a}|| = \sqrt{3^2 + (-5)^2 + 10^2} = \sqrt{9 + 25 + 100} = \sqrt{134}$.</li>
+				<li>Use the formula for the unit vector: $\boldsymbol{u}=\frac{\boldsymbol{v}}{||\boldsymbol{v}||}$. </li>
+				<li>Subsitude the given values: $\boldsymbol{u}=\frac{\langle 3, -5, 10 \rangle}{\sqrt{134}}$.</li>
+				<li>Distribute for clarity: $\boldsymbol{u}= \langle \frac{3}{\sqrt{134}} , \frac{-5}{\sqrt{134}} , \frac{10}{\sqrt{134}} \rangle$.</li>
+			    </ol>
+			    <p><strong>Magnitude of Vector $a$:</strong> $\boldsymbol{u} = \langle \frac{3}{\sqrt{134}} , \frac{-5}{\sqrt{134}} , \frac{10}{\sqrt{134}} \rangle$.</p>
+			</div>
+			
+			<div class="example-steps">
+			    <strong>Part b: Magnitude of Vector $\boldsymbol{b}$</strong>
+			    <ol>
+				<li>Use the formula for the magnitude of a vector: $||\boldsymbol{b}|| = \sqrt{b_1^2 + b_2^2}$.</li>
+				<li>Substitute the given values: $||\boldsymbol{b}|| = \sqrt{(\frac{1}{\sqrt{5}})^2 + (\frac{-2}{\sqrt{5}})^2 } = \sqrt{\frac{1}{5} + \frac{4}{5}} = 1$.</li>
+			    	<li>Use the formula for the unit vector: $\boldsymbol{u}=\frac{\boldsymbol{v}}{||\boldsymbol{v}||}$. </li>
+				<li>Subsitude the given values: $\boldsymbol{u}=\frac{\\langle \frac{1}{\sqrt{5}},\frac{-2}{\sqrt{5}}\rangle}{1}$.</li>
+				<li>Distribute for clarity: $\boldsymbol{u}= \langle \frac{\frac{1}{\sqrt{5}}}{1},\frac{\frac{-2}{\sqrt{5}}}{1} \rangle$.</li>  
+			    </ol>
+			    <p><strong>Magnitude of Vector $b$:</strong> $\boldsymbol{u} = \langle \frac{1}{\sqrt{5}},\frac{-2}{\sqrt{5}} \rangle$.</p>
+			</div>
+			
+			<div class="example-steps">
+			    <strong>Part c: Magnitude of Vector $\boldsymbol{c}$</strong>
+			    <ol>
+				<li>Use the formula for the magnitude of a vector: $||\boldsymbol{c}|| = \sqrt{c_1^2 + c_2^2}$.</li>
+				<li>Substitute the given values: $||\boldsymbol{c}|| = \sqrt{0^2 + 0^2} = \sqrt{0+0} = 0$.</li>
+				<li>Use the formula for the unit vector: $\boldsymbol{u}=\frac{\boldsymbol{v}}{||\boldsymbol{v}||}$. </li>
+				<li>Subsitude the given values: $\boldsymbol{u}=\frac{\langle 0, 0 \rangle}{0}$.</li>
+				<li>Distribute for clarity: $\boldsymbol{u}= \langle \frac{0}{0} , \frac{0}{0} \rangle$.</li>  
+			    </ol>
+			    <p><strong>Magnitude of Vector $c$:</strong> $\boldsymbol{u} = \langle 0, 0 \rangle $.</p>
+			</div>
+			
+			<div class="example-steps">
+			    <strong>Part d: Magnitude of Vector $\boldsymbol{d}$</strong>
+			    <ol>
+				<li>Use the formula for the magnitude of a vector: $||\boldsymbol{d}|| = \sqrt{d_1^2 + d_2^2 + d_3^2}$.</li>
+				<li>Substitute the given values: $||\boldsymbol{d}|| = \sqrt{1^2 + 0^2 + 0^2} = \sqrt{1 + 0 + 0} = 1$.</li>
+				<li>Use the formula for the unit vector: $\boldsymbol{u}=\frac{\boldsymbol{v}}{||\boldsymbol{v}||}$. </li>
+				<li>Subsitude the given values: $\boldsymbol{u}=\frac{\langle 1, 0, 0 \rangle}{1}}$.</li>
+				<li>Distribute for clarity: $\boldsymbol{u}= \langle \frac{1}{1} , \frac{0}{1} , \frac{0}{1} \rangle$.</li> 
+			    </ol>
+			    <p><strong>Magnitude of Vector $d$:</strong> $\boldsymbol{u} = \langle 1,0,0 \rangle $.</p>
+			</div>
+		</div>
+
+		<h3>Special Vectors</h3>
+			
+			
+		</div>
+	<!-- Close Transcript button  -->
+		<button onclick="toggleTranscript('transcript2')">Close: Magnitude and Direction</button>
+	</div>
 </section>
 
 <!-- Addition and Subtraction -->
