@@ -169,22 +169,21 @@ title: Vector Arithmetic
 		<p> So, how do we remove magnitude from the vector in order to see the direction more clearly? </p>
 
 		<div class="example">
-			<p><strong>Definition:</strong> The <b>unit vector</b>, or direction, of the vector $\boldsymbol{v}=\langle x_1,x_2,x_3 \rangle $ is given by $\boldsymbol{u}=\frac{\boldsymbol{v}}{||\boldsymbol{v}||}$.</p>
-			<p>Notice, that a unit vector always has magnitude 1. To see why, click proof. </p>
-			<details>
-			    <summary>Proof</summary>
-			    <!-- Your proof content goes here -->
-			    $$ \begin{align*}
-			    \text{Given a vector } \boldsymbol{v}=\langle x_1,x_2,x_3 \rangle \text{ with magnitude }||\boldsymbol{v}|| =\sqrt{ x_1^2 + x_2^2 + x_3^2 }  \text{ we have the unit vector } \boldsymbol{u}=  \frac{\boldsymbol{v}}{||\boldsymbol{v}||} \\
-			                = \langle \frac{x_1}{\sqrt{x_1^2 + x_2^2 + x_3^2}} , \frac{x_2}{\sqrt{x_1^2 + x_2^2 + x_3^2}} , \frac{x_3}{\sqrt{x_1^2 + x_2^2 + x_3^2}}  \rangle \\
-			    \text{ therefore, the magnitude of \boldsymbol{u} is } ||\boldsymbol{u}||  =  \sqrt{ (\frac{x_1}{\sqrt{x_1^2 + x_2^2 + x_3^2}})^2 + (\frac{x_2}{\sqrt{x_1^2 + x_2^2 + x_3^2}})^2 + (\frac{x_3}{\sqrt{x_1^2 + x_2^2 + x_3^2}})^2 } \\
-			                                         = \sqrt{ \frac{x_1^2}{(\sqrt{x_1^2 + x_2^2 + x_3^2})^2} + \frac{x_2^2}{(\sqrt{x_1^2 + x_2^2 + x_3^2})^2} + \frac{x_3^2}{(\sqrt{x_1^2 + x_2^2 + x_3^2})^2} } \\
-			                                         = \sqrt{ \frac{x_1^2}{(x_1^2 + x_2^2 + x_3^2)} + \frac{x_2^2}{(x_1^2 + x_2^2 + x_3^2)}} + \frac{x_3^2}{(x_1^2 + x_2^2 + x_3^2)} } \\
-			                                         = \sqrt{ \frac{x_1^2 + x_2^2 +x_3^2)}{(x_1^2 + x_2^2 + x_3^2)} \\
-			                                          = 1
-			    \end{align*}$$
-			</details>
-		</div>
+		    <p><strong>Definition:</strong> The <b>unit vector</b>, or direction, of the vector $\boldsymbol{v}=\langle x_1,x_2,x_3 \rangle $ is given by $\boldsymbol{u}=\frac{\boldsymbol{v}}{||\boldsymbol{v}||}$.</p>
+		    <p>Notice, that a unit vector always has magnitude 1. To see why, click proof. </p>
+		    <details>
+		        <summary>Proof</summary>
+		        <!-- Your proof content goes here -->
+		        $$ \begin{align*}
+		        \text{Given a vector } \boldsymbol{v}=\langle x_1,x_2,x_3 \rangle \text{ with magnitude }||\boldsymbol{v}||=\sqrt{ x_1^2 + x_2^2 + x_3^2 } \text{ we have the unit vector } \boldsymbol{u}=  \frac{\boldsymbol{v}}{||\boldsymbol{v}||} \\
+		                 = \langle \frac{x_1}{\sqrt{x_1^2 + x_2^2 + x_3^2}} , \frac{x_2}{\sqrt{x_1^2 + x_2^2 + x_3^2}} , \frac{x_3}{\sqrt{x_1^2 + x_2^2 + x_3^2}}  \rangle \\
+		        \text{ therefore, the magnitude of \boldsymbol{u} is } ||\boldsymbol{u}|| & =  \sqrt{ (\frac{x_1}{\sqrt{x_1^2 + x_2^2 + x_3^2}})^2 + (\frac{x_2}{\sqrt{x_1^2 + x_2^2 + x_3^2}})^2 + (\frac{x_3}{\sqrt{x_1^2 + x_2^2 + x_3^2}})^2 } \\
+		                                        & = \sqrt{ \frac{x_1^2}{(\sqrt{x_1^2 + x_2^2 + x_3^2})^2} + \frac{x_2^2}{(\sqrt{x_1^2 + x_2^2 + x_3^2})^2} + \frac{x_3^2}{(\sqrt{x_1^2 + x_2^2 + x_3^2})^2} } \\
+		                                        & = \sqrt{ \frac{x_1^2}{(x_1^2 + x_2^2 + x_3^2)} + \frac{x_2^2}{(x_1^2 + x_2^2 + x_3^2)}} + \frac{x_3^2}{(x_1^2 + x_2^2 + x_3^2)} } \\
+		                                        & = \sqrt{ \frac{x_1^2 + x_2^2 +x_3^2)}{(x_1^2 + x_2^2 + x_3^2)} \\
+		                                        &  = 1
+		        \end{align*} $$
+		    </details>
 
 		<div class="example">
 			 <p><strong>Example:</strong> Find the unit vector of the following vectors:</p>
