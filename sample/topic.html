@@ -47,20 +47,20 @@ title: sample-topic
 <div class="quiz-content tab-content active">
   <div class="question-block">
     <p><strong>Level 1: Recall a definition correctly:</strong></p>
-    <form class="quiz-form">
-      <div class="options">
-        <label><input type="radio" name="q1" value="a"> (a) Definition A</label>
-        <label><input type="radio" name="q1" value="b"> (b) Definition B</label>
-        <label><input type="radio" name="q1" value="c"> (c) Definition C</label>
-        <label><input type="radio" name="q1" value="d"> (d) Definition D</label>
-        <label><input type="radio" name="q1" value="e"> (e) I don't know</label>
-      </div>
-      <button type="button" class="submit-btn">Solution</button>
-      <div class="solution">
-        <strong>Solution:</strong> (b) Definition B is correct.<br>
-        <strong>Reference:</strong> See Lecture: Introduction at 3:24.
-      </div>
-    </form>
+    <div class="options">
+  	<p>(a) Definition A</p>
+  	<p>(b) Definition B</p>
+  	<p>(c) Definition C</p>
+  	<p>(d) Definition D</p>
+  	<p>(e) I don't know</p>
+	</div>
+
+<button type="button" class="solution-toggle">Show Solution</button>
+<div class="solution" style="display: none;">
+  <strong>Solution:</strong> (b) Definition B is correct.<br>
+  <strong>Reference:</strong> See Lecture: Introduction at 3:24.
+</div>
+
   </div>
 </div>
 
@@ -171,15 +171,32 @@ title: sample-topic
   setupTabSystem('.video-tab', '.video-content');
   setupTabSystem('.quiz-tab', '.quiz-content');
 
-  document.querySelectorAll('.submit-btn').forEach(btn => {
+ <script>
+  function setupTabSystem(tabSelector, contentSelector) {
+    const tabs = document.querySelectorAll(tabSelector);
+    const contents = document.querySelectorAll(contentSelector);
+    tabs.forEach((tab, idx) => {
+      tab.addEventListener('click', () => {
+        tabs.forEach(t => t.classList.remove('active'));
+        contents.forEach(c => c.classList.remove('active'));
+        tab.classList.add('active');
+        contents[idx].classList.add('active');
+      });
+    });
+  }
+
+  setupTabSystem('.video-tab', '.video-content');
+  setupTabSystem('.quiz-tab', '.quiz-content');
+
+  // Toggle solution visibility
+  document.querySelectorAll('.solution-toggle').forEach(btn => {
     btn.addEventListener('click', () => {
-      const form = btn.closest('.quiz-form');
-      const selected = form.querySelector('input[type=radio]:checked');
-      if (selected) {
-        form.querySelector('.solution').style.display = 'block';
-      } else {
-        alert("Please select an answer first.");
-      }
+      const sol = btn.nextElementSibling;
+      const visible = sol.style.display === 'block';
+      sol.style.display = visible ? 'none' : 'block';
+      btn.textContent = visible ? 'Show Solution' : 'Hide Solution';
     });
   });
+</script>
+
 </script>
