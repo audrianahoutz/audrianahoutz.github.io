@@ -8,16 +8,23 @@ title: sample-topic
     <header class="main">
 	<h1>Video Lectures</h1>
     </header>
+<h1>Video Lectures</h1>
 <div class="video-tabs tabs">
-  <div class="video-tab active">Introduction</div>
-  <div class="video-tab">Computation 1</div>
-  <div class="video-tab">Computation 2</div>
-  <div class="video-tab">Theory 1</div>
-  <div class="video-tab">Theory 2</div>
-  <div class="video-tab">Conclusion</div>
+  <div class="video-tab active color1">Introduction</div>
+  <div class="video-tab color2">Computation 1</div>
+  <div class="video-tab color3">Computation 2</div>
+  <div class="video-tab color4">Theory 1</div>
+  <div class="video-tab color5">Theory 2</div>
+  <div class="video-tab color6">Conclusion</div>
 </div>
+
 <div class="video-content tab-content active">
   <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+  <div class="resource-links">
+    <a href="path/to/blank_note.pdf" target="_blank">Blank Note Sheet</a> |
+    <a href="path/to/exit_ticket.pdf" target="_blank">Blank Exit Ticket</a> |
+    <a href="path/to/filled_in_document.pdf" target="_blank">Filled-In Document</a>
+  </div>
 </div>
 <div class="video-content tab-content"><p>Computation 1 video here...</p></div>
 <div class="video-content tab-content"><p>Computation 2 video here...</p></div>
@@ -63,22 +70,110 @@ title: sample-topic
 <div class="quiz-content tab-content"><p>Level 5 question goes here</p></div>
 <div class="quiz-content tab-content"><p>Level 6 question goes here</p></div>
 
+<!-- Styles -->
 <style>
-  .tabs { display: flex; border-bottom: 2px solid #ccc; margin-bottom: 1rem; flex-wrap: wrap; }
-  .tabs div { padding: 0.5rem 1rem; cursor: pointer; border: 1px solid #ccc; border-bottom: none; background-color: #f1f1f1; }
-  .tabs .active { background-color: white; font-weight: bold; border-top: 3px solid steelblue; }
-  .tab-content { border: 1px solid #ccc; padding: 1rem; display: none; width: 100%; }
-  .tab-content.active { display: block; }
-  .question-block { margin-top: 1rem; }
-  .options label { display: block; margin: 0.5rem 0; cursor: pointer; }
-  .solution { margin-top: 1rem; background: #eef; padding: 0.5rem; display: none; border: 1px solid #99c; }
-  .submit-btn { margin-top: 1rem; display: block; }
+  .tabs {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 1rem;
+  }
+
+  .tabs div {
+    padding: 0.75rem 1rem;
+    text-align: center;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    background-color: #f1f1f1;
+    font-weight: bold;
+  }
+
+  .tabs .active {
+    background-color: white;
+    border-top: 3px solid #000;
+  }
+
+  .tab-content {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    display: none;
+    width: 100%;
+  }
+
+  .tab-content.active {
+    display: block;
+  }
+
+  .question-block {
+    margin-top: 1rem;
+  }
+
+  .options label {
+    display: block;
+    margin: 0.5rem 0;
+    cursor: pointer;
+  }
+
+  .solution {
+    margin-top: 1rem;
+    background: #eef;
+    padding: 0.5rem;
+    display: none;
+    border: 1px solid #99c;
+  }
+
+  .submit-btn {
+    margin-top: 1rem;
+    display: block;
+  }
+
+  .resource-links {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+  }
+
+  .resource-links a {
+    margin-right: 1rem;
+    text-decoration: underline;
+  }
+
+  /* Optional color themes for tabs */
+  .color1 { background-color: #e6f2ff; }
+  .color2 { background-color: #e6ffe6; }
+  .color3 { background-color: #fff5e6; }
+  .color4 { background-color: #ffe6f0; }
+  .color5 { background-color: #f0e6ff; }
+  .color6 { background-color: #e6ffff; }
 </style>
 
+<!-- Scripts -->
 <script>
   function setupTabSystem(tabSelector, contentSelector) {
     const tabs = document.querySelectorAll(tabSelector);
     const contents = document.querySelectorAll(contentSelector);
     tabs.forEach((tab, idx) => {
       tab.addEventListener('click', () => {
-        tabs.forEach(t => t.classList.re
+        tabs.forEach(t => t.classList.remove('active'));
+        contents.forEach(c => c.classList.remove('active'));
+        tab.classList.add('active');
+        contents[idx].classList.add('active');
+      });
+    });
+  }
+
+  setupTabSystem('.video-tab', '.video-content');
+  setupTabSystem('.quiz-tab', '.quiz-content');
+
+  document.querySelectorAll('.submit-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const form = btn.closest('.quiz-form');
+      const selected = form.querySelector('input[type=radio]:checked');
+      if (selected) {
+        form.querySelector('.solution').style.display = 'block';
+      } else {
+        alert("Please select an answer first.");
+      }
+    });
+  });
+</script>
