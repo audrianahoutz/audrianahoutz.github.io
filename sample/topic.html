@@ -1,39 +1,36 @@
----
-layout: default
-title: Calculus B - Videos
----
-
 <h1>Video Lectures</h1>
-<div class="tabs" id="video-tabs">
-  <div class="tab active">Introduction</div>
-  <div class="tab">Computation 1</div>
-  <div class="tab">Computation 2</div>
-  <div class="tab">Theory 1</div>
-  <div class="tab">Theory 2</div>
-  <div class="tab">Conclusion</div>
+<div class="video-tabs tabs">
+  <div class="video-tab active">Introduction</div>
+  <div class="video-tab">Computation 1</div>
+  <div class="video-tab">Computation 2</div>
+  <div class="video-tab">Theory 1</div>
+  <div class="video-tab">Theory 2</div>
+  <div class="video-tab">Conclusion</div>
 </div>
-<div class="tab-content active">
+<div class="video-content tab-content active">
   <iframe width="100%" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
 </div>
-<div class="tab-content"><p>Computation 1 video here...</p></div>
-<div class="tab-content"><p>Computation 2 video here...</p></div>
-<div class="tab-content"><p>Theory 1 video here...</p></div>
-<div class="tab-content"><p>Theory 2 video here...</p></div>
-<div class="tab-content"><p>Conclusion video here...</p></div>
+<div class="video-content tab-content"><p>Computation 1 video here...</p></div>
+<div class="video-content tab-content"><p>Computation 2 video here...</p></div>
+<div class="video-content tab-content"><p>Theory 1 video here...</p></div>
+<div class="video-content tab-content"><p>Theory 2 video here...</p></div>
+<div class="video-content tab-content"><p>Conclusion video here...</p></div>
+
+<hr>
 
 <h2>Test Your Knowledge</h2>
-<div class="tabs" id="quiz-tabs">
-  <div class="tab active">Level 1</div>
-  <div class="tab">Level 2</div>
-  <div class="tab">Level 3</div>
-  <div class="tab">Level 4</div>
-  <div class="tab">Level 5</div>
-  <div class="tab">Level 6</div>
+<div class="quiz-tabs tabs">
+  <div class="quiz-tab active">Level 1</div>
+  <div class="quiz-tab">Level 2</div>
+  <div class="quiz-tab">Level 3</div>
+  <div class="quiz-tab">Level 4</div>
+  <div class="quiz-tab">Level 5</div>
+  <div class="quiz-tab">Level 6</div>
 </div>
 
-<div class="tab-content active">
+<div class="quiz-content tab-content active">
   <div class="question-block">
-    <p>Level 1: Recall a definition correctly:</p>
+    <p><strong>Level 1: Recall a definition correctly:</strong></p>
     <form class="quiz-form">
       <div class="options">
         <label><input type="radio" name="q1" value="a"> (a) Definition A</label>
@@ -50,13 +47,17 @@ title: Calculus B - Videos
     </form>
   </div>
 </div>
-<!-- ... Add other quiz levels here ... -->
 
-<!-- Embed style and script -->
+<div class="quiz-content tab-content"><p>Level 2 question goes here</p></div>
+<div class="quiz-content tab-content"><p>Level 3 question goes here</p></div>
+<div class="quiz-content tab-content"><p>Level 4 question goes here</p></div>
+<div class="quiz-content tab-content"><p>Level 5 question goes here</p></div>
+<div class="quiz-content tab-content"><p>Level 6 question goes here</p></div>
+
 <style>
-  .tabs { display: flex; border-bottom: 2px solid #ccc; margin-bottom: 1rem; flex-wrap: wrap;}
-  .tab { padding: 0.5rem 1rem; cursor: pointer; border: 1px solid #ccc; border-bottom: none; background-color: #f1f1f1; }
-  .tab.active { background-color: white; font-weight: bold; border-top: 3px solid steelblue; }
+  .tabs { display: flex; border-bottom: 2px solid #ccc; margin-bottom: 1rem; flex-wrap: wrap; }
+  .tabs div { padding: 0.5rem 1rem; cursor: pointer; border: 1px solid #ccc; border-bottom: none; background-color: #f1f1f1; }
+  .tabs .active { background-color: white; font-weight: bold; border-top: 3px solid steelblue; }
   .tab-content { border: 1px solid #ccc; padding: 1rem; display: none; width: 100%; }
   .tab-content.active { display: block; }
   .question-block { margin-top: 1rem; }
@@ -66,32 +67,9 @@ title: Calculus B - Videos
 </style>
 
 <script>
-  function setupTabs(containerId) {
-    const container = document.getElementById(containerId);
-    const tabs = container.querySelectorAll('.tab');
-    const allTabContents = container.parentElement.querySelectorAll('.tab-content');
+  function setupTabSystem(tabSelector, contentSelector) {
+    const tabs = document.querySelectorAll(tabSelector);
+    const contents = document.querySelectorAll(contentSelector);
     tabs.forEach((tab, idx) => {
       tab.addEventListener('click', () => {
-        tabs.forEach(t => t.classList.remove('active'));
-        allTabContents.forEach(c => c.classList.remove('active'));
-        tab.classList.add('active');
-        allTabContents[idx].classList.add('active');
-      });
-    });
-  }
-
-  setupTabs('video-tabs');
-  setupTabs('quiz-tabs');
-
-  document.querySelectorAll('.submit-btn').forEach(btn => {
-    btn.addEventListener('click', () => {
-      const form = btn.closest('.quiz-form');
-      const selected = form.querySelector('input[type=radio]:checked');
-      if (selected) {
-        form.querySelector('.solution').style.display = 'block';
-      } else {
-        alert("Please select an answer first.");
-      }
-    });
-  });
-</script>
+        tabs.forEach(t => t.classList.re
