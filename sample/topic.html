@@ -73,11 +73,17 @@ title: sample-topic
 <!-- Styles -->
 <style>
   .tabs {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    border-bottom: 2px solid #ccc;
-    margin-bottom: 1rem;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  border-bottom: 2px solid #ccc;
+  margin-bottom: 1rem;
+}
+.tabs div {
+  flex: 1 1 16%;
+  text-align: center;
+}
+
 
   .tabs div {
     padding: 0.75rem 1rem;
