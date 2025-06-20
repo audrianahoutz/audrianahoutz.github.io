@@ -2203,7 +2203,7 @@ button,
 }
 
 #footer .copyright a {
-  color: #007BFF;
+  color: #f1f3f5;
   text-decoration: underline;
 }
 #footer .copyright a:hover {
@@ -2231,7 +2231,7 @@ button,
 
 .nav-buttons .button {
   padding: 0.75em 2em;
-  background-color: #007BFF;
+  background-color: #f1f3f5;
   color: #fff;
   font-size: 1rem;
   text-decoration: none;
@@ -2242,7 +2242,7 @@ button,
 }
 
 .nav-buttons .button:hover {
-  background-color: #0056b3;
+  background-color: #f1f3f5;
   transform: translateY(-2px);
 }
 
