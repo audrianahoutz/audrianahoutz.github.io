@@ -5,8 +5,6 @@ title: sample-topic
 
 <!-- Content section -->
 <section>
-
-<div class="full-width-section">
 	
     <header class="main">
 	<h1>Video Lectures</h1>
@@ -72,23 +70,13 @@ title: sample-topic
 <div class="quiz-content tab-content"><p>Level 5 question goes here</p></div>
 <div class="quiz-content tab-content"><p>Level 6 question goes here</p></div>
 
-</div>
-
 <!-- Styles -->
 <style>
-
-.full-width-section {
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  padding: 1rem 0;
-  background: #ffffff; /* Optional: background color to visually separate */
-}
-
-.full-width-section .tabs,
-.full-width-section .tab-content {
-  width: 100%;
-  max-width: 100%;
-}
+  #main > .inner {
+    max-width: 100% !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
 	
   .tabs {
   display: flex;
