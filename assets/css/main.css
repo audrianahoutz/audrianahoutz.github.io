@@ -2192,6 +2192,30 @@ button,
   font-size: 0.9em; }
   #footer .copyright a {
     color: inherit; }
+.navigation-footer {
+  padding: 4em 0;
+  text-align: center;
+  background-color: #f8f9fa; /* Light background to separate visually */
+  border-top: 1px solid #ddd;
+  margin-top: 4em;
+}
+
+.nav-buttons .button {
+  display: inline-block;
+  margin: 0 1em;
+  padding: 0.75em 2em;
+  background-color: #007BFF; /* Bootstrap blue or your theme color */
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 0.3em;
+  transition: background-color 0.3s;
+}
+
+.nav-buttons .button:hover {
+  background-color: #0056b3; /* Darker on hover */
+}
+
 
 /* Menu */
 #menu ul {
