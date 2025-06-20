@@ -1580,6 +1580,13 @@ button,
   .button:disabled {
     pointer-events: none;
     opacity: 0.25; }
+.nav-buttons .button {
+  background-color: #4a90e2 !important;
+  color: #ffffff !important;
+  box-shadow: none !important;
+  border: none !important;
+}
+
 
 /* Mini Posts */
 .mini-posts article {
