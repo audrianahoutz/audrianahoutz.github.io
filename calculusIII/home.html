@@ -1,0 +1,374 @@
+---
+layout: template
+title: Calculus III 
+---
+
+<script type="text/javascript">
+  function toggle_visibility(id) {
+    var e = document.getElementById(id);
+    if (e.style.display == 'block') e.style.display = 'none';
+    else e.style.display = 'block';
+  }
+</script>
+
+<!-- Content -->
+<section>
+<header class="main">
+    <h1>Calculus III</h1>
+</header>
+
+<p> Welcome to Calculus III, an advanced exploration of multivariable calculus, including an essential exploration of vector calculus. This course builds on the foundational concepts from Calculus I and II, guiding you through functions of multiple variables, partial derivatives, and multiple integrals. A significant portion is dedicated to vector calculus—vector fields, line integrals, surface integrals, and the central theorems of Green, Stokes, and Gauss. These areas are crucial for applying mathematical theory to real-world problems in engineering, physics, and other disciplines. With a blend of theoretical exploration and practical application, this course is designed to deepen your understanding of the multi-dimensional mathematical universe. Prerequisites include a solid understanding of single-variable calculus. Over the semester, we will cover a comprehensive list of 22 topics:</p>
+
+</section>
+
+<!-- Standards -->
+<section>
+<table style="width:100%; table-layout:fixed;">
+  <tbody>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./pdfs/calc3-standard01.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calc3_std01'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div>Standard 01. Dot and Cross Product</div>
+        <div id="calc3_std01" style="display:none; margin-left: 1em;">
+          <br>
+          <b>Summary:</b> An introduction to vector arithmetic and its applications.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./pdfs/calc3-standard02.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calc3_std02'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div>Standard 02. Lines</div>
+        <div id="calc3_std02" style="display:none; margin-left: 1em;">
+          <br>
+          <b>Summary:</b> An introduction to lines in 3-dimensional space and three ways to write the equation(s) of a line.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./pdfs/calc3-standard03.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calc3_std03'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div>Standard 03. Planes</div>
+        <div id="calc3_std03" style="display:none; margin-left: 1em;">
+          <br>
+          <b>Summary:</b> An introduction to planes in 3-dimension space and how planes interact with each other.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./pdfs/calc3-standard04.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calc3_std04'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div>Standard 04. Vector-valued Functions</div>
+        <div id="calc3_std04" style="display:none; margin-left: 1em;">
+          <br>
+          <b>Summary:</b> An extensive introduction to common quadratic surfaces and vector valued functions, in order to find the curve of intersection between two quadratic surfaces and parameterize the solution.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./pdfs/calc3-standard05.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calc3_std05'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div>Standard 05. Calculus for Curves</div>
+        <div id="calc3_std05" style="display:none; margin-left: 1em;">
+          <br>
+          <b>Summary:</b> An extension our of the single variable definitions of limits, derivatives, and integrals to vector-valued functions.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./pdfs/calc3-standard06.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calc3_std06'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div>Standard 06. T-N-B Frame</div>
+        <div id="calc3_std06" style="display:none; margin-left: 1em;">
+          <br>
+          <b>Summary:</b> A deep dive into an application of the derivative of vector-valued functions called the T-N-B frame.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./pdfs/calc3-standard07.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calc3_std07'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div>Standard 07. Partial Derivative</div>
+        <div id="calc3_std07" style="display:none; margin-left: 1em;">
+          <br>
+          <b>Summary:</b> An introduction to partial derivatives and an extension of the chain rule for multivariable calculus.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./pdfs/calc3-standard08.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calc3_std08'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div>Standard 08. Directional Derivative</div>
+        <div id="calc3_std08" style="display:none; margin-left: 1em;">
+          <br>
+          <b>Summary:</b> An introduction to a second form of partial derivatives, one where we allow both the x and y vary as we look for the rate of change of f(x,y).
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./pdfs/calc3-standard09.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calc3_std09'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div>Standard 09. Local Extrema</div>
+        <div id="calc3_std09" style="display:none; margin-left: 1em;">
+          <br>
+          <b>Summary:</b> An extension of local extrema into multivariables through critical points and the second derivative test for multivariable functions. Also contains an example of finding absolute extrema on a closed and bounded region using the same techniques.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./pdfs/calc3-standard10.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calc3_std10'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div>Standard 10. Lagrange Multipliers</div>
+        <div id="calc3_std10" style="display:none; margin-left: 1em;">
+          <br>
+          <b>Summary:</b> An introduction to a new method of solving for absolute extrema on a closed and bounded region given one or two constraints.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./pdfs/calc3-standard11.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calc3_std11'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div>Standard 11. Double Integrals - Rectangular</div>
+        <div id="calc3_std11" style="display:none; margin-left: 1em;">
+          <br>
+          <b>Summary:</b> An introduction to double integration over a rectangular region or a general two-dimensional region.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./pdfs/calc3-standard12.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calc3_std12'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div>Standard 12. Double Integrals - Polar</div>
+        <div id="calc3_std12" style="display:none; margin-left: 1em;">
+          <br>
+          <b>Summary:</b> A look into converting double integrals, and the region of integration, using Cartesian (or rectangular) coordinates into polar coordinates.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./pdfs/calc3-standard13.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calc3_std13'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div>Standard 13. Triple Integrals - Rectangular</div>
+        <div id="calc3_std13" style="display:none; margin-left: 1em;">
+          <br>
+          <b>Summary:</b> An introduction to triple integration over a rectangular prism or a general three-dimensional region.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./pdfs/calc3-standard14.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calc3_std14'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div>Standard 14. Triple Integrals - Cylindrical and Spherical</div>
+        <div id="calc3_std14" style="display:none; margin-left: 1em;">
+          <br>
+          <b>Summary:</b> A look into converting triple integrals, and the region of integration, using Cartesian coordinate into cylindrical and spherical coordinates.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./pdfs/calc3-standard15.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calc3_std15'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div>Standard 15. Change of Variable</div>
+        <div id="calc3_std15" style="display:none; margin-left: 1em;">
+          <br>
+          <b>Summary:</b> A generalization of the process to convert integrals using Cartesian coordinates into an alternate coordinate system.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./pdfs/calc3-standard16.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calc3_std16'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div>Standard 16. Line Integrals</div>
+        <div id="calc3_std16" style="display:none; margin-left: 1em;">
+          <br>
+          <b>Summary:</b> An introduction to a new type of integral called line integrals, where the independent variables now are defined by curves rather than regions as we have done before.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./pdfs/calc3-standard17.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calc3_std17'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div>Standard 17. Fundamental Theorem of Line Integrals</div>
+        <div id="calc3_std17" style="display:none; margin-left: 1em;">
+          <br>
+          <b>Summary:</b> An introduction to the fundamental theorem of calculus for line integrals of vector fields along with more in-depth discussion on conservative vector fields and their potential functions.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./pdfs/calc3-standard18.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calc3_std18'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div>Standard 18. Curl and Divergence</div>
+        <div id="calc3_std18" style="display:none; margin-left: 1em;">
+          <br>
+          <b>Summary:</b> An introduction of the curl and divergence of a vector field along and how the curl can be used to find out if a vector field is conservative.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./pdfs/calc3-standard19.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calc3_std19'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div>Standard 19. Green's Theorem</div>
+        <div id="calc3_std19" style="display:none; margin-left: 1em;">
+          <br>
+          <b>Summary:</b> An introduction to one of the three main theorems of calculus III, Green's theorem.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./pdfs/calc3-standard20.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calc3_std20'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div>Standard 20. Surface Integrals</div>
+        <div id="calc3_std20" style="display:none; margin-left: 1em;">
+          <br>
+          <b>Summary:</b> An introduction to a new type of integral called surface integrals, where the integrand is a function of two variables or more variables and the independent variables are now on the surface of a three-dimensional solid.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./pdfs/calc3-standard21.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calc3_std21'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div>Standard 21. Stokes' Theorem</div>
+        <div id="calc3_std21" style="display:none; margin-left: 1em;">
+          <br>
+          <b>Summary:</b> An introduction to the second of the three main theorems of calculus III, Stokes' theorem.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./pdfs/calc3-standard22.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calc3_std22'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div>Standard 22. Divergence Theorem</div>
+        <div id="calc3_std22" style="display:none; margin-left: 1em;">
+          <br>
+          <b>Summary:</b> An introduction to the last of the three main theorems (and ana pplication of divergence) of calculus III, Divergence theorem.
+        </div>
+      </td>
+    </tr>
+
+    <!-- Final exam review: PDF only -->
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./pdfs/calc3-final-review.pdf#toolbar=0" target="_blank">PDF</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div>Final Exam Review</div>
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+    
+</section>
+
