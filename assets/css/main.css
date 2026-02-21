@@ -16,8 +16,8 @@ HopeOrange rgb: 244, 106, 31 */
 HopeOrange rgb: 211, 159, 16 */
 
 :root {
-  --theme-color: #ae9142;
-  --theme-color-rgb: 174, 145, 66;
+  --theme-color: #3F5A4D;
+  --theme-color-rgb: 211, 159, 16;
 }
 
 
@@ -2312,6 +2312,7 @@ button,
     border-top: 0;
     margin-top: 0;
     padding-top: 0; }
+
 
 
 
