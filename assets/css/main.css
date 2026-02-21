@@ -2209,29 +2209,12 @@ button,
     #banner .image {
       max-height: 35vh; } }
 
-/* Footer copyright text */
-#footer {
-  background-color: #f1f3f5; /* Light subtle background */
-  padding: 2em 1em;          /* More vertical space */
-  font-family: 'Segoe UI', sans-serif;
-  font-size: 1em;
-  color: #6c757d;
-  text-align: center;
-}
-
+/* Footer */
 #footer .copyright {
-  color: #6c757d;
-  font-size: 1em;
-  line-height: 1.6;
-}
-
-#footer .copyright a {
-  color: #f1f3f5;
-  text-decoration: underline;
-}
-#footer .copyright a:hover {
-  color: #f8f9fa;
-}
+  color: #9fa3a6;
+  font-size: 0.9em; }
+  #footer .copyright a {
+    color: inherit; }
 
 /* Menu */
 #menu ul {
@@ -2312,6 +2295,7 @@ button,
     border-top: 0;
     margin-top: 0;
     padding-top: 0; }
+
 
 
 
