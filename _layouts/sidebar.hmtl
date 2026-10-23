@@ -229,7 +229,12 @@
                 <!-- Uncomment the following lines if needed -->
                 <!-- <li><a href="aboutme.html">About Me</a></li> -->
                 <li><a href="research.html">Research</a></li>
-				<li><a href="office-hours/home.html">Research</a></li>
+				<li>
+                    <span class="opener">Office Hours</span>
+                    <ul>
+								    <li><a href="../office-hours/home.html">About the Project</a></li>
+					</ul>
+                </li>
                 <li>
                     <span class="opener">Teaching</span>
                     <ul>
@@ -237,7 +242,7 @@
 								    <li><a href="Calculus A.html">Calculus A</a></li>
 								    <li><a href="Calculus B.html">Calculus B</a></li>
 								    <li><a href="Calculus III.html">Calculus III</a></li>
-								    </ul>
+					</ul>
                 </li>
             </ul>
         </nav>
