@@ -2297,6 +2297,46 @@ button,
     padding-top: 0; }
 
 
+/* New reusable CSS for Office Hours */
+
+/* For interviews, essays, and other text-heavy pages. */
+.content-narrow {
+  max-width: 58em;
+}
+
+/* Small uppercase label above a heading. */
+.eyebrow {
+  color: #7f888f;
+  font-size: 0.8em;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  margin: 0 0 1.25em 0;
+  text-transform: uppercase;
+}
+
+/* Lead statement or introductory sentence. */
+.lede {
+  color: #3d4449;
+  font-size: 1.4em;
+  line-height: 1.5;
+  max-width: 33em;
+}
+
+/* Accent numbers for processes, features, or article steps. */
+.step-number {
+  color: var(--theme-color);
+  display: block;
+  font-size: 0.85em;
+  font-weight: 600;
+  margin-bottom: 0.5em;
+}
+
+/* Homepage banner spacing. */
+#banner {
+  margin-top: 0;
+  padding-top: 0;
+}
+
 
 
 
