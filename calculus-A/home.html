@@ -1,0 +1,701 @@
+---
+layout: template
+title: Calculus A Home
+---
+
+<script type="text/javascript">
+  function toggle_visibility(id) {
+    var e = document.getElementById(id);
+    if (e.style.display == 'block') e.style.display = 'none';
+    else e.style.display = 'block';
+  }
+</script>
+
+<!-- Content section -->
+<section>
+    <header class="main">
+        <h2>Calculus A Home Page</h2>
+    </header>
+
+    <!-- <h2>Course Overview</h2> -->
+    <p>
+      <strong>Calculus A</strong> is the first course in the calculus sequence at the University of Notre Dame.
+      It covers fundamental concepts of differential and integral calculus, focusing on understanding
+      limits, derivatives, and the basics of integration.
+    </p>
+
+    <h3>Key Topics Include:</h3>
+    <ul>
+      <li><strong>Functions and Precalculus Foundations:</strong> Algebra and function review, exponential and logarithmic functions, and core equation-solving skills used throughout the course.</li>
+      <li><strong>Limits and Continuity:</strong> Limits from graphs, tables, and algebraic manipulation; continuity; and interpreting/handling discontinuities (including piecewise functions).</li>
+      <li><strong>Differentiation:</strong> The derivative as a rate of change and slope; differentiation rules (power, product, quotient, chain); derivatives of exponential, logarithmic, and trigonometric functions; and implicit differentiation.</li>
+      <li><strong>Applications of Derivatives:</strong> Related rates, linearization and percent error, optimization (including closed/bounded intervals), and core theorems (Mean Value Theorem, L’Hôpital’s Rule, first/second derivative tests, and curve sketching).</li>
+      <li><strong>Introductory Integration:</strong> Antiderivatives, Riemann sums, the Fundamental Theorem of Calculus, and u-substitution.</li>
+    </ul>
+
+    <p>
+      Exit Tickets:
+      <a href="./exit-tickets.pdf#toolbar=0" target="_blank">Exit Tickets</a>
+    </p>
+    <p>For those attending my Calculus 1/A Tutorial in Spring '26, here is a link to a google drive with all of the tutorial worksheet and quiz keys. Please feel free to use the notes below as additional resources even though they do not line up with the lectures perfectly. <a href="https://drive.google.com/drive/folders/1IrsAFN6tbkkCTtTZvUB5ynZwQp2hFwiy?usp=share_link" target="_blank">view keys</a></p>
+</section>
+
+<!-- Lecture materials -->
+<section>
+<table style="width:100%; table-layout:fixed;">
+  <tbody>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./week01A.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calcA_note01'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div><strong>Week01A. Syllabus and Algebra Review</strong></div>
+        <div id="calcA_note01" style="display:none; margin-left: 1em;">
+          <br>
+          Syllabus information and a review of algebra skills needed for calculus.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./week01B.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calcA_note02'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div><strong>Week01B. Completing the Square</strong></div>
+        <div id="calcA_note02" style="display:none; margin-left: 1em;">
+          <br>
+          Review of completing the square to rewrite and solve quadratic expressions.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./algebra-workshop.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calcA_note03'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div><strong>Algebra Workshop</strong></div>
+        <div id="calcA_note03" style="display:none; margin-left: 1em;">
+          <br>
+          Additional practice with foundational algebra techniques.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./week02A.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calcA_note04'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div><strong>Week02A. Quadratic Functions and Exponential Equations</strong></div>
+        <div id="calcA_note04" style="display:none; margin-left: 1em;">
+          <br>
+          Quadratic functions and methods for solving exponential equations.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./week02B.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calcA_note05'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div><strong>Week02B. Exponential and Logarithmic Equations</strong></div>
+        <div id="calcA_note05" style="display:none; margin-left: 1em;">
+          <br>
+          Working with exponential and logarithmic equations.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./week02C.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calcA_note06'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div><strong>Week02C. Exponential and Logarithmic Equations Applications</strong></div>
+        <div id="calcA_note06" style="display:none; margin-left: 1em;">
+          <br>
+          Applications involving exponential and logarithmic equations.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./week03A.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calcA_note07'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div><strong>Week03A. Limits using Charts</strong></div>
+        <div id="calcA_note07" style="display:none; margin-left: 1em;">
+          <br>
+          Estimating and interpreting limits from numerical tables.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./week03B.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calcA_note08'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div><strong>Week03B. Limits using Graphs</strong></div>
+        <div id="calcA_note08" style="display:none; margin-left: 1em;">
+          <br>
+          Reading limits from graphs, including one-sided behavior.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./week03C.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calcA_note09'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div><strong>Week03C. Discontinuities and Piecewise functions</strong></div>
+        <div id="calcA_note09" style="display:none; margin-left: 1em;">
+          <br>
+          Understanding discontinuities and evaluating piecewise-defined functions.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./week04A.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calcA_note10'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div><strong>Week04A. Introducing Derivative</strong></div>
+        <div id="calcA_note10" style="display:none; margin-left: 1em;">
+          <br>
+          Introducing derivatives as slopes and instantaneous rates of change.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./week04B.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calcA_note11'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div><strong>Week04B. Power Rule and Derivatives of Exponential Functions</strong></div>
+        <div id="calcA_note11" style="display:none; margin-left: 1em;">
+          <br>
+          Differentiation using the power rule and rules for exponential functions.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./week04C.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calcA_note12'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div><strong>Week04C. Derivatives Graphically</strong></div>
+        <div id="calcA_note12" style="display:none; margin-left: 1em;">
+          <br>
+          Interpreting derivatives from graphical information.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./week05A.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calcA_note13'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div><strong>Week05A. Product and Quotient Rule</strong></div>
+        <div id="calcA_note13" style="display:none; margin-left: 1em;">
+          <br>
+          Differentiating products and quotients of functions.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./midterm01-review.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calcA_note14'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div><strong>Week05. Midterm 01 Review</strong></div>
+        <div id="calcA_note14" style="display:none; margin-left: 1em;">
+          <br>
+          Review material for the first midterm exam.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./week05B.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calcA_note15'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div><strong>Week05b. Derivative of Trig Functions</strong></div>
+        <div id="calcA_note15" style="display:none; margin-left: 1em;">
+          <br>
+          Rules for differentiating trigonometric functions.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./week06A.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calcA_note16'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div><strong>Week06A. Chain Rule</strong></div>
+        <div id="calcA_note16" style="display:none; margin-left: 1em;">
+          <br>
+          Differentiating composite functions with the chain rule.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./week06B.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calcA_note17'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div><strong>Week06B. Chain Rule with Logs</strong></div>
+        <div id="calcA_note17" style="display:none; margin-left: 1em;">
+          <br>
+          Using the chain rule with logarithmic functions.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./week06C.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calcA_note18'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div><strong>Week06C. Implicit Differentation</strong></div>
+        <div id="calcA_note18" style="display:none; margin-left: 1em;">
+          <br>
+          Finding derivatives when the variables are related implicitly.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./week07A.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calcA_note19'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div><strong>Week07A. Related Rates</strong></div>
+        <div id="calcA_note19" style="display:none; margin-left: 1em;">
+          <br>
+          Using derivatives to connect changing quantities in related-rates problems.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="https://drive.google.com/drive/folders/1adKRBdReyVxBJAAwoNmicoINqNlqWkzM?usp=share_link" target="_blank">Drive</a><br>
+        <a href="#" onclick="toggle_visibility('calcA_note20'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div><strong>Week07AII. Related Rates Extra Questions</strong></div>
+        <div id="calcA_note20" style="display:none; margin-left: 1em;">
+          <br>
+          Extra related-rates questions available in the linked Google Drive folder.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./week07B.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calcA_note21'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div><strong>Week07B. Parameterization</strong></div>
+        <div id="calcA_note21" style="display:none; margin-left: 1em;">
+          <br>
+          Describing mathematical objects using parameters.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./week07C.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calcA_note22'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div><strong>Week07C. Linearization</strong></div>
+        <div id="calcA_note22" style="display:none; margin-left: 1em;">
+          <br>
+          Approximating functions locally using linearization.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./week08A.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calcA_note23'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div><strong>Week08A. Linerization Percent Error</strong></div>
+        <div id="calcA_note23" style="display:none; margin-left: 1em;">
+          <br>
+          Applying linearization to approximations and percent error.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./midterm02-review.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calcA_note24'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div><strong>Week08. Midterm 02 Review</strong></div>
+        <div id="calcA_note24" style="display:none; margin-left: 1em;">
+          <br>
+          Review material for the second midterm exam.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./week08B.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calcA_note25'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div><strong>Week08B. Minimums and Maximums</strong></div>
+        <div id="calcA_note25" style="display:none; margin-left: 1em;">
+          <br>
+          Finding and classifying minimum and maximum values.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90"></td>
+      <td width="10"></td>
+      <td><div><strong>Week09. FALL BREAK</strong></div></td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./week10A.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calcA_note27'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div><strong>Week10A. Mean Value Theorem</strong></div>
+        <div id="calcA_note27" style="display:none; margin-left: 1em;">
+          <br>
+          Understanding the Mean Value Theorem and its implications.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./week10B.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calcA_note28'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div><strong>Week10B. First Derivative Test</strong></div>
+        <div id="calcA_note28" style="display:none; margin-left: 1em;">
+          <br>
+          Using the sign of the first derivative to analyze function behavior.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./week10C.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calcA_note29'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div><strong>Week10C. Second Derivative Test</strong></div>
+        <div id="calcA_note29" style="display:none; margin-left: 1em;">
+          <br>
+          Using the second derivative to analyze concavity and extrema.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./week11A.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calcA_note30'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div><strong>Week11A. Asymptotes and L&#x27;Hopital&#x27;s Rule</strong></div>
+        <div id="calcA_note30" style="display:none; margin-left: 1em;">
+          <br>
+          Identifying asymptotes and evaluating indeterminate limits with L’Hôpital’s Rule.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./week11B.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calcA_note31'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div><strong>Week11B. Curve Sketching I</strong></div>
+        <div id="calcA_note31" style="display:none; margin-left: 1em;">
+          <br>
+          Using derivatives and other function information to sketch curves.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./week11C.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calcA_note32'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div><strong>Week11C. Curve Sketching II</strong></div>
+        <div id="calcA_note32" style="display:none; margin-left: 1em;">
+          <br>
+          Further practice analyzing and sketching curves.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./week12A.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calcA_note33'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div><strong>Week12A. Optimization on a (Closed and) Bounded Region I</strong></div>
+        <div id="calcA_note33" style="display:none; margin-left: 1em;">
+          <br>
+          Optimization on closed and bounded regions, part I.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./week12B.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calcA_note34'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div><strong>Week12B.Optimization on a (Closed and) Bounded Region II</strong></div>
+        <div id="calcA_note34" style="display:none; margin-left: 1em;">
+          <br>
+          Optimization on closed and bounded regions, part II.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./week12C.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calcA_note35'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div><strong>Week12C.Optimization on a (Closed and) Bounded Region III</strong></div>
+        <div id="calcA_note35" style="display:none; margin-left: 1em;">
+          <br>
+          Optimization on closed and bounded regions, part III.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./midterm03-review.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calcA_note36'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div><strong>Week13. Midterm 03 Review</strong></div>
+        <div id="calcA_note36" style="display:none; margin-left: 1em;">
+          <br>
+          Review material for the third midterm exam.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./week13B.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calcA_note37'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div><strong>Week13B. Newton&#x27;s Method</strong></div>
+        <div id="calcA_note37" style="display:none; margin-left: 1em;">
+          <br>
+          Approximating solutions of equations with Newton’s method.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./week13C.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calcA_note38'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div><strong>Week13C. Antiderivatives</strong></div>
+        <div id="calcA_note38" style="display:none; margin-left: 1em;">
+          <br>
+          Introducing antiderivatives and reversing differentiation.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./week14A.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calcA_note39'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div><strong>Week14A. Trig. Antiderivatives</strong></div>
+        <div id="calcA_note39" style="display:none; margin-left: 1em;">
+          <br>
+          Finding antiderivatives of trigonometric functions.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./week15A.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calcA_note40'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div><strong>Week15A. Riemann Sums</strong></div>
+        <div id="calcA_note40" style="display:none; margin-left: 1em;">
+          <br>
+          Estimating accumulated quantities with Riemann sums.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./week15B.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calcA_note41'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div><strong>Week15B. Fundamental Theorem of Calculus</strong></div>
+        <div id="calcA_note41" style="display:none; margin-left: 1em;">
+          <br>
+          Connecting definite integrals and antiderivatives through the Fundamental Theorem of Calculus.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./week15C.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calcA_note42'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div><strong>Week15C. u-Substitution</strong></div>
+        <div id="calcA_note42" style="display:none; margin-left: 1em;">
+          <br>
+          Evaluating integrals with substitution.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./week16A.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calcA_note43'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div><strong>Week16A. Second Fundamental Theorem of Calculus</strong></div>
+        <div id="calcA_note43" style="display:none; margin-left: 1em;">
+          <br>
+          Further applications of the Fundamental Theorem of Calculus.
+        </div>
+      </td>
+    </tr>
+
+    <tr>
+      <td width="90" style="white-space:nowrap;">
+        <a href="./final-review.pdf#toolbar=0" target="_blank">PDF</a><br>
+        <a href="#" onclick="toggle_visibility('calcA_note44'); return false">Summary</a>
+      </td>
+      <td width="10"></td>
+      <td>
+        <div><strong>Week16B. In-class Commentary</strong></div>
+        <div id="calcA_note44" style="display:none; margin-left: 1em;">
+          <br>
+          End-of-course review material.
+        </div>
+      </td>
+    </tr>
+
+  </tbody>
+</table>
+</section>
